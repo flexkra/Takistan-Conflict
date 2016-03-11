@@ -133,8 +133,8 @@
       <Polish>Skup materiałów przemysłowych</Polish>
     </Key>
     <Key ID="STR_Shops_Cop">
-      <Original>APD Item Shop</Original>
-      <German>APD Gegenstände</German>
+      <Original>Food Distribution</Original>
+      <German>Essensausgabe</German>
       <Italian>Negozio Polizia</Italian>
       <French>Equipement de Police</French>
       <Portuguese>Equipamentos da Polícia</Portuguese>
@@ -176,6 +176,38 @@
       <Original>Fuel Station Coffee</Original>
       <German>Tankstellen Café</German>
       <Polish>Caffe OLLEN</Polish>
+    </Key>
+    <Key ID="STR_Shops_Bandit">
+      <Original>Kitchen</Original>
+      <German>Küche</German>
+    </Key>
+    <Key ID="STR_Shops_Heroin">
+      <Original>Drug dealer</Original>
+      <German>Drogendealer</German>
+    </Key>
+    <Key ID="STR_Shops_Fladen">
+      <Original>Bakery</Original>
+      <German>Bäckerei</German>
+    </Key>
+    <Key ID="STR_Shops_Electrostore">
+      <Original>Abdul electronics demand</Original>
+      <German>Abduls Elektronikbedarf</German>
+    </Key>
+    <Key ID="STR_Shops_Blackstore">
+      <Original>Black market</Original>
+      <German>Schwarzmarkt</German>
+    </Key>
+    <Key ID="STR_Shops_Hehler">
+      <Original>Black market</Original>
+      <German>Schwarzmarkt</German>
+    </Key>
+    <Key ID="STR_Shops_Medic">
+      <Original>PJ Equipment</Original>
+      <German>PJ Ausrüstung</German>
+    </Key>
+    <Key ID="STR_Shops_Dirtydoc">
+      <Original>Dirty Doc</Original>
+      <German>Dirty Doc</German>
     </Key>
   </Package>
   <Package name="Global">
@@ -647,20 +679,18 @@
   </Package>
   <Package name="Cell_Phone">
     <Key ID="STR_CELL_Title">
-      <Original>Altis Mobile</Original>
-      <German>Altis Mobilfunk</German>
+      <Original>Takistan Mobile</Original>
+      <German>Takistan Mobilfunk</German>
       <French>Altis mobile</French>
       <Italian>Cellulare Altis</Italian>
-      <Portuguese>Celular</Portuguese>
-      <Polish>Telefon</Polish>
+      <Portuguese>Altis Mobile</Portuguese>
     </Key>
     <Key ID="STR_CELL_TextToSend">
       <Original>Message To Send:</Original>
       <German>Deine Nachricht:</German>
       <French>SMS à Envoyer :</French>
       <Italian>Messaggio da mandare:</Italian>
-      <Portuguese>Mensagem à enviar:</Portuguese>
-      <Polish>Treść wiadomości</Polish>
+      <Portuguese>Mensagem a enviar:</Portuguese>
     </Key>
     <Key ID="STR_CELL_TextMSGBtn">
       <Original>Text Message:</Original>
@@ -668,7 +698,6 @@
       <French>Text Message:</French>
       <Italian>Msg Giocatore:</Italian>
       <Portuguese>Mensagem:</Portuguese>
-      <Polish>Do: Gracz</Polish>
     </Key>
     <Key ID="STR_CELL_TextPolice">
       <Original>Text Police</Original>
@@ -676,31 +705,27 @@
       <French>Text Police</French>
       <Italian>Msg Polizia</Italian>
       <Portuguese>Polícia</Portuguese>
-      <Polish>Do: Policja</Polish>
     </Key>
     <Key ID="STR_CELL_TextAdmins">
       <Original>Text Admins</Original>
       <German>An die Admins</German>
       <French>Text Admins</French>
       <Italian>Msg Admin</Italian>
-      <Portuguese>Msg Admins</Portuguese>
-      <Polish>Do: Admin</Polish>
+      <Portuguese>Text Admin</Portuguese>
     </Key>
     <Key ID="STR_CELL_AdminMsg">
       <Original>Admin Message</Original>
       <German>Admin-Nachricht</German>
       <French>Admin Message</French>
       <Italian>Admin Msg</Italian>
-      <Portuguese>Admin Msg</Portuguese>
-      <Polish>AdmGracz</Polish>
+      <Portuguese>Msg do Admin</Portuguese>
     </Key>
     <Key ID="STR_CELL_AdminMSGAll">
-      <Original>Admin Msg All</Original>
-      <German>Admin-Nachricht an alle</German>
+      <Original>Msg All</Original>
+      <German>An alle</German>
       <French>Admin Msg ALL</French>
       <Italian>Admin Msg</Italian>
-      <Portuguese>Admin Msg All</Portuguese>
-      <Polish>SMS do Wszyscy</Polish>
+      <Portuguese>Admin Msg ALL</Portuguese>
     </Key>
     <Key ID="STR_CELL_EMSRequest">
       <Original>Request EMS</Original>
@@ -708,7 +733,6 @@
       <French>Requête Medecin</French>
       <Italian>Msg medici</Italian>
       <Portuguese>Chamar SAMU</Portuguese>
-      <Polish>MEDYK</Polish>
     </Key>
   </Package>
   <Package name="Chop_Shop">
@@ -4003,8 +4027,318 @@
       <Portuguese>Tapete de Espinhos</Portuguese>
       <Polish>Kolczatka drogowa</Polish>
     </Key>
+    <Key ID="STR_Item_depotwaffen">
+      <Original>Depotweapons</Original>
+      <German>Depotwaffen</German>
+      <French>Depotweapons</French>
+      <Italian>Depotweapons</Italian>
+      <Portuguese>Depotweapons</Portuguese>
+    </Key>
+    <Key ID="STR_Item_information">
+      <Original>Information</Original>
+      <German>Information</German>
+      <French>Information</French>
+      <Italian>Information</Italian>
+      <Portuguese>Information</Portuguese>
+    </Key>
+    <Key ID="STR_Item_strahler">
+      <Original>Strahler</Original>
+      <German>Strahler</German>
+      <French>Strahler</French>
+      <Italian>Strahler</Italian>
+      <Portuguese>Strahler</Portuguese>
+    </Key>
+    <Key ID="STR_Item_barricade">
+      <Original>Barricade</Original>
+      <German>Barrikade</German>
+      <French>Barricade</French>
+      <Italian>Barricade</Italian>
+      <Portuguese>Barricade</Portuguese>
+    </Key>
+    <Key ID="STR_Item_tape">
+      <Original>Tapesign</Original>
+      <German>Flatterband</German>
+      <French>Tapesign</French>
+      <Italian>Tapesign</Italian>
+      <Portuguese>Tapesign</Portuguese>
+    </Key>
+    <Key ID="STR_Item_barrier">
+      <Original>Barrier</Original>
+      <German>Barriere</German>
+      <French>Barrier</French>
+      <Italian>Barrier</Italian>
+      <Portuguese>Barrier</Portuguese>
+    </Key>
+    <Key ID="STR_Item_bandage">
+      <Original>Bandage</Original>
+      <German>Bandage</German>
+      <French>Bandage</French>
+      <Italian>Bandage</Italian>
+      <Portuguese>Bandage</Portuguese>
+    </Key>
+    <Key ID="STR_Item_traumakit">
+      <Original>Traumakit</Original>
+      <German>Traumakit</German>
+      <French>Traumakit</French>
+      <Italian>Traumakit</Italian>
+      <Portuguese>Traumakit</Portuguese>
+    </Key>
+    <Key ID="STR_Item_kochsalz">
+      <Original>Sodium chloride</Original>
+      <German>Kochsalz</German>
+      <French>Sodium chloride</French>
+      <Italian>Sodium chloride</Italian>
+      <Portuguese>Sodium chloride</Portuguese>
+    </Key>
+    <Key ID="STR_Item_morphin">
+      <Original>Morphine</Original>
+      <German>Morphin</German>
+      <French>Morphin</French>
+      <Italian>Morphine</Italian>
+      <Portuguese>Morphin</Portuguese>
+    </Key>
+    <Key ID="STR_Item_epikit">
+      <Original>Epikit</Original>
+      <German>Epikit</German>
+      <French>Epikit</French>
+      <Italian>Epikit</Italian>
+      <Portuguese>Epikit</Portuguese>
+    </Key>
+    <Key ID="STR_Item_morphin">
+      <Original>Morphine</Original>
+      <German>Morphin</German>
+      <French>Morphin</French>
+      <Italian>Morphine</Italian>
+      <Portuguese>Morphin</Portuguese>
+    </Key>
+    <Key ID="STR_Item_mehl">
+      <Original>Flour</Original>
+      <German>Mehl</German>
+      <French>Mehl</French>
+      <Italian>Mehl</Italian>
+      <Portuguese>Mehl</Portuguese>
+    </Key>
+    <Key ID="STR_Item_getreide">
+      <Original>Cereals</Original>
+      <German>Getreide</German>
+      <French>Getreide</French>
+      <Italian>Getreide</Italian>
+      <Portuguese>Getreide</Portuguese>
+    </Key>
+    <Key ID="STR_Item_wasser">
+      <Original>Water</Original>
+      <German>Wasser</German>
+      <French>Water</French>
+      <Italian>Water</Italian>
+      <Portuguese>Water</Portuguese>
+    </Key>
+    <Key ID="STR_Item_fladen">
+      <Original>Flatbread</Original>
+      <German>Fladen</German>
+      <French>Flatbread</French>
+      <Italian>Flatbread</Italian>
+      <Portuguese>Flatbread</Portuguese>
+    </Key>
+    <Key ID="STR_Item_getreide">
+      <Original>Cereals</Original>
+      <German>Getreide</German>
+      <French>Getreide</French>
+      <Italian>Getreide</Italian>
+      <Portuguese>Getreide</Portuguese>
+    </Key>
+    <Key ID="STR_Item_getreide">
+      <Original>Cereals</Original>
+      <German>Getreide</German>
+      <French>Getreide</French>
+      <Italian>Getreide</Italian>
+      <Portuguese>Getreide</Portuguese>
+    </Key>
+    <Key ID="STR_Item_pistolenlieferung">
+      <Original>Pistol delivery</Original>
+      <German>Pistolenlieferung</German>
+    </Key>
+    <Key ID="STR_Item_nahrungsmittel">
+      <Original>Food</Original>
+      <German>Nahrungsmittel</German>
+    </Key>
+    <Key ID="STR_Item_munitionsliferung">
+      <Original>Ammunition delivery</Original>
+      <German>Munitionsliferung</German>
+    </Key>
+    <Key ID="STR_Item_aklieferung">
+      <Original>AK delivery</Original>
+      <German>AK Lieferung</German>
+    </Key>
+    <Key ID="STR_Item_gestohlenevisiere">
+      <Original>Stolen sights</Original>
+      <German>Gestohlene Visiere</German>
+    </Key>
+    <Key ID="STR_Item_uniformen">
+      <Original>Uniforms</Original>
+      <German>Uniformen</German>
+    </Key>
+    <Key ID="STR_Item_koran">
+      <Original>Koran</Original>
+      <German>Koran</German>
+    </Key>
+    <Key ID="STR_Item_kodome">
+      <Original>Condoms</Original>
+      <German>Kondome</German>
+    </Key>
+    <Key ID="STR_Item_sniperkiste">
+      <Original>Sniperbox</Original>
+      <German>Sniper Kiste</German>
+    </Key>
+
+    <Key ID="STR_Item_cola">
+      <Original>Cola</Original>
+      <German>Cola</German>
+    </Key>
+    <Key ID="STR_Item_ziegenmilch">
+      <Original>Goat milk</Original>
+      <German>Ziegenmilch</German>
+    </Key>
+    <Key ID="STR_Item_fladenbrot">
+      <Original>Flatbread</Original>
+      <German>Fladenbrot</German>
+    </Key>
+    <Key ID="STR_Item_burger">
+      <Original>Burger</Original>
+      <German>Burger</German>
+    </Key>
+
+    <Key ID="STR_Item_explosive">
+      <Original>Explosive</Original>
+      <German>Sprengstoff</German>
+      <French>Explosive</French>
+      <Italian>Explosive</Italian>
+      <Portuguese>Explosive</Portuguese>
+    </Key>
+    <Key ID="STR_Item_guertel">
+      <Original>Belt</Original>
+      <German>Guertel</German>
+      <French>Belt</French>
+      <Italian>Belt</Italian>
+      <Portuguese>Belt</Portuguese>
+    </Key>
+    <Key ID="STR_Item_antenne">
+      <Original>Antenna</Original>
+      <German>Antenne</German>
+      <French>Antenna</French>
+      <Italian>Antenna</Italian>
+      <Portuguese>Antenna</Portuguese>
+    </Key>
+    <Key ID="STR_Item_gehaeuse">
+      <Original>Casing</Original>
+      <German>Gehaeuse</German>
+      <French>Casing</French>
+      <Italian>Casing</Italian>
+      <Portuguese>Casing</Portuguese>
+    </Key>
+    <Key ID="STR_Item_behaelter">
+      <Original>Storage</Original>
+      <German>Behaelter</German>
+      <French>Storage</French>
+      <Italian>Storage</Italian>
+      <Portuguese>Storage</Portuguese>
+    </Key>
+    <Key ID="STR_Item_battery">
+      <Original>Battery</Original>
+      <German>Batterie</German>
+      <French>Battery</French>
+      <Italian>Battery</Italian>
+      <Portuguese>Battery</Portuguese>
+    </Key>
+    <Key ID="STR_Item_abhoergeraet">
+      <Original>Bugging device</Original>
+      <German>Abhoergeraet</German>
+      <French>Bugging device</French>
+      <Italian>Bugging device</Italian>
+      <Portuguese>Bugging device</Portuguese>
+    </Key>
+    <Key ID="STR_Item_sulfuru">
+      <Original>Sulfur unprocessed</Original>
+      <German>Schwefel unverarbeitet</German>
+      <French>Sulfur unprocessed</French>
+      <Italian>Sulfur unprocessed</Italian>
+      <Portuguese>Sulfur unprocessed</Portuguese>
+    </Key>
+    <Key ID="STR_Item_sulfurp">
+      <Original>Sulfur processed</Original>
+      <German>Schwefel verarbeitet</German>
+      <French>Sulfur processed</French>
+      <Italian>Sulfur processed</Italian>
+      <Portuguese>Sulfur processed</Portuguese>
+    </Key>
+    <Key ID="STR_Item_nitre">
+      <Original>Potassium nitrate unprocessed</Original>
+      <German>Kaliumnitrat unverarbeitet</German>
+      <French>Potassium nitrate unprocessed</French>
+      <Italian>Potassium nitrate unprocessed</Italian>
+      <Portuguese>Potassium nitrate unprocessed</Portuguese>
+    </Key>
+    <Key ID="STR_Item_potassiumnitrate">
+      <Original>Potassium nitrate processed</Original>
+      <German>Kaliumnitrat verarbeitet</German>
+      <French>Potassium nitrate processed</French>
+      <Italian>Potassium nitrate processed</Italian>
+      <Portuguese>Potassium nitrate processed</Portuguese>
+    </Key>
+    <Key ID="STR_Item_nitroglycerin">
+      <Original>Nitroglycerin</Original>
+      <German>Nitroglycerin</German>
+      <French>Nitroglycerin</French>
+      <Italian>Nitroglycerin</Italian>
+      <Portuguese>Nitroglycerin</Portuguese>
+    </Key>
+    <Key ID="STR_Item_gunpowder">
+      <Original>Gunpowder</Original>
+      <German>Schwarzpulver</German>
+      <French>Gunpowder</French>
+      <Italian>Gunpowder</Italian>
+      <Portuguese>Gunpowder</Portuguese>
+    </Key>
+    <Key ID="STR_Item_flask">
+      <Original>Flask</Original>
+      <German>Flasche</German>
+      <French>Flask</French>
+      <Italian>Flask</Italian>
+      <Portuguese>Flask</Portuguese>
+    </Key>
+    <Key ID="STR_Item_altpapier">
+      <Original>Wastepaper</Original>
+      <German>Altpapier</German>
+      <French>Wastepaper</French>
+      <Italian>Wastepaper</Italian>
+      <Portuguese>Wastepaper</Portuguese>
+    </Key>
+    <Key ID="STR_Item_blumenerde">
+      <Original>Potting soil</Original>
+      <German>Blumenerde</German>
+      <French>Blumenerde</French>
+      <Italian>Blumenerde</Italian>
+      <Portuguese>Blumenerde</Portuguese>
+    </Key>
+    <Key ID="STR_Item_dattel">
+      <Original>Dattel</Original>
+      <German>Dattel</German>
+      <French>Dattel</French>
+      <Italian>Dattel</Italian>
+      <Portuguese>Dattel</Portuguese>
+    </Key>
+    <Key ID="STR_Item_pipe">
+      <Original>pipe</Original>
+      <German>Rohr</German>
+      <French>Rohr</French>
+      <Italian>Rohr</Italian>
+      <Portuguese>Rohr</Portuguese>
+    </Key>
   </Package>
   <Package name="Life_License">
+    <Key ID="STR_License_Donator">
+      <Original>Donatorlicense</Original>
+      <German>Donatorlizenz</German>
+    </Key>
     <Key ID="STR_License_Driver">
       <Original>Driver License</Original>
       <German>Führerschein</German>
@@ -4473,6 +4807,65 @@
     </Key>
   </Package>
     <Package name="Process_Action">
+    <Key ID="STR_Process_Gold">
+      <Original>Processing Gold</Original>
+      <German>Gold wird verarbeitet</German>
+      <French>Raffinage de Gold</French>
+      <Italian>Processando l'Gold</Italian>
+      <Portuguese>Processando Gold</Portuguese>
+    </Key>
+
+    <Key ID="STR_Process_Sulfur">
+      <Original>Pulverize Sulfur</Original>
+      <German>Schwefel wird verfeinert</German>
+      <French>pulvériser soufre</French>
+      <Italian>Processando Cemento</Italian>
+      <Portuguese>Pulverize Sulfur</Portuguese>
+    </Key>
+
+    <Key ID="STR_Process_Getreide">
+      <Original>Processing Getreide</Original>
+      <German>Getreide wird gemahlen</German>
+      <French>Traitement de Getreide</French>
+      <Italian>Processando Getreide</Italian>
+      <Portuguese>Processando Erva</Portuguese>
+    </Key>
+
+    <Key ID="STR_Process_Fladen">
+      <Original>Processing Fladen</Original>
+      <English>Processing Fladen</English>
+      <German>Fladen wird hergestellt</German>
+      <French>Traitement de Fladen</French>
+      <Italian>Processando Fladen</Italian>
+      <Portuguese>Processando Erva</Portuguese>
+    </Key>
+
+    <Key ID="STR_Process_Nitre">
+      <Original>Produce Potassiumnitrate</Original>
+      <English>Produce Potassiumnitrate</English>
+      <German>Kaliumnitrat wird hergestellt</German>
+      <French>Produce Potassiumnitrate</French>
+      <Italian>Produce Potassiumnitrate</Italian>
+      <Portuguese>Produce Potassiumnitrate</Portuguese>
+    </Key>
+
+    <Key ID="STR_Process_Gunpowder">
+      <Original>Mix Gunpowder</Original>
+      <English>Mix Gunpowder</English>
+      <German>Schwarzpulver mischen</German>
+      <French>Mix Gunpowder</French>
+      <Italian>Mix Gunpowder</Italian>
+      <Portuguese>Mix Gunpowder</Portuguese>
+    </Key>
+
+    <Key ID="STR_Process_Explosive">
+      <Original>Manufacture Explosives</Original>
+      <English>Manufacture Explosives</English>
+      <German>Sprengstoff herstellen</German>
+      <French>Manufacture Explosives</French>
+      <Italian>Manufacture Explosives</Italian>
+      <Portuguese>Manufacture Explosives</Portuguese>
+    </Key>
     <Key ID="STR_Process_Oil">
       <Original>Processing Oil</Original>
       <German>Öl wird verarbeite</German>
