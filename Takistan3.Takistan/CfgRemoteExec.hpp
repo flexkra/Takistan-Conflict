@@ -62,6 +62,10 @@ class CfgRemoteExec {
         F(life_fnc_ticketPrompt,CLIENT)
         F(life_fnc_ticketPaid,CLIENT)
         F(life_fnc_freezePlayer,CLIENT)
+        F(life_fnc_barrier,CLIENT)
+        F(life_fnc_barricade,CLIENT)
+        F(life_fnc_flatterband,CLIENT)
+        F(life_fnc_strahler,CLIENT)
 
         /* Server only functions */
         F(bis_fnc_execvm,SERVER)
