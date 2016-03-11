@@ -1,0 +1,948 @@
+author = "synced-gaming.de";
+onLoadName = "Takistan Conflict";
+onLoadMission = "based on an RPG game mode (Altis Life) developed by Tonic";
+joinUnassigned = 1;
+respawn = BASE;
+respawndelay = 120;
+disabledAI = true;
+disableChannels[]={0,1,2,6};
+enableDebugConsole = 1;
+respawnDialog = 0;
+LoadScreen = "textures\loadScreen_ca.jpg";
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 100;
+};
+
+wreckLimit = 3;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 320;
+corpseLimit = 150;
+corpseRemovalMinTime = 500;
+corpseRemovalMaxTime = 9999;
+
+//SpyGlass configuration
+SPY_Enable = false;
+
+#include "Config_Spyglass.hpp"
+#include "CfgRemoteExec.hpp"
+#include "dialog\MasterHandler.hpp"
+#include "Config_Master.hpp"
+
+class RscTitles {
+	#include "dialog\progress.hpp"
+	#include "dialog\hud_nameTags.hpp"
+	#include "dialog\hud_stats.hpp"
+};
+
+class CfgFunctions {
+	#include "Functions.hpp"
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+	class welcome
+	{
+    name = "welcome";
+    sound[] = {"@SG_SOUNDS\Sounds\Mission\welcome.ogg", 0.5, 1};
+    titles[] = {};
+	};
+
+		class welcomeblue
+	{
+    name = "welcomeblue";
+    sound[] = {"@SG_SOUNDS\Sounds\Mission\welcomeblue.ogg", 0.5, 1};
+    titles[] = {};
+	};
+
+
+	class tazersound
+	{
+		name = "Tazersound";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\tazer.ogg", 0.25, 1};
+		titles[] = {};
+	};
+
+	class flashbang
+	{
+		name = "flashbang";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\flashbang.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
+
+	class TicketPolizei {
+		name = "TicketPolizei";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\TicketPolizei.ogg", 0.95, 0.95};
+		titles[] = {};
+	};
+
+	class Cuff {
+		name = "cuff";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\cuff.ogg", 0.95, 0.95};
+		titles[] = {};
+	};
+		class unlock
+	{
+		name = "unlock";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\unlock.ogg", 0.5, 1};
+		titles[] = {};
+	};
+
+		class car_alarm
+	{
+		name = "car_alarm";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\caralarm.ogg", 0.5, 1};
+		titles[] = {};
+	};
+
+	class SireneTanke
+	{
+		name = "SireneTanke";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\SireneTanke.ogg", 0.5, 1};
+		titles[] = {};
+	};
+
+	class Schlag
+	{
+		name = "Schlag";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\Schlag.ogg", 0.7, 1};
+		titles[] = {};
+	};
+		class car_lock
+	{
+		name = "car_lock";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\car_lock.ogg", 0.7, 1};
+		titles[] = {};
+	};
+		class peep
+	{
+		name = "peep";
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\peep.ogg", 0.7, 1};
+		titles[] = {};
+	};
+
+//transportsounds
+
+	class transport_1_1_0
+	{
+		name = "transport_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_1_1
+	{
+		name = "transport_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_2_0
+	{
+		name = "transport_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_2_1
+	{
+		name = "transport_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_3_0
+	{
+		name = "transport_1_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_3_1
+	{
+		name = "transport_1_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_1_0
+	{
+		name = "transport_2_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_1_1
+	{
+		name = "transport_2_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_2_0
+	{
+		name = "transport_2_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_2_1
+	{
+		name = "transport_2_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+
+	class transport_2_3_0
+	{
+		name = "transport_2_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_3_1
+	{
+		name = "transport_2_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_1_0
+	{
+		name = "transport_3_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_1_1
+	{
+		name = "transport_3_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_2_0
+	{
+		name = "transport_3_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_2_1
+	{
+		name = "transport_3_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_2_2
+	{
+		name = "transport_3_2_2";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_2_2.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_4_1_0
+	{
+		name = "transport_4_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_4_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_4_1_1
+	{
+		name = "transport_4_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_4_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  	class schakaleins_1_1_0
+	{
+		name = "schakaleins_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaleins_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+    	class schakaleins_1_1_1
+	{
+		name = "schakaleins_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaleins_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+      	class schakaleins_1_2_0
+	{
+		name = "schakaleins_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaleins_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+class schakaleins_1_2_1
+	{
+		name = "schakaleins_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaleins_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_1_0
+	{
+		name = "blond_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_1_1
+	{
+		name = "blond_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_2_0
+	{
+		name = "blond_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_2_1
+	{
+		name = "blond_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_3_0
+	{
+		name = "blond_1_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_3_1
+	{
+		name = "blond_1_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_4_0
+	{
+		name = "blond_1_4_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_4_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_4_1
+	{
+		name = "blond_1_4_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_4_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_5_0
+	{
+		name = "blond_1_5_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_5_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class blond_1_5_1
+	{
+		name = "blond_1_5_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\blond_1_5_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalzwei_1_1_0
+	{
+		name = "schakalzwei_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalzwei_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalzwei_1_1_1
+	{
+		name = "schakalzwei_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalzwei_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class glauben_1_1_0
+	{
+		name = "glauben_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\glauben_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class glauben_1_1_1
+	{
+		name = "glauben_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\glauben_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class glauben_1_2_0
+	{
+		name = "glauben_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\glauben_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class glauben_1_2_1
+	{
+		name = "glauben_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\glauben_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class glauben_1_3_0
+	{
+		name = "glauben_1_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\glauben_1_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class glauben_1_3_1
+	{
+		name = "glauben_1_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\glauben_1_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class propaganda_1_1_0
+	{
+		name = "propaganda_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\propaganda_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class propaganda_1_1_1
+	{
+		name = "propaganda_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\propaganda_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class propaganda_1_2_0
+	{
+		name = "propaganda_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\propaganda_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class propaganda_1_2_1
+	{
+		name = "propaganda_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\propaganda_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class propaganda_1_3_0
+	{
+		name = "propaganda_1_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\propaganda_1_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class propaganda_1_3_1
+	{
+		name = "propaganda_1_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\propaganda_1_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakaldrei_1_1_0
+	{
+		name = "schakaldrei_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaldrei_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakaldrei_1_1_1
+	{
+		name = "schakaldrei_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaldrei_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakaldrei_1_2_0
+	{
+		name = "schakaldrei_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaldrei_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakaldrei_1_2_1
+	{
+		name = "schakaldrei_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaldrei_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakaldrei_1_3_0
+	{
+		name = "schakaldrei_1_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaldrei_1_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakaldrei_1_3_1
+	{
+		name = "schakaldrei_1_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakaldrei_1_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_1_0
+	{
+		name = "abhoeren_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_1_1
+	{
+		name = "abhoeren_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_2_0
+	{
+		name = "abhoeren_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_2_1
+	{
+		name = "abhoeren_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_3_0
+	{
+		name = "abhoeren_1_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_3_1
+	{
+		name = "abhoeren_1_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_4_0
+	{
+		name = "abhoeren_1_4_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_4_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_4_1
+	{
+		name = "abhoeren_1_4_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_4_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_5_0
+	{
+		name = "abhoeren_1_5_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_5_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_5_1
+	{
+		name = "abhoeren_1_5_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_5_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_6_0
+	{
+		name = "abhoeren_1_6_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_6_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_6_1
+	{
+		name = "abhoeren_1_6_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_6_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_7_0
+	{
+		name = "abhoeren_1_7_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_7_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class abhoeren_1_7_1
+	{
+		name = "abhoeren_1_7_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\abhoeren_1_7_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_1_0
+	{
+		name = "hoellenfeuer_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_1_1
+	{
+		name = "hoellenfeuer_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_2_0
+	{
+		name = "hoellenfeuer_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_2_1
+	{
+		name = "hoellenfeuer_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_3_0
+	{
+		name = "hoellenfeuer_1_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_3_1
+	{
+		name = "hoellenfeuer_1_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_4_0
+	{
+		name = "hoellenfeuer_1_4_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_4_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_4_1
+	{
+		name = "hoellenfeuer_1_4_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_4_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_5_0
+	{
+		name = "hoellenfeuer_1_5_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_5_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_5_1
+	{
+		name = "hoellenfeuer_1_5_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_5_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_6_0
+	{
+		name = "hoellenfeuer_1_6_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_6_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_6_1
+	{
+		name = "hoellenfeuer_1_6_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_6_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_7_0
+	{
+		name = "hoellenfeuer_1_7_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_7_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_7_1
+	{
+		name = "hoellenfeuer_1_7_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_7_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_8_0
+	{
+		name = "hoellenfeuer_1_8_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_8_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_8_1
+	{
+		name = "hoellenfeuer_1_8_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_8_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_9_0
+	{
+		name = "hoellenfeuer_1_9_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_9_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class hoellenfeuer_1_9_1
+	{
+		name = "hoellenfeuer_1_9_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\hoellenfeuer_1_9_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_1_0
+	{
+		name = "schakalvier_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_1_1
+	{
+		name = "schakalvier_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_2_0
+	{
+		name = "schakalvier_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_2_1
+	{
+		name = "schakalvier_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_3_0
+	{
+		name = "schakalvier_1_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_3_1
+	{
+		name = "schakalvier_1_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_4_0
+	{
+		name = "schakalvier_1_4_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_4_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_4_1
+	{
+		name = "schakalvier_1_4_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_4_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_5_0
+	{
+		name = "schakalvier_1_5_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_5_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_5_1
+	{
+		name = "schakalvier_1_5_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_5_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_6_0
+	{
+		name = "schakalvier_1_6_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_6_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+  class schakalvier_1_6_1
+	{
+		name = "schakalvier_1_6_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Quest\schakalvier_1_6_1.ogg", 1, 1};
+		titles[] = {};
+	};
+};
+
+class CfgDebriefing
+{
+	class NotWhitelisted
+	{
+		title = "Mission Failed";
+		subtitle = "You are not white-listed to use this slot";
+		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+	class Blacklisted
+	{
+		title = "Mission Failed";
+		subtitle = "You are blacklisted from cops";
+		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+	class SpyGlass
+	{
+		title = "The SpyGlass sees you";
+		subTitle = "You were detected by the SpyGlass";
+		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+	class NOTFAR
+	{
+		title = "Mission Failed";
+		subtitle = "Du hast kein TFAR aktiv!";
+		description = "Aktiviere zuerst dein TFAR und starte dann erneut die Mission.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	class AFK
+	{
+		title = "Mission Failed";
+		subtitle = "Du warst zu lange AFK!";
+		description = "";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+};
+
+class CfgNotifications
+{
+	class Paycheck
+	{
+		title = "Paycheck erhalten";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 5;
+		sound = "taskAssigned";
+	};
+	class MedicalRequestEmerg
+	{
+		title = "EMS Requested";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
+
+	class DeliveryAssigned
+	{
+		title = "Delivery Job Accepted";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 10;
+		priority = 7;
+	};
+
+	class DeliveryFailed
+	{
+		title = "Delivery Job Failed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
+
+	class DeliverySucceeded
+	{
+		title = "Delivery Job Completed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 6;
+		priority = 6;
+	};
+
+	class TextMessage
+	{
+		title = "Received A Text Message";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class PoliceDispatch
+	{
+		title = "911 Dispatch Center";
+		iconPicture = "icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class AdminDispatch
+	{
+		title = "Admin Dispatch Center";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class AdminMessage
+	{
+		title = "Admin Message";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+};
+
+#include "infiSTAR_AdminMenu.hpp
