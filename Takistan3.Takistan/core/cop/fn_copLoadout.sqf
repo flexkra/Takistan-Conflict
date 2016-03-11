@@ -2,7 +2,7 @@
 	File: fn_copLoadout.sqf
 	Author: Bryan "Tonic" Boardwine
 	Edited: Itsyuka
-	
+
 	Description:
 	Loads the cops out with the default gear.
 */
@@ -11,26 +11,19 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
-player addUniform "U_Rangemaster";
-player addVest "V_Rangemaster_belt";
+player addUniform "TRYK_B_TRYK_OCP_T";
 
-player addWeapon "hgun_P07_snds_F";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
 
 /* ITEMS */
 player addItem "ItemMap";
 player assignItem "ItemMap";
-player addItem "ItemCompass";
-player assignItem "ItemCompass";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
-player addItem "ItemGPS";
-player assignItem "ItemGPS";
 
-[] call life_fnc_playerSkins;
+if ((player getVariable "rank") < 7) then {[true,"dogtag",1] call life_fnc_handleInv};
+if (((player getVariable "rank") < 12) AND ((player getVariable "rank") > 6)) then {[true,"dogtag",2] call life_fnc_handleInv};
+if (((player getVariable "rank") < 16) AND ((player getVariable "rank") > 11)) then {[true,"dogtag",3] call life_fnc_handleInv};
+if ((player getVariable "rank") > 15) then {[true,"dogtag",4] call life_fnc_handleInv};
+
 [] call life_fnc_saveGear;
+
