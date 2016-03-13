@@ -80,7 +80,6 @@ switch(playerSide) do {
 		life_questinfo = SEL(_this,16);
 		life_payday = SEL(_this,17);
 		life_paytime = SEL(_this,18);
-		life_gangData = SEL(_this,19);
 	};
 
 	case independent: {

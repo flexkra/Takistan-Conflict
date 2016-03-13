@@ -54,6 +54,21 @@ _lastPos = visiblePosition player;
 _lastPos = (SEL(_lastPos,0)) + (SEL(_lastPos,1));
 _lastState = vehicle player;
 
+[] spawn {
+  while {true} do {
+    if (life_hideout GVAR "gangOwner" == group player) then {
+      sleep 600;
+      if (life_hideout GVAR "gangOwner" == group player) then {
+        ADD(life_gesamtexp,350);
+        ADD(CASH,500);
+        if (life_quest == 33) then {ADD(life_questinfo,1);};
+        [] call life_fnc_SetupLevel;
+        [format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ganggebiet gehalten<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 500$  <br /> + 350 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+      };
+    };
+  };
+};
+
 while {true} do {
 	/* Thirst / Hunger adjustment that is time based */
 	if((time - _waterTime) > 600) then {[] call _fnc_water; _waterTime = time;};

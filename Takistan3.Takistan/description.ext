@@ -33,6 +33,7 @@ SPY_Enable = false;
 #include "Config_Master.hpp"
 
 class RscTitles {
+	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.hpp"
 	#include "dialog\hud_stats.hpp"

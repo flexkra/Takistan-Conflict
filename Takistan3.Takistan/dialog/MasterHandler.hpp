@@ -33,7 +33,6 @@
 #include "geld.hpp"
 #include "hud_nameTags.hpp"
 #include "inventar.hpp"
-#include "player_sys.hpp"
 #include "progress.hpp"
 #include "ui.hpp"
 #include "wantedadd2.hpp"

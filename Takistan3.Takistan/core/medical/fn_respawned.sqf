@@ -71,5 +71,11 @@ if(life_removeWanted) then {
 	[getPlayerUID player] remoteExecCall ["life_fnc_wantedRemove",RSERV];
 };
 
+life_bloodmulti = 0;
+if (life_bloodmulti == 0) then {life_bloodstatus = "";};
+if (life_bloodmulti == 1) then {life_bloodstatus = "einfache Blutung";};
+if (life_bloodmulti == 2) then {life_bloodstatus = "mittlere Blutung";};
+if (life_bloodmulti == 3) then {life_bloodstatus = "schwere Blutung";};
+
 [] call SOCK_fnc_updateRequest;
 [] call life_fnc_hudUpdate; //Request update of hud.
