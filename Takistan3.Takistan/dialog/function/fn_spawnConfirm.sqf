@@ -8,6 +8,9 @@
 private["_spCfg","_sp","_spawnPos"];
 closeDialog 0;
 cutText ["","BLACK IN"];
+
+diag_log "spawn";
+
 if(count life_spawn_point == 0) then {
 	private["_sp","_spCfg"];
 	_spCfg = [playerSide] call life_fnc_spawnPointCfg;
@@ -53,6 +56,8 @@ if(count life_spawn_point == 0) then {
 	};
 	titleText[format["%2 %1",life_spawn_point select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
 };
+
+diag_log "spawn2";
 
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
