@@ -18,9 +18,12 @@ _shopSide = M_CONFIG(getText,"CarShops",SEL(life_veh_shop,0),"side");
 _basePrice = SEL(SEL(_vehicleList,_vIndex),1);
 _licenses = SEL(SEL(_vehicleList,_vIndex),2);
 
+diag_log "1";
+
  if(_mode) then {_basePrice = round(_basePrice * 1.5)};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
+diag_log "2";
 //Series of checks (YAY!)
 _licensesName = "";
 {
@@ -31,11 +34,17 @@ _licensesName = "";
 } foreach _licenses;
 if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];};
 
+diag_log "3";
+
 if(_basePrice < 0) exitWith {}; //Bad price entry
 if(CASH < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough",[_basePrice - CASH] call life_fnc_numberText];};
 
+diag_log "4";
+
 _spawnPoints = SEL(life_veh_shop,1);
 _spawnPoint = "";
+
+diag_log "5";
 
 if((SEL(life_veh_shop,0) == "med_air_hs")) then {
 	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {_spawnPoint = _spawnPoints};
@@ -49,10 +58,14 @@ if((SEL(life_veh_shop,0) == "med_air_hs")) then {
 	};
 };
 
+diag_log "6";
 
 if(EQUAL(_spawnPoint,"")) exitWith {hint localize "STR_Shop_Veh_Block";};
 SUB(CASH,_basePrice);
 hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
+
+diag_log "7";
+
 
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
@@ -77,6 +90,8 @@ _vehicle lock 2;
 [_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true] remoteExecCall ["TON_fnc_setObjVar",RSERV];
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
+diag_log "8";
+
 //Side Specific actions.
 switch(playerSide) do {
 	case west: {
@@ -94,6 +109,8 @@ switch(playerSide) do {
 	};
 };
 
+diag_log "9";
+
 _vehicle allowDamage true;
 
 //life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
@@ -106,6 +123,11 @@ if(_mode) then {
 	};
 };
 
+diag_log "10";
+
 [0] call SOCK_fnc_updatePartial;
 closeDialog 0; //Exit the menu.
 true;
+
+
+diag_log "ende";
