@@ -121,16 +121,6 @@ class playerSettings {
 			h = 0.088 * safezoneH;
 		};
 
-		class wantedplus_icon: life_RscPicture
-		{
-			idc = 1214;
-			text = "icons\wantedplus.paa";
-			x = 0.42 * safezoneW + safezoneX;
-			y = 0.5 * safezoneH + safezoneY;
-			w = 0.0515624 * safezoneW;
-			h = 0.088 * safezoneH;
-		};
-
 		class settings_icon: life_RscPicture
 		{
 			idc = 1215;
@@ -151,17 +141,7 @@ class playerSettings {
 			h = 0.088 * safezoneH;
 		};
 
-		class adminplus_icon: life_RscPicture
-		{
-			idc = 1217;
-			text = "icons\adminplus.paa";
-			x = 0.36 * safezoneW + safezoneX;
-			y = 0.45 * safezoneH + safezoneY;
-			w = 0.0515624 * safezoneW;
-			h = 0.088 * safezoneH;
-		};
-
-				class moneyStatusInfo : Life_RscStructuredText
+		class moneyStatusInfo : Life_RscStructuredText
 		{
 			idc = 2015;
 			sizeEx = 0.020;
@@ -365,25 +345,6 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 			onButtonClick = "createDialog ""life_wantedadd2"";";
-		};
-
-		class WantedPlus_button: Life_RscButtonMenu
-		{
-			idc = 9801;
-			x = 0.43 * safezoneW + safezoneX;
-			y = 0.565 * safezoneH + safezoneY;
-			w = 0.03 * safezoneW;
-			h = 0.0587 * safezoneH;
-			tooltip = "Wanted-Liste"; //--- ToDo: Localize;
-			colorBackground[] = {-1,-1,-1,-1};
-			colorBackgroundFocused[] = {1,1,1,0.12};
-			colorBackground2[] = {0.75,0.75,0.75,0.2};
-			color[] = {1,1,1,1};
-			colorFocused[] = {0,0,0,1};
-			color2[] = {0,0,0,1};
-			colorText[] = {1,1,1,1};
-			colorDisabled[] = {0,0,0,0.4};
-			onButtonClick = "[] call life_fnc_wantedMenu;";
 		};
 
 		class geldmenu_button: Life_RscButtonMenu
