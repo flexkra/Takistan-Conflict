@@ -2,6 +2,7 @@
 /*
 	Master client initialization file
 */
+[] call life_fnc_marker;
 life_firstSpawn = true;
 life_session_completed = false;
 private["_handle","_timeStamp"];

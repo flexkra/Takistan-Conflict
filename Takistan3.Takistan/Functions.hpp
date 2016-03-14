@@ -115,6 +115,7 @@ class Life_Client_Core
 		class vehicleAnimate {};
 		class vehicleWeightCfg {};
 		class craftCfg {};
+		class marker {};
 	};
 
 	class Player_Menu
