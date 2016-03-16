@@ -2,7 +2,7 @@
 /*
 	File: fn_p_updateMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-
+	
 	Description:
 	Updates the player menu (Virtual Interaction Menu)
 */
@@ -16,11 +16,11 @@ if(FETCH_CONST(life_adminlevel) < 1) then {
 
 _side = switch(playerSide) do {case west:{"cop"}; case civilian:{"civ"}; case independent:{"med"};};
 
-_inv = CONTROL(20001,2005);
-_lic = CONTROL(20001,2014);
-_near = CONTROL(20001,2022);
-_near_i = CONTROL(20001,2023);
-_mstatus = CONTROL(20001,2015);
+_inv = CONTROL(2001,2005);
+_lic = CONTROL(2001,2014);
+_near = CONTROL(2001,2022);
+_near_i = CONTROL(2001,2023);
+_mstatus = CONTROL(2001,2015);
 _struct = "";
 lbClear _inv;
 lbClear _near;
@@ -54,7 +54,7 @@ ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
 
 {
 	_displayName = getText(_x >> "displayName");
-
+	
 	if(LICENSE_VALUE(configName _x,_side)) then {
 		_struct = _struct + format["%1<br/>",localize _displayName];
 	};
