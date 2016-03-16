@@ -46,7 +46,7 @@ class FSM
     class Split
     {
       name = "Split";
-      init = /*%FSM<STATEINIT""">*/"systemChat format[localize ""STR_FSM_Paycheck"",(getNumber(missionConfigFile >> ""Life_Settings"" >> ""paycheck_period""))];"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -57,17 +57,16 @@ class FSM
           to="Split";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"(time - _lastcheck) > ((getNumber(missionConfigFile >> ""Life_Settings"" >> ""paycheck_period"")) * 60)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"if(!alive player) then {" \n
-           "	systemChat localize ""STR_FSM_MissedPay"";" \n
-           "} else {" \n
-           "	if(player distance (getMarkerPos ""fed_reserve"") < 120 && playerSide == west) then {" \n
-           "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck) + 1500] call life_fnc_numberText];" \n
-           "		life_atmbank = life_atmbank + (call life_paycheck) + 1500;" \n
-           "	} else {" \n
-           "		life_atmbank = life_atmbank + (call life_paycheck);" \n
-           "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck)] call life_fnc_numberText];" \n
+          action=/*%FSM<ACTION""">*/"if(playerSide == civilian) then {life_paytime = life_paytime + 5;};" \n
+           "	if (life_paytime >= 60) then {" \n
+           "  life_payday = (life_payday + 1); " \n
+           "  life_atmbank = life_atmbank + 1000;" \n
+           "  life_gesamtexp = life_gesamtexp + 1000;" \n
+           "  [] call life_fnc_SetupLevel;" \n
+           "  [""Paycheck"",[""Payday erhalten."",5]] call bis_fnc_showNotification; " \n
+           "  [format [""<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 1000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden"",life_payday],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;" \n
+           " life_paytime = 0;" \n
            "	};" \n
-           "};" \n
            "" \n
            "_lastcheck = time;" \n
            "" \n
