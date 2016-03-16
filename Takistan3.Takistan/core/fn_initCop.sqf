@@ -23,6 +23,7 @@ if(!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
 	};
 };
 
+{_x setMarkerAlphaLocal 0} foreach ["oil_1","cocaine_1","Ölverarbeitung","Cannabisverarbeitung","Mohnverfeinerung","Hehler Nord","Hehler Süd","Cannabisverfeinerung","Drogendealer","Mohnverarbeitung","heroin_1","weed_1","Ölhändler","gold_1","Schwefelverarbeiter","Pulvermühle","Salpeterverarbeiter","illegale Chemieküche","Chemielabor","sulfur_1","nitre_1","gang_area_1","Bäckerei","Mühle","Bäcker","brunnen"," Transporte für Fortgeschrittene_1"," Transporte für Fortgeschrittene"];
 
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
