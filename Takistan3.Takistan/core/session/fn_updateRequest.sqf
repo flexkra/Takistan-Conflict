@@ -32,6 +32,10 @@ switch (playerSide) do {
 		_packet pushBack life_payday;
 		_packet pushBack life_paytime;
 	};
+	case west: {
+		_packet pushBack CASH;
+		_packet pushBack BANK;
+	};
 };
 
 _packet remoteExecCall ["DB_fnc_updateRequest",RSERV];

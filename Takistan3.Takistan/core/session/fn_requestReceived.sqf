@@ -32,8 +32,6 @@ if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "l
 };
 
 //Parse basic player information.
-CASH = parseNumber (SEL(_this,2));
-BANK = parseNumber (SEL(_this,3));
 CONST(life_adminlevel,parseNumber (SEL(_this,4)));
 CONST(life_donator,0);
 
@@ -55,9 +53,13 @@ switch(playerSide) do {
 			life_hunger = SEL(SEL(_this,10),0);
 			life_thirst = SEL(SEL(_this,10),1);
 		};
+		CASH = parseNumber (SEL(_this,14));
+		BANK = parseNumber (SEL(_this,15));
 	};
 
 	case civilian: {
+		CASH = parseNumber (SEL(_this,2));
+		BANK = parseNumber (SEL(_this,3));
 		life_is_arrested = SEL(_this,7);
 		CONST(life_coplevel, 0);
 		CONST(life_medicLevel, 0);
@@ -89,6 +91,8 @@ switch(playerSide) do {
 			life_hunger = SEL(SEL(_this,9),0);
 			life_thirst = SEL(SEL(_this,9),1);
 		};
+		CASH = parseNumber (SEL(_this,14));
+		BANK = parseNumber (SEL(_this,15));
 	};
 };
 
