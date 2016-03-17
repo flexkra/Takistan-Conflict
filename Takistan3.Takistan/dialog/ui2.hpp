@@ -21,10 +21,10 @@ class PlayerHUD {
 	{
 		colorBackground[] = {0,0,0,0.35};
 		idc = 2200;
-		x = 0.298906 * safezoneW + safezoneX;
-		y = 0.236 * safezoneH + safezoneY;
-		w = 0.242344 * safezoneW;
-		h = 0.154 * safezoneH;
+		x = safezoneX;
+        y = safezoneY;
+        w = 0.16 * safezoneW;
+        h = 0.03 * safezoneH;
 	};
 
 	/* Picture */
@@ -49,28 +49,24 @@ class PlayerHUD {
 	class xy_ui_health: LIFE_RscProgress_HUDCommon
 	{
 		idc = 5501;
-		text = "Health"; //--- ToDo: Localize;
 		colorBar[] = { 0.8118, 0, 0.0588, 0.8};
 		y = 0.247 * safezoneH + safezoneY;
 	};
 	class xy_ui_blood: LIFE_RscProgress_HUDCommon
 	{
 		idc = 5502;
-		text = "Blood"; //--- ToDo: Localize;
 		colorBar[] = { 0.8510, 0.1176, 0.0941, 0.8};
 		y = 0.269 * safezoneH + safezoneY;
 	};
 	class xy_ui_food: LIFE_RscProgress_HUDCommon
 	{
 		idc = 5503;
-		text = "Food"; //--- ToDo: Localize;
 		colorBar[] = { 0, 0.6941, 0.4157, 0.8};
 		y = 0.291 * safezoneH + safezoneY;
 	};
 	class xy_ui_water: LIFE_RscProgress_HUDCommon
 	{
 		idc = 5504;
-		text = "Water"; //--- ToDo: Localize;
 		colorBar[] = { 0.0980, 0.7098, 0.9961, 0.8};
 		y = 0.313 * safezoneH + safezoneY;
 	};
@@ -78,12 +74,49 @@ class PlayerHUD {
 	/* Text */
 	class xy_ui_level: Life_RscText
 	{
-	idc = 5505;
-	text = "1"; //--- ToDo: Localize;
-	colorText[] = { 0.9765, 0.4118, 0.0549, 0.8};
-	x = 0.329844 * safezoneW + safezoneX;
-	y = 0.291 * safezoneH + safezoneY;
-	w = 0.04125 * safezoneW;
-	h = 0.055 * safezoneH;
+		idc = 5505;
+		text = "1"; //--- ToDo: Localize;
+		colorText[] = { 0.9765, 0.4118, 0.0549, 0.8};
+		x = 0.329844 * safezoneW + safezoneX;
+		y = 0.291 * safezoneH + safezoneY;
+		w = 0.04125 * safezoneW;
+		h = 0.055 * safezoneH;
+	};
+
+	class xy_ui_commonText: Life_RscText 
+	{
+		SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+		style = ST_CENTER;
+		x = 0.4 * safezoneW + safezoneX;
+		w = 0.154687 * safezoneW;
+		h = 0.022 * safezoneH;
+	};
+
+	class xy_ui_healthText : xy_ui_commonText
+	{
+		idc = 5510
+		y = 0.249 * safezoneH + safezoneY;
+		text = "$STR_HUD_Health";
+	};
+
+	class xy_ui_bloodText : xy_ui_commonText
+	{
+		idc = 5511
+		y = 0.271 * safezoneH + safezoneY;
+		text = "$STR_HUD_Blood";
+	};
+
+	class xy_ui_foodText : xy_ui_commonText
+	{
+		idc = 5512
+		y = 0.293 * safezoneH + safezoneY;
+		text = "$STR_HUD_Food";
+	};
+
+	class xy_ui_waterText : xy_ui_commonText
+	{
+		idc = 5513
+		y = 0.315 * safezoneH + safezoneY;
+		text = "$STR_HUD_Water";
 	};
 };

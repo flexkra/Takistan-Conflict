@@ -3430,14 +3430,22 @@
     <Key ID="STR_HUD_Food">
       <Original>Food</Original>
       <Portuguese>Comida</Portuguese>
+      <German>Essen</German>
     </Key>
     <Key ID="STR_HUD_Health">
       <Original>Health</Original>
       <Portuguese>Vida</Portuguese>
+      <German>Gesundheit</German>
+    </Key>
+    <Key ID="STR_HUD_Blood">
+      <Original>Blood</Original>
+      <Portuguese>Vida</Portuguese>
+      <German>Blut</German>
     </Key>
     <Key ID="STR_HUD_Water">
       <Original>Water</Original>
       <Portuguese>Água</Portuguese>
+      <German>Wasser</German>
     </Key>
   </Package>
   <Package name="Vehicle_Service">
