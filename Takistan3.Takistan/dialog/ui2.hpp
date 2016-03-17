@@ -26,7 +26,7 @@ class PlayerHUD {
 		h = 0.154 * safezoneH;
 	};
 
-	class xy_ui_exp: RscPicture
+	class xy_ui_exp: Life_RscPicture
 	{
 		idc = 5500;
 		text = "#(argb,8,8,3)color(1,1,1,1)";
