@@ -94,28 +94,28 @@ class PlayerHUD {
 
 	class xy_ui_healthText : xy_ui_commonText
 	{
-		idc = 5510
+		idc = 5510;
 		y = 0.249 * safezoneH + safezoneY;
 		text = "$STR_HUD_Health";
 	};
 
 	class xy_ui_bloodText : xy_ui_commonText
 	{
-		idc = 5511
+		idc = 5511;
 		y = 0.271 * safezoneH + safezoneY;
 		text = "$STR_HUD_Blood";
 	};
 
 	class xy_ui_foodText : xy_ui_commonText
 	{
-		idc = 5512
+		idc = 5512;
 		y = 0.293 * safezoneH + safezoneY;
 		text = "$STR_HUD_Food";
 	};
 
 	class xy_ui_waterText : xy_ui_commonText
 	{
-		idc = 5513
+		idc = 5513;
 		y = 0.315 * safezoneH + safezoneY;
 		text = "$STR_HUD_Water";
 	};
