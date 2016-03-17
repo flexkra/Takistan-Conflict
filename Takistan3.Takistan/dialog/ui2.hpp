@@ -1,7 +1,7 @@
 class PlayerHUD {
 	idd = -1;
 	duration = 10e10;
-	movingEnable = 0;
+	movingEnable = 1;
 	fadein = 0;
 	fadeout = 0;
 	name = "playerHUD";
@@ -16,6 +16,7 @@ class PlayerHUD {
 		xy_ui_water
 	};
 
+	/* Background */
 	class xy_ui_background: Life_RscBackground
 	{
 		colorBackground[] = {0,0,0,0.35};
@@ -26,10 +27,11 @@ class PlayerHUD {
 		h = 0.154 * safezoneH;
 	};
 
+	/* Picture */
 	class xy_ui_exp: Life_RscPicture
 	{
 		idc = 5500;
-		text = "#(argb,8,8,3)color(1,1,1,1)";
+		text = "#(argb,8,8,3)color(1,1,1,0)";
 		x = 0.304062 * safezoneW + safezoneX;
 		y = 0.247 * safezoneH + safezoneY;
 		w = 0.0721875 * safezoneW;
@@ -49,30 +51,31 @@ class PlayerHUD {
 		idc = 5501;
 		text = "Health"; //--- ToDo: Localize;
 		colorBar[] = { 0.8118, 0, 0.0588, 0.8};
-		y = 0.258 * safezoneH + safezoneY;
+		y = 0.247 * safezoneH + safezoneY;
 	};
 	class xy_ui_blood: LIFE_RscProgress_HUDCommon
 	{
 		idc = 5502;
 		text = "Blood"; //--- ToDo: Localize;
 		colorBar[] = { 0.8510, 0.1176, 0.0941, 0.8};
-		y = 0.28 * safezoneH + safezoneY;
+		y = 0.269 * safezoneH + safezoneY;
 	};
 	class xy_ui_food: LIFE_RscProgress_HUDCommon
 	{
 		idc = 5503;
 		text = "Food"; //--- ToDo: Localize;
 		colorBar[] = { 0, 0.6941, 0.4157, 0.8};
-		y = 0.302 * safezoneH + safezoneY;
+		y = 0.291 * safezoneH + safezoneY;
 	};
 	class xy_ui_water: LIFE_RscProgress_HUDCommon
 	{
 		idc = 5504;
 		text = "Water"; //--- ToDo: Localize;
 		colorBar[] = { 0.0980, 0.7098, 0.9961, 0.8};
-		y = 0.324 * safezoneH + safezoneY;
+		y = 0.313 * safezoneH + safezoneY;
 	};
 
+	/* Text */
 	class xy_ui_level: Life_RscText
 	{
 	idc = 5505;
