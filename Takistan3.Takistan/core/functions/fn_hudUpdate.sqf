@@ -12,24 +12,21 @@
 #define IDC_LIFE_LEVEL_TEXT 1004
 #define IDC_LIFE_LEVEL_TEXT2 1005
 #define IDC_LIFE_BLOOD_TEXT 1006
-#define GVAR_UINS uiNamespace getVariable
-#define LIFEdisplay (GVAR_UINS ["playerHUD",displayNull])
-#define LIFEctrl(ctrl) ((GVAR_UINS ["playerHUD",displayNull]) displayCtrl ctrl)
 
 private["_bounty","_crime"];
 disableSerialization;
 
 if(isNull LIFEdisplay) then {[] call life_fnc_hudSetup;};
-LIFEctrl(IDC_LIFE_BAR_FOOD) progressSetPosition (1 / (100 / life_hunger));
-LIFEctrl(IDC_LIFE_BAR_WATER) progressSetPosition (1 / (100 / life_thirst));
-LIFEctrl(IDC_LIFE_BAR_HEALTH) progressSetPosition (1 - (damage player));
+LIFEctrl(5503) progressSetPosition (1 / (100 / life_hunger));
+LIFEctrl(5504) progressSetPosition (1 / (100 / life_thirst));
+LIFEctrl(5501) progressSetPosition (1 - (damage player));
 LIFEctrl(IDC_LIFE_BAR_EXP) progressSetPosition (1 / (100 / (life_exp +1)));
-LIFEctrl(IDC_LIFE_BAR_BLOOD) progressSetPosition (1 / (100 / (life_blood +1)));
+LIFEctrl(5502) progressSetPosition (1 / (100 / (life_blood +1)));
 
 LIFEctrl(IDC_LIFE_FOOD_TEXT) ctrlsetText format["%1", life_hunger];
 LIFEctrl(IDC_LIFE_WATER_TEXT) ctrlsetText format["%1", life_thirst];
 LIFEctrl(IDC_LIFE_HEALTH_TEXT) ctrlsetText format["%1", round((1 - (damage player)) * 100)];
 LIFEctrl(IDC_LIFE_EXP_TEXT) ctrlsetText format["%1", life_exp];
-LIFEctrl(IDC_LIFE_LEVEL_TEXT) ctrlsetText format["%1", life_level];
+LIFEctrl(5505) ctrlsetText format["%1", life_level];
 LIFEctrl(IDC_LIFE_BLOOD_TEXT) ctrlsetText format["%1", life_bloodstatus];
 LIFEctrl(IDC_LIFE_LEVEL_TEXT2) ctrlsetText format["%1", (life_level + 1)];
