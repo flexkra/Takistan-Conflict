@@ -21,10 +21,10 @@ class PlayerHUD {
 	{
 		colorBackground[] = {0,0,0,0.35};
 		idc = 2200;
-		x = safezoneX;
-        y = safezoneY;
-        w = 0.16 * safezoneW;
-        h = 0.03 * safezoneH;
+		x = 0.298906 * safezoneW + safezoneX;
+		y = 0.236 * safezoneH + safezoneY;
+		w = 0.242344 * safezoneW;
+		h = 0.154 * safezoneH;
 	};
 
 	/* Picture */
