@@ -14,6 +14,86 @@
 *    Item classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Items
 *
 */
+class GangShops {
+    class miliz {
+        name = "STR_Shops_Miliz";
+        side = "civ";
+        license = "";
+        level = -1;
+        msg = "";
+        items[] = {
+            { "NONE","Equipment",0},
+            { "rhsusf_ANPVS_15","",400}, 
+            { "ItemGPS", "", 15 },
+            { "ItemMap", "", 10 },
+            { "ItemCompass", "", 15 },
+            { "ToolKit", "", 50 },
+            { "Chemlight_red", "", 20 },
+            { "Chemlight_yellow", "", 20 },
+            { "ACE_CableTie","",10},
+            { "ACE_EarPlugs", "", 20 },
+            { "ACE_MapTools", "", 15 }
+        };
+    };
+    class militarycamp {
+        name = "STR_Shops_MilitaryCamp";
+        side = "civ";
+        license = "";
+        level = -1;
+        msg = "";
+        items[] = { 
+
+        };
+        mags[] = {
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_8Rnd_9x18_Makarov_M","",20},
+             {"CUP_20Rnd_B_765x17_Ball_M","",30},
+             
+             {"CUP_30Rnd_545x39_AK_M","",55},
+             {"CUP_1Rnd_HE_GP25_M","",450},
+             
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_30Rnd_556x45_Stanag","",60},
+             
+             {"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M","",150},
+             
+             {"CUP_20Rnd_762x51_CZ805B","",250},
+             
+             {"CUP_20Rnd_762x51_FNFAL_M","",300},
+             
+             {"CUP_1Rnd_HE_M203","",450},
+             
+             {"CUP_10Rnd_762x54_SVD_M","",450},
+             
+             {"CUP_PG7V_M","",2000},
+             {"CUP_PG7VR_M","",2500},
+             {"CUP_PG7VM_M","",3000},
+             {"CUP_TBG7V_M","",4000},
+             
+             {"CUP_30Rnd_762x39_AK47_M","",250},
+             
+             {"CUP_5x_22_LR_17_HMR_M","",300},
+             
+             {"CUP_10x_303_M","",75},
+             
+             {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M","",250},
+             
+             {"CUP_30Rnd_Sa58_M_TracerG","",250},
+             
+             {"CUP_10Rnd_762x51_CZ750_Tracer","",350},
+             
+             {"CUP_20Rnd_762x51_DMR","",400},
+             
+             {"CUP_5Rnd_127x108_KSVK_M","",875},
+             
+             {"CUP_10Rnd_9x39_SP5_VSS_M","",700},
+             {"CUP_20Rnd_9x39_SP5_VSS_M","",700},
+             
+             {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","",700}
+        };
+    };
+};
 class WeaponShops {
     //Armory Shops
     class donator {
