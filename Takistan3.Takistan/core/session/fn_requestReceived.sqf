@@ -56,8 +56,8 @@ switch(playerSide) do {
 			life_thirst = SEL(SEL(_this,10),1);
 		};
 		diag_log "Pre Money";
-		CASH = parseNumber (SEL(_this,14));
-		BANK = parseNumber (SEL(_this,15));
+		CASH = parseNumber (SEL(_this,16));
+		BANK = parseNumber (SEL(_this,17));
 		diag_log "After Money";
 	};
 
@@ -96,8 +96,8 @@ switch(playerSide) do {
 			life_thirst = SEL(SEL(_this,9),1);
 		};
 		diag_log "Pre Money";
-		CASH = parseNumber (SEL(_this,14));
-		BANK = parseNumber (SEL(_this,15));
+		CASH = parseNumber (SEL(_this,16));
+		BANK = parseNumber (SEL(_this,17));
 		diag_log "After Money";
 	};
 };
