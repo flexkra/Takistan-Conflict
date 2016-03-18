@@ -15,7 +15,7 @@ _alt = SEL(_this,4);
 _speed = speed cursorTarget;
 _handled = false;
 
-_interactionKey = if((EQUAL(count (actionKeys "User10"),0))) then {219} else {(actionKeys "User10") select 0};
+_interactionKey = if((EQUAL(count (actionKeys "User10"),0))) then {29} else {(actionKeys "User10") select 0};
 _mapKey = SEL(actionKeys "ShowMap",0);
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
@@ -56,7 +56,7 @@ if (life_container_active) then {
 
 switch (_code) do {
 	//Space key for Jumping
-	case 57: {
+	/*case 57: {
 		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
 		if(_shift && {!(EQUAL(animationState player,"AovrPercMrunSrasWrflDf"))} && {isTouchingGround player} && {EQUAL(stance player,"STAND")} && {speed player > 2} && {!life_is_arrested} && {SEL((velocity player),2) < 2.5} && {time - jumpActionTime > 1.5}) then {
 			jumpActionTime = time; //Update the time.
@@ -64,7 +64,7 @@ switch (_code) do {
 			[player,false] remoteExec ["life_fnc_jumpFnc",RANY]; //Global execution
 			_handled = true;
 		};
-	};
+	};*/
 
 	//Surrender (Shift + B)
 	case 48: {
@@ -158,7 +158,7 @@ switch (_code) do {
 	};
 
 	//L Key?
-	case 38: {
+	/*case 38: {
 		//If cop run checks for turning lights on.
 		if(_shift && playerSide in [west,independent]) then {
 			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
@@ -174,7 +174,7 @@ switch (_code) do {
 		};
 
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
-	};
+	};*/
 
 	//Y Player Menu
 	case 21: {
@@ -184,7 +184,7 @@ switch (_code) do {
 	};
 
 	//F Key
-	case 33: {
+	/*case 33: {
 		if(playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
 			[] spawn {
 				life_siren_active = true;
@@ -207,10 +207,10 @@ switch (_code) do {
 				};
 			};
 		};
-	};
+	};*/
 
 	//O Key
-	case 24: {
+	/*case 24: {
 		if(_shift) then {
 			if (soundVolume != 1) then {
 				1 fadeSound 1;
@@ -220,7 +220,7 @@ switch (_code) do {
 				systemChat localize "STR_MISC_soundfade";
 			};
 		};
-	};
+	};*/
 
 	//U Key
 	case 22: {
