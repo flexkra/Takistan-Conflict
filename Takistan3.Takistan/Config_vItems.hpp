@@ -9,67 +9,118 @@
 class VirtualShops {
     class market {
         name = "STR_Shops_Market";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "ziegenmilch", "dattel", "fladenbrot", "guertel", "pipe", "behaelter", "flask", "bandage", "kochsalz", "morphin", "epikit", "coalp", "mehl" };
     };
 
     class tankstelle {
         name = "STR_Shops_Tankstelle";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "ziegenmilch", "dattel", "fladenbrot", "fuelF" };
     };
 
     class bandit {
         name = "STR_Shops_Bandit";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "ziegenmilch", "dattel", "fladenbrot", "bandage", "kochsalz", "morphin", "epikit" };
     };
 
     class heroin {
         name = "STR_Shops_Heroin";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "marijuana_refined", "marijuana", "heroin_processed", "heroin_refined" };
     };
 
     class dirtydoc {
         name = "STR_Shops_Dirtydoc";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "bandage", "kochsalz", "morphin", "epikit" };
     };
 
     class oil {
         name = "STR_Shops_Oil";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "oil_processed" };
     };
 
     class cop {
         name = "STR_Shops_Cop";
+        side = "cop";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "burger", "cola", "spikeStrip", "strahler", "barrier", "barricade", "lockpick", "tape", "bandage", "kochsalz", "morphin", "epikit", "defusekit" };
     };
 
     class medic {
         name = "STR_Shops_Medic";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "burger", "cola", "fuelFull", "strahler", "barrier", "barricade", "tape",  "lockpick" };
     };
 
     class electrostore {
         name = "STR_Shops_Electrostore";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "battery", "gehaeuse", "antenne" , "abhoergeraet" };
     };
 
     class electrostore2 {
         name = "STR_Shops_Electrostore";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "battery", "gehaeuse", "antenne", "abhoergeraet" };
     };
 
     class blackstore  {
         name = "STR_Shops_Blackstore";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "lockpick", "blastingcharge", "depotwaffen", "nitroglycerin", "boltcutter" };
     };
 
     class hehler {
         name = "STR_Shops_Hehler";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "goldbar", "information" };
     };
 
     class fladen {
         name = "STR_Shops_Fladen";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
         items[] = { "fladen" };
+    };
+
+    
+};
+
+class VirtualGangShops {
+    class werkstatt {
+        name = "STR_Shops_Werkstatt";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "battery", "gehaeuse", "antenne", "abhoergeraet", "blastingcharge", "boltcutter" };
     };
 };
 
