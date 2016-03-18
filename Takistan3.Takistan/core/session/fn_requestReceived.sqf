@@ -8,6 +8,7 @@
 	sort through the information, validate it and if all valid
 	set the client up.
 */
+diag_log format["Startshizzle - %1",_this];
 private["_array"];
 diag_log "Load";
 life_session_tries = life_session_tries + 1;
