@@ -209,9 +209,45 @@
       <Original>Dirty Doc</Original>
       <German>Dirty Doc</German>
     </Key>
+    <Key ID='STR_Shops_Tankstelle'>
+       <Original>Fuel station</Original>
+       <German>Tankstelle</German>
+    </Key>
+    <Key ID='STR_Shops_Dirtydoc'>
+       <Original>Dirty Doc</Original>
+       <German>Dirty Doc</German>
+     </Key>
+     <Key ID='STR_Shops_Oil'>
+       <Original>Oil dealer</Original>
+       <German>Ölhändler</German>
+     </Key>
+     <Key ID='STR_Shops_Cop'>
+       <Original>Food Distribution</Original>
+       <German>Essensausgabe</German>
+     </Key>
+     <Key ID='STR_Shops_Medic'>
+       <Original>PJ Equipment</Original>
+       <German>PJ Ausrüstung</German>
+      </Key>
+      <Key ID='STR_Shops_Fladen'>
+       <Original>Bakery</Original>
+       <German>Bäckerei</German>
+      </Key>
+      <Key ID='STR_Shops_Werkstatt'>
+        <Original>Workshop</Original>
+        <German>Werkstatt</German>
+      </Key>
+      <Key ID='STR_Shops_Miliz'>
+        <Original>Militia Outpost</Original>
+        <German>Milizposten</German>
+      </Key>
+      <Key ID='STR_Shops_MilitaryCamp'>
+        <Original>Military Camp</Original>
+        <German>Militärcamp</German>
+      </Key>
   </Package>
   <Package name="Global">
-    <Key ID="STR_Global_Close">
+    <Key ID="Close">
       <Original>Close</Original>
       <German>Schließen</German>
       <French>Fermer</French>
@@ -238,6 +274,12 @@
     <Key ID="STR_Global_Mags">
       <Original>Magazines</Original>
       <Portuguese>Munições</Portuguese>
+      <German>Magazine</German>
+    </Key>
+    <Key ID="STR_Global_Attachments">
+      <Original>Attachments</Original>
+      <Portuguese>Munições</Portuguese>
+      <German>Aufsätze</German>
     </Key>
     <Key ID="STR_Global_Weapons">
       <Original>Weapons</Original>
@@ -1711,30 +1753,37 @@
     <Key ID="STR_Wanted_Add">
       <Original>Add</Original>
       <Portuguese>Adicionar</Portuguese>
+      <German>Hinzufügen</German>
     </Key>
     <Key ID="STR_Wanted_People">
       <Original>Wanted People</Original>
       <Portuguese>Pessoas Procuradas</Portuguese>
+      <German>Gesuchte Personen</German>
     </Key>
     <Key ID="STR_Wanted_Citizens">
       <Original>Citizens</Original>
       <Portuguese>Cidadãos</Portuguese>
+      <German>Einwohner</German>
     </Key>
     <Key ID="STR_Wanted_Crimes">
       <Original>Crimes</Original>
       <Portuguese>Crimes</Portuguese>
+      <German>Verbrechen</German>
     </Key>
     <Key ID="STR_Wanted_AddP">
       <Original>%1 has been added to the wanted list.</Original>
       <Portuguese>%1 foi adicionado a lista de procurados.</Portuguese>
+      <German>%1 wurde zur Fahndungsliste hinzugefügt</German>
     </Key>
     <Key ID="STR_Wanted_Count">
       <Original>%1 count(s) of %2</Original>
       <Portuguese>%1 contagem(s) de %2</Portuguese>
+      <German>%1 hat %2 getan</German>
     </Key>
     <Key ID="STR_Wanted_Bounty">
       <Original>Current Bounty Price: $%1</Original>
       <Portuguese>Atual recompensa: R$%1</Portuguese>
+      <German>Akutelles Kopfgeld: $%1</German>
     </Key>
 	</Package>
   <Package name="Animals">
@@ -4341,7 +4390,35 @@
       <Italian>Rohr</Italian>
       <Portuguese>Rohr</Portuguese>
     </Key>
+    <Key ID='STR_Item_MarijuanaR'>
+       <Original>Refined Marijuana</Original>
+       <German>Verbessertes Marijuana</German>
+       <French>Verbessertes Marijuana</French>
+       <Italian>Verbessertes Marijuana</Italian>
+       <Portuguese>Verbessertes Marijuana</Portuguese>
+    </Key>
+    <Key ID='STR_Item_dogtag'>
+       <Original>Dogtag</Original>
+       <German>Dogtag</German>
+       <French>Dogtag</French>
+       <Italian>Dogtag</Italian>
+       <Portuguese>Dogtag</Portuguese>
+    </Key>
+    <Key ID='STR_Item_coalp'>
+       <Original>Coal</Original>
+       <German>Kohle</German>
+       <French>Coal'or</French>
+       <Italian>Coal'Oro</Italian>
+       <Portuguese>Coal</Portuguese>
+      </Key>
   </Package>
+  <Key ID='STR_Item_GoldOre'>
+       <Original>Goldore</Original>
+       <German>Golderz</German>
+       <French>Lingot d'or</French>
+       <Italian>Lingotto d'Oro</Italian>
+       <Portuguese>Barra de Ouro</Portuguese>
++     </Key>
   <Package name="Life_License">
     <Key ID="STR_License_Donator">
       <Original>Donatorlicense</Original>
@@ -6863,4 +6940,102 @@
       <French>Meurtre d'un militaire</French>
     </Key>
 	</Package>
+    <Package name="Crafting">
+        <Key ID='STR_CRAFT_Title'>
+       <Original>Crafting Menu</Original>
+       <English>Crafting Menu</English>
+       <German>Bau MenÃ¼</German>
+       <French>Menu de Crafting</French>
+       <Italian>Crafting Menu</Italian>
+       <Portuguese>Crafting Menu</Portuguese>
+     </Key>
+     <Key ID='STR_PM_CraftStats'>
+       <Original>Object to craft</Original>
+       <English>Object to craft</English>
+       <German>Sachen zum bauen</German>
+       <French>Objet Ã  crafter</French>
+       <Italian>Object to craft</Italian>
+       <Portuguese>Object to craft</Portuguese>
+     </Key>
+     <Key ID='STR_PM_CraftMaterials'>
+       <Original>Materials needed</Original>
+       <English>Materials needed</English>
+       <German>BenÃ¶tigte Sachen</German>
+       <French>Materiaux requis</French>
+       <Italian>Materials needed</Italian>
+       <Portuguese>Materials needed</Portuguese>
+     </Key>
+     <Key ID='STR_CRAFT_Button'>
+       <Original>Craft !</Original>
+       <English>Craft !</English>
+       <German>Bauen !</German>
+       <French>Craft !</French>
+       <Italian>Craft !</Italian>
+       <Portuguese>Craft !</Portuguese>
+     </Key>
+     <Key ID='STR_PM_NoMaterial'>
+       <Original>You do not have all the required materials !</Original>
+       <English>You do not have all the required materials !</English>
+       <German>Du hast nicht genug davon...!</German>
+       <French>Vous n'avez pas tous les matÃ©riaux requis !</French>
+       <Italian>You do not have all the required materials !</Italian>
+       <Portuguese>You do not have all the required materials !</Portuguese>
+     </Key>
+     <Key ID='STR_CRAFT_Process'>
+       <Original>You have crafted : %1</Original>
+       <English>You have crafted : %1</English>
+       <German>Du hast folgendes hergestellt : %1</German>
+       <French>Vous avez craftÃ© : %1</French>
+       <Italian>You have crafted : %1</Italian>
+       <Portuguese>You have crafted : %1</Portuguese>
+      </Key>
+      <Key ID='STR_CRAFT_FILTER_Weapon'>
+       <Original>Weapons</Original>
+       <English>Weapons</English>
+       <German>Waffen</German>
+       <French>Armes</French>
+       <Italian>Weapons</Italian>
+       <Portuguese>Weapons</Portuguese>
+      </Key>
+      <Key ID='STR_CRAFT_FILTER_Uniform'>
+       <Original>Uniforms</Original>
+       <English>Uniforms</English>
+       <German>Kleidung</German>
+       <French>Uniformes</French>
+       <Italian>Uniforms</Italian>
+       <Portuguese>Uniforms</Portuguese>
+     </Key>
+     <Key ID='STR_CRAFT_FILTER_Backpack'>
+       <Original>Backpacks</Original>
+       <English>Backpacks</English>
+       <German>RucksÃ¤cke</German>
+       <French>Sacs Ã  dos</French>
+       <Italian>Backpacks</Italian>
+       <Portuguese>Backpacks</Portuguese>
+     </Key>
+     <Key ID='STR_CRAFT_FILTER_Item'>
+       <Original>Items</Original>
+       <English>Items</English>
+       <German>Items</German>
+       <French>Items</French>
+       <Italian>Items</Italian>
+       <Portuguese>Items</Portuguese>
+     </Key>
+     <Key ID='STR_CRAFT_AR_Backpack'>
+       <Original>You already have a backpack ! Put it on the ground before crafting a new.</Original>
+       <English>You already have a backpack ! Put it on the ground before crafting a new.</English>
+       <German>Du hast bereit einen Rucksack ! Pack den alten erstmal weg.</German>
+       <French>Vous avez dÃ©jÃ  un sac Ã  dos ! Posez le votre avant d'en crafter un nouveau.</French>
+       <Italian>You already have a backpack ! Put it on the ground before crafting a new.</Italian>
+       <Portuguese>You already have a backpack ! Put it on the ground before crafting a new.</Portuguese>
+     </Key>
+     <Key ID='STR_CRAFT_AR_Uniform'>
+       <Original>You already have an uniform ! Put it on the ground before crafting a new.</Original>
+       <English>You already have an uniform ! Put it on the ground before crafting a new.</English>
+       <German>Du hast bereits was an ! Mach dich nackt und versuch es nochmal.</German>
+       <French>Vous avez dÃ©jÃ  un uniforme ! Posez le votre avant d'en crafter un nouveau.</French>
+       <Italian>You already have an uniform ! Put it on the ground before crafting a new.</Italian>
+       <Portuguese>You already have an uniform ! Put it on the ground before crafting a new.</Portuguese>
+      </Key>
+    </Package>
 </Project>
