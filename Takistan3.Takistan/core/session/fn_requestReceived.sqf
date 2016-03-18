@@ -57,14 +57,14 @@ switch(playerSide) do {
 			life_thirst = SEL(SEL(_this,10),1);
 		};
 		diag_log "Pre Money";
-		CASH = parseNumber (SEL(_this,16));
-		BANK = parseNumber (SEL(_this,17));
+		CASH = (SEL(_this,16));
+		BANK = (SEL(_this,17));
 		diag_log "After Money";
 	};
 
 	case civilian: {
-		CASH = parseNumber (SEL(_this,2));
-		BANK = parseNumber (SEL(_this,3));
+		CASH = (SEL(_this,2));
+		BANK = (SEL(_this,3));
 		life_is_arrested = SEL(_this,7);
 		CONST(life_coplevel, 0);
 		CONST(life_medicLevel, 0);
@@ -97,8 +97,8 @@ switch(playerSide) do {
 			life_thirst = SEL(SEL(_this,9),1);
 		};
 		diag_log "Pre Money";
-		CASH = parseNumber (SEL(_this,16));
-		BANK = parseNumber (SEL(_this,17));
+		CASH = (SEL(_this,16));
+		BANK = (SEL(_this,17));
 		diag_log "After Money";
 	};
 };
