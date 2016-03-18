@@ -9,19 +9,20 @@
 	set the client up.
 */
 private["_array"];
+diag_log "Load";
 life_session_tries = life_session_tries + 1;
-if(life_session_completed) exitWith {}; //Why did this get executed when the client already initialized? Fucking arma...
+if(life_session_completed) exitWith {diag_log "Session completed";}; //Why did this get executed when the client already initialized? Fucking arma...
 if(life_session_tries > 3) exitWith {cutText[localize "STR_Session_Error","BLACK FADED"]; 0 cutFadeOut 999999999;};
 
 0 cutText [localize "STR_Session_Received","BLACK FADED"];
 0 cutFadeOut 9999999;
 
 //Error handling and junk..
-if(isNil "_this") exitWith {[] call SOCK_fnc_insertPlayerInfo;};
-if(EQUAL(typeName _this,"STRING")) exitWith {[] call SOCK_fnc_insertPlayerInfo;};
-if(EQUAL(count _this,0)) exitWith {[] call SOCK_fnc_insertPlayerInfo;};
-if(EQUAL(SEL(_this,0),"Error")) exitWith {[] call SOCK_fnc_insertPlayerInfo;};
-if(!(EQUAL(steamid,SEL(_this,0)))) exitWith {[] call SOCK_fnc_dataQuery;};
+if(isNil "_this") exitWith {diag_log "Nil";[] call SOCK_fnc_insertPlayerInfo;};
+if(EQUAL(typeName _this,"STRING")) exitWith {diag_log "typeName";[] call SOCK_fnc_insertPlayerInfo;};
+if(EQUAL(count _this,0)) exitWith {diag_log "count";[] call SOCK_fnc_insertPlayerInfo;};
+if(EQUAL(SEL(_this,0),"Error")) exitWith {diag_log "Error";[] call SOCK_fnc_insertPlayerInfo;};
+if(!(EQUAL(steamid,SEL(_this,0)))) exitWith {diag_log "steamid";[] call SOCK_fnc_dataQuery;};
 
 //Lets make sure some vars are not set before hand.. If they are get rid of them, hopefully the engine purges past variables but meh who cares.
 if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "life_donator")) exitWith {
