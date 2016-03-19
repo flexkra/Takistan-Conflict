@@ -12,7 +12,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "ziegenmilch", "dattel", "fladenbrot", "guertel", "pipe", "behaelter", "flask", "bandage", "kochsalz", "morphin", "epikit", "coalp", "mehl" };
+        items[] = { "ziegenmilch", "dattel", "fladen", "guertel", "pipe", "behaelter", "flask", "bandage", "kochsalz", "morphin", "epikit", "coalp", "mehl" };
     };
 
     class tankstelle {
@@ -20,7 +20,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "ziegenmilch", "dattel", "fladenbrot", "fuelF" };
+        items[] = { "ziegenmilch", "dattel", "fladen", "fuelF" };
     };
 
     class bandit {
@@ -28,7 +28,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "ziegenmilch", "dattel", "fladenbrot", "bandage", "kochsalz", "morphin", "epikit" };
+        items[] = { "ziegenmilch", "dattel", "fladen", "bandage", "kochsalz", "morphin", "epikit" };
     };
 
     class heroin {
@@ -833,7 +833,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = false;
         edible = -1;
-        icon = "icons\ico_coal.paa";
+        icon = "icons\ico_coalp.paa";
     };
 
     class sulfuru {
@@ -986,6 +986,17 @@ class VirtualItems {
     class gehaeuse {
         variable = ;
         displayName = "STR_Item_Gehaeuse";
+        weight = 3;
+        buyPrice = 50;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "";
+    };
+
+    class behaelter {
+        variable = ;
+        displayName = "STR_Item_Behaelter";
         weight = 3;
         buyPrice = 50;
         sellPrice = -1;

@@ -4292,6 +4292,10 @@
       <Italian>Casing</Italian>
       <Portuguese>Casing</Portuguese>
     </Key>
+    <Key ID="STR_Item_Behaelter">
+      <Original>Container</Original>
+      <German>Behaelter</German>
+    </Key>
     <Key ID="STR_Item_behaelter">
       <Original>Storage</Original>
       <German>Behaelter</German>
