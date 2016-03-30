@@ -25,14 +25,14 @@ _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 diag_log "2";
 //Series of checks (YAY!)
-_licensesName = "";
-{
-	if(!(EQUAL(_x,"")) && {!(LICENSE_VALUE(_x,_shopSide))}) then {
-		ADD(_licensesName,localize M_CONFIG(getText,"Licenses",_x,"displayName") + "<br/>");
-		_exit = true;
-	};
-} foreach _licenses;
-if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];};
+//_licensesName = "";
+//{
+	//if(!(EQUAL(_x,"")) && {!(LICENSE_VALUE(_x,_shopSide))}) then {
+		//ADD(_licensesName,localize M_CONFIG(getText,"Licenses",_x,"displayName") + "<br/>");
+		//_exit = true;
+	//};
+//} foreach _licenses;
+//if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];};
 
 diag_log "3";
 
