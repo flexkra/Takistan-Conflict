@@ -161,7 +161,7 @@ class CarShops {
         INDEX 2: Texture Layer 2
         etc etc etc
 */
-class CfgVehicles {
+class LifeCfgVehicles {
     class Default {
         vItemSpace = 10;
         storageFee[] = { 50, 50, 50, 50 };
@@ -175,25 +175,29 @@ class CfgVehicles {
         vItemSpace = 15;
         storageFee[] = { 20, 0, 20, 0 };
         chopShop = 3000;
-    insurance = 2500;
+        insurance = 2500;
+        textures[] = {};
     };
 
     class RDS_S1203_Civ_01 {
         vItemSpace = 17;
         storageFee[] = { 25, 0, 3000, 0 };
         chopShop = 7500;
+        textures[] = {};
     };
 
     class RDS_Gaz24_Civ_01 {
         vItemSpace = 17;
         storageFee[] = { 35, 0, 6500, 0 };
         chopShop = 12500;
+        textures[] = {};
     };
     
     class O_Truck_02_covered_F {
         vItemSpace = 85;
         storageFee[] = { 35, 0, 0, 0 };
         chopShop = 12500;
+        textures[] = {};
     };
     
     class B_Truck_01_box_F {
