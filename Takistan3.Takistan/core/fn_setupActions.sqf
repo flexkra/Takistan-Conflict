@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp"
 /*
 	File: fn_setupActions.sqf
 
@@ -17,7 +18,7 @@ switch (playerSide) do
 		//life_actions = life_actions + [player addAction["Fahrzeug flippen",{_veh = cursorTarget; _veh setPos [position _veh select 0, position _veh select 1,1];_veh setVectorUp [0,0,1];},"",0,false,false,"",'!isNull cursorTarget  && player distance cursorTarget > 6 && cursortarget isKindOf "Landvehicle" || cursorTarget isKindOf "RDS_Lada_Civ_01" || cursorTarget isKindOf "RDS_Gaz24_Civ_01" || cursorTarget isKindOf "RDS_Octavia_Civ_01" && speed cursorTarget < 2 && speed player < 5 && (vectorUp cursorTarget select 2 < 5) && {alive _x} count crew cursorTarget > 0 && damage cursorTarget > 0.5 && cursortarget in life_vehicles']];
 		life_actions = life_actions + [player addAction["Aktiviere Bombe",life_fnc_suicideBomb,"",0,false,false,"",' vest player == "V_HarnessOGL_brn" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
 
-		life_actions = life_actions + [player addAction["Person niederschlagen",life_fnc_knockoutAction,cursorTarget,0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 3 && primaryWeapon != ""']];
+		life_actions = life_actions + [player addAction["Person niederschlagen",life_fnc_knockoutAction,cursorTarget,0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 3']];
 		life_actions = life_actions + [player addAction["Person fesseln",life_fnc_restrainAction,cursorTarget,0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 3 && speed cursorTarget < 1 && ("ACE_CableTie" in uniformItems player or "ACE_CableTie" in vestItems player or "ACE_CableTie" in backpackItems player) && vehicle player != player']];
 		life_actions = life_actions + [player addAction["Person freilassen",life_fnc_unrestrain,cursorTarget,0,false,false,"",'(cursorTarget GVAR ["restrained",false])']];
 		life_actions = life_actions + [player addAction["Person foltern",life_fnc_torturePerson,cursorTarget,0,false,false,"",'(cursorTarget GVAR ["restrained",false])']];
