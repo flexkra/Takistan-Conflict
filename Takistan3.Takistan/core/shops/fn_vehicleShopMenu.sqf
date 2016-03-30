@@ -52,7 +52,7 @@ ctrlShow [2304,false];
 	_levelValue = SEL(_levelAssert,1);
 	_showall = true;
 
-	diag_log format["_levelAssert: %1",_levelAssert;
+	diag_log format["_levelAssert: %1",_levelAssert];
 	diag_log format["_levelValue: %1",_levelValue];
 
 	if(!(EQUAL(_levelValue,-1))) then {
