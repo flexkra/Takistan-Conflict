@@ -35,8 +35,6 @@ if(_disableBuy) then {
 //Fetch the shop config.
 _vehicleList = M_CONFIG(getArray,"CarShops",_shop,"vehicles");
 
-diag_log format["VehicleList: %1",_vehicleList];
-
 _control = CONTROL(2300,2302);
 lbClear _control; //Flush the list.
 ctrlShow [2330,false];
@@ -51,9 +49,6 @@ ctrlShow [2304,false];
 	_levelType = "SCALAR";
 	_levelValue = SEL(_levelAssert,1);
 	_showall = true;
-
-	diag_log format["_levelAssert: %1",_levelAssert];
-	diag_log format["_levelValue: %1",_levelValue];
 
 	if(!(EQUAL(_levelValue,-1))) then {
 		_level = GVAR_MNS _levelName;
