@@ -35,8 +35,8 @@ diag_log "2";
 //if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];};
 
 diag_log "3";
-diag_log format["_basePrice: %1",_basePrice];
-diag_log format["CASH: %1",CASH];
+diag_log format["_basePrice: %1",typename _basePrice];
+diag_log format["CASH: %1",typename CASH];
 
 if(_basePrice < 0) exitWith {}; //Bad price entry
 if(life_cash < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough"]};
