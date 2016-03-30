@@ -1,22 +1,32 @@
 class CarShops {
     /*
-        Format:
-        { Classname, rental price, license required, { varname, >= value } }
-
-        { varname, >= value} this is a "level" requirement mainly used by cops and rebels, do not fill this in if you are not utilizing it.
+    *    ARRAY FORMAT:
+    *        0: STRING (Classname)
+    *        1: SCALAR (Rental Price)
+    *        2: ARRAY (license required)
+    *            Ex: { "driver", "trucking", "rebel" }
+    *        3: ARRAY (This is for limiting items to certain things)
+    *            0: Variable to read from
+    *            1: Variable Value Type (SCALAR / BOOL /EQUAL)
+    *            2: What to compare to (-1 = Check Disabled)
+    *
+    *   BLUFOR Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST
+    *   OPFOR Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_EAST
+    *   Independent Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_GUER
+    *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
     */
     class civ_car {
         side = "civ";
         vehicles[] = {
             { "RDS_Lada_Civ_01", 150, "", { "life_levelshop", 1 }},
-      { "RDS_S1203_Civ_01", 250, "", { "life_levelshop", 2 }},
-      { "RDS_Gaz24_Civ_01", 300, "", { "life_levelshop", 4 }},
-      { "rhs_uaz_open_MSV_01", 400, "", { "life_levelshop", 5 }},
-      { "C_Van_01_transport_F", 1750, "", { "life_levelshop", 6 }},
-      { "C_Van_01_fuel_F", 2750, "", { "life_levelshop", 8 }},
-      { "UAZ_Unarmed", 550, "", { "life_levelshop", 7 }},
-      { "RDS_Octavia_Civ_01", 500, "", { "life_levelshop", 8 }},
-      { "C_Quadbike_01_F", 350, "", { "life_levelshop", 9 }}
+            { "RDS_S1203_Civ_01", 250, "", { "life_levelshop", 2 }},
+            { "RDS_Gaz24_Civ_01", 300, "", { "life_levelshop", 4 }},
+            { "rhs_uaz_open_MSV_01", 400, "", { "life_levelshop", 5 }},
+            { "C_Van_01_transport_F", 1750, "", { "life_levelshop", 6 }},
+            { "C_Van_01_fuel_F", 2750, "", { "life_levelshop", 8 }},
+            { "UAZ_Unarmed", 550, "", { "life_levelshop", 7 }},
+            { "RDS_Octavia_Civ_01", 500, "", { "life_levelshop", 8 }},
+            { "C_Quadbike_01_F", 350, "", { "life_levelshop", 9 }}
         };
     };
 

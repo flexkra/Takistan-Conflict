@@ -48,8 +48,8 @@ ctrlShow [2304,false];
 	_basePrice = SEL(_x,1);
 	_levelAssert = SEL(_x,3);
 	_levelName = SEL(_levelAssert,0);
-	_levelType = SEL(_levelAssert,1);
-	_levelValue = SEL(_levelAssert,2);
+	_levelType = "SCALAR"
+	_levelValue = SEL(_levelAssert,1);
 	_showall = true;
 
 	diag_log format["_levelAssert: %1",_levelAssert;
