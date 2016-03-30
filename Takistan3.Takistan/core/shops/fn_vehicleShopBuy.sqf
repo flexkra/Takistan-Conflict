@@ -67,7 +67,7 @@ hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >
 
 diag_log "7";
 diag_log format["Spawnpoint: %1",_spawnPoint];
-diag_log format["Spawnpoint Pos: %1",pos _spawnPoint];
+diag_log format["Spawnpoint Pos: %1",getMarkerPos _spawnPoint];
 diag_log format["Spawnpoints2: %1",_spawnPoints];
 
 
