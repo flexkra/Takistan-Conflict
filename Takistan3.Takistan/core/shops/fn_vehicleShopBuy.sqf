@@ -37,6 +37,7 @@ diag_log "2";
 diag_log "3";
 diag_log format["_basePrice: %1",typename _basePrice];
 diag_log format["CASH: %1",typename CASH];
+life_cash = parseNumber life_cash;
 
 if(_basePrice < 0) exitWith {}; //Bad price entry
 if(life_cash < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough"]};
