@@ -45,6 +45,7 @@ _spawnPoints = SEL(life_veh_shop,1);
 _spawnPoint = "";
 
 diag_log "5";
+diag_log format ["Spawnpoints: %1",_spawnPoints];
 
 if((SEL(life_veh_shop,0) == "med_air_hs")) then {
 	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {_spawnPoint = _spawnPoints};
@@ -65,6 +66,9 @@ SUB(CASH,_basePrice);
 hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 diag_log "7";
+diag_log format ["Spawnpoint: %1",_spawnPoint];
+diag_log format ["Spawnpoint Pos: %1",pos _spawnPoint];
+diag_log format ["Spawnpoints2: %1",_spawnPoints];
 
 
 //Spawn the vehicle and prep it.
