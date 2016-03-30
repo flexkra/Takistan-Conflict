@@ -39,7 +39,7 @@ diag_log format["_basePrice: %1",_basePrice];
 diag_log format["CASH: %1",CASH];
 
 if(_basePrice < 0) exitWith {}; //Bad price entry
-if(CASH < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough"]};
+if(life_cash < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough"]};
 
 diag_log "4";
 
