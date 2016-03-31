@@ -21,6 +21,7 @@ if(count life_spawn_point == 0) then {
 	diag_log format["_sp: %1", _sp];
 
 	if(playerSide == civilian) then {
+		diag_log format["isNil {(call compile format["%1", _sp select 0])}", isNil {(call compile format["%1", _sp select 0])}];
 		if(isNil {(call compile format["%1", _sp select 0])}) then {
 			diag_log "setPos";
 			diag_log format["getMarkerPos (_sp select 0): %1", getMarkerPos (_sp select 0)];
