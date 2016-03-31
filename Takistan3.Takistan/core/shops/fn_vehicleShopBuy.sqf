@@ -22,14 +22,15 @@ _licenses = SEL(SEL(_vehicleList,_vIndex),2);
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
-_licensesName = "";
+/*_licensesName = "";
 {
 	if(!(EQUAL(_x,"")) && {!(LICENSE_VALUE(_x,_shopSide))}) then {
 		ADD(_licensesName,localize M_CONFIG(getText,"Licenses",_x,"displayName") + "<br/>");
 		_exit = true;
 	};
-} foreach _licenses;
-if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];};
+} foreach _licenses; */
+
+//if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];};
 
 if(typeName CASH == "STRING") then {
 	CASH = parseNumber CASH
