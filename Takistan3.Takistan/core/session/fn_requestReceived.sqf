@@ -57,6 +57,10 @@ switch(playerSide) do {
 			life_thirst = SEL(SEL(_this,10),1);
 		};
 		diag_log "Pre Money";
+		diag_log format["west CASH: %1", SEL(_this,16)];
+		diag_log format["west CASH: %1",typeName SEL(_this,16)];
+		diag_log format["west BANK: %1", SEL(_this,17)];
+		diag_log format["west BANK: %1",typeName SEL(_this,17)];
 		CASH = (SEL(_this,16));
 		BANK = (SEL(_this,17));
 		diag_log "After Money";
@@ -65,6 +69,10 @@ switch(playerSide) do {
 	case civilian: {
 		CASH = (SEL(_this,2));
 		BANK = (SEL(_this,3));
+		diag_log format["civilian CASH: %1", SEL(_this,2)];
+		diag_log format["civilian CASH: %1",typeName SEL(_this,2)];
+		diag_log format["civilian BANK: %1", SEL(_this,3)];
+		diag_log format["civilian BANK: %1",typeName SEL(_this,3)];
 		life_is_arrested = SEL(_this,7);
 		CONST(life_coplevel, 0);
 		CONST(life_medicLevel, 0);
@@ -100,6 +108,10 @@ switch(playerSide) do {
 		CASH = (SEL(_this,16));
 		BANK = (SEL(_this,17));
 		diag_log "After Money";
+		diag_log format["independent CASH: %1", SEL(_this,16)];
+		diag_log format["independent CASH: %1",typeName SEL(_this,16)];
+		diag_log format["independent BANK: %1", SEL(_this,17)];
+		diag_log format["independent BANK: %1",typeName SEL(_this,17)];
 	};
 };
 diag_log "After Sidestuff";
@@ -107,4 +119,9 @@ if(count (SEL(_this,13)) > 0) then {
 	{life_vehicles pushBack _x;} foreach (SEL(_this,13));
 };
 diag_log "Final";
+
+diag_log format["CASH: %1", CASH];
+diag_log format["CASH type: %1",typeName CASH];
+diag_log format["BANK: %1",BANK];
+diag_log format["BANK type: %1",typeName BANK];
 life_session_completed = true;
