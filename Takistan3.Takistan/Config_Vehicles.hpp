@@ -18,15 +18,15 @@ class CarShops {
     class civ_car {
         side = "civ";
         vehicles[] = {
-            { "RDS_Lada_Civ_01", 150, "", { "life_levelshop", 1 }},
-            { "RDS_S1203_Civ_01", 250, "", { "life_levelshop", 2 }},
-            { "RDS_Gaz24_Civ_01", 300, "", { "life_levelshop", 4 }},
-            { "rhs_uaz_open_MSV_01", 400, "", { "life_levelshop", 5 }},
-            { "C_Van_01_transport_F", 1750, "", { "life_levelshop", 6 }},
-            { "C_Van_01_fuel_F", 2750, "", { "life_levelshop", 8 }},
-            { "UAZ_Unarmed", 550, "", { "life_levelshop", 7 }},
-            { "RDS_Octavia_Civ_01", 500, "", { "life_levelshop", 8 }},
-            { "C_Quadbike_01_F", 350, "", { "life_levelshop", 9 }}
+            { "RDS_Lada_Civ_01", 150, "", { "life_level", 1 }},
+            { "RDS_S1203_Civ_01", 250, "", { "life_level", 2 }},
+            { "RDS_Gaz24_Civ_01", 300, "", { "life_level", 4 }},
+            { "rhs_uaz_open_MSV_01", 400, "", { "life_level", 5 }},
+            { "C_Van_01_transport_F", 1750, "", { "life_level", 6 }},
+            { "C_Van_01_fuel_F", 2750, "", { "life_level", 8 }},
+            { "UAZ_Unarmed", 550, "", { "life_level", 7 }},
+            { "RDS_Octavia_Civ_01", 500, "", { "life_level", 8 }},
+            { "C_Quadbike_01_F", 350, "", { "life_level", 9 }}
         };
     };
 
@@ -73,31 +73,31 @@ class CarShops {
     class reb_car {
         side = "civ";
         vehicles[] = {
-            { "RDS_Ikarus_Civ_01", 500, "", { "life_levelshop", 10 }},
-            { "RHS_Ural_Open_Civ_01", 3750, "", { "life_levelshop", 10 }},
-            { "B_mas_cars_Hilux_Unarmed", 1850, "", { "life_levelshop", 13 }},
-            { "O_Truck_02_covered_F", 5250, "", { "life_levelshop", 13 }},
-            { "B_mas_cars_LR_Unarmed", 2000, "", { "life_levelshop", 15 }},
-            { "rhs_gaz66_ammo_vmf", 7750, "", { "life_levelshop", 16 }},
-            { "O_Truck_03_ammo_F", 9750, "", { "life_levelshop", 17 }},
-            { "I_mas_cars_UAZ_M2", 4500, "", { "life_levelshop", 18 }},
-            { "B_mas_cars_Hilux_M2", 6750, "", { "life_levelshop", 19 }},
-            { "B_Truck_01_box_F", 12500, "", { "life_levelshop", 19 }},
-            { "I_mas_cars_LR_soft_M2", 8750, "", { "life_levelshop", 20 }},
-            { "B_Truck_01_fuel_F", 15000, "", { "life_levelshop", 21 }},
-            { "I_mas_cars_UAZ_MG", 9760, "", { "life_levelshop", 22 }},
-            { "B_mas_cars_Hilux_MG", 10750, "", { "life_levelshop", 23 }},
-            { "RHS_Ural_Fuel_MSV_01", 18750, "", { "life_levelshop", 24 }},
-            { "DAR_LHS_16", 22750, "", { "life_levelshop", 26 }},
-            { "B_G_Offroad_01_armed_F", 11000, "", { "life_levelshop", 29 }},
-            { "DAR_MK27T", 27000, "", { "life_levelshop", 30 }},
-            { "C_Hatchback_01_F", 3000, "", { "life_levelshop", 33 }},
-            { "_Truck_01_ammo_F", 35000, "", { "life_levelshop", 35 }},
-            { "C_SUV_01_F", 4500, "", { "life_levelshop", 36 }},
-            { "max_Dodge_multy", 6750, "", { "life_levelshop", 39 }},
-            { "I_mas_cars_UAZ_SPG9", 15000, "", { "life_levelshop", 40 }},
-            { "B_mas_cars_Hilux_SPG9", 16500, "", { "life_levelshop", 42 }},
-            { "O_MRAP_02_F", 15000, "", { "life_levelshop", 44 }}
+            { "RDS_Ikarus_Civ_01", 500, "", { "life_level", 10 }},
+            { "RHS_Ural_Open_Civ_01", 3750, "", { "life_level", 10 }},
+            { "B_mas_cars_Hilux_Unarmed", 1850, "", { "life_level", 13 }},
+            { "O_Truck_02_covered_F", 5250, "", { "life_level", 13 }},
+            { "B_mas_cars_LR_Unarmed", 2000, "", { "life_level", 15 }},
+            { "rhs_gaz66_ammo_vmf", 7750, "", { "life_level", 16 }},
+            { "O_Truck_03_ammo_F", 9750, "", { "life_level", 17 }},
+            { "I_mas_cars_UAZ_M2", 4500, "", { "life_level", 18 }},
+            { "B_mas_cars_Hilux_M2", 6750, "", { "life_level", 19 }},
+            { "B_Truck_01_box_F", 12500, "", { "life_level", 19 }},
+            { "I_mas_cars_LR_soft_M2", 8750, "", { "life_level", 20 }},
+            { "B_Truck_01_fuel_F", 15000, "", { "life_level", 21 }},
+            { "I_mas_cars_UAZ_MG", 9760, "", { "life_level", 22 }},
+            { "B_mas_cars_Hilux_MG", 10750, "", { "life_level", 23 }},
+            { "RHS_Ural_Fuel_MSV_01", 18750, "", { "life_level", 24 }},
+            { "DAR_LHS_16", 22750, "", { "life_level", 26 }},
+            { "B_G_Offroad_01_armed_F", 11000, "", { "life_level", 29 }},
+            { "DAR_MK27T", 27000, "", { "life_level", 30 }},
+            { "C_Hatchback_01_F", 3000, "", { "life_level", 33 }},
+            { "_Truck_01_ammo_F", 35000, "", { "life_level", 35 }},
+            { "C_SUV_01_F", 4500, "", { "life_level", 36 }},
+            { "max_Dodge_multy", 6750, "", { "life_level", 39 }},
+            { "I_mas_cars_UAZ_SPG9", 15000, "", { "life_level", 40 }},
+            { "B_mas_cars_Hilux_SPG9", 16500, "", { "life_level", 42 }},
+            { "O_MRAP_02_F", 15000, "", { "life_level", 44 }}
         };
     };
 
@@ -124,8 +124,8 @@ class CarShops {
     class civ_air {
         side = "civ";
         vehicles[] = {
-      { "GR_Mi8_1", 15000, "", { "life_levelshop", 32 }},
-      { "GR_Mi_171_2", 30000, "", { "life_levelshop", 49 }}
+      { "GR_Mi8_1", 15000, "", { "life_level", 32 }},
+      { "GR_Mi_171_2", 30000, "", { "life_level", 49 }}
         };
     };
 
