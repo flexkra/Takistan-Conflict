@@ -66,6 +66,10 @@ class CfgRemoteExec {
         F(life_fnc_barricade,CLIENT)
         F(life_fnc_flatterband,CLIENT)
         F(life_fnc_strahler,CLIENT)
+        F(life_fnc_transport,CLIENT)
+        F(life_fnc_quest,CLIENT)
+        F(life_fnc_queststart,CLIENT)
+        F(life_fnc_setupLevel,CLIENT)
 
         /* Server only functions */
         F(bis_fnc_execvm,SERVER)
