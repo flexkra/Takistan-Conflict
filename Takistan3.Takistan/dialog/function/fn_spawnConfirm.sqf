@@ -31,6 +31,8 @@ if(count life_spawn_point == 0) then {
 			player setPos _spawnPos;
 		};
 	} else {
+		diag_log "setPos";
+		diag_log format["getMarkerPos (_sp select 0): %1", getMarkerPos (_sp select 0)];
 		player setPos (getMarkerPos (_sp select 0));
 	};
 	titleText[format["%2 %1",_sp select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
