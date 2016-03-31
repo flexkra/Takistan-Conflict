@@ -21,6 +21,8 @@ _licenses = SEL(SEL(_vehicleList,_vIndex),2);
  if(_mode) then {_basePrice = round(_basePrice * 1.5)};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
+diag_log format["_licenses: %1",_licenses];
+
 //Series of checks (YAY!)
 /*_licensesName = "";
 {
