@@ -38,8 +38,7 @@ if(count life_spawn_point == 0) then {
 	};
 	titleText[format["%2 %1",_sp select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
 } else {
-	if(playerSide == civilian) then {
-			player setPos (getMarkerPos (life_spawn_point select 0));
+	//if(playerSide == civilian) then {
 		/*if(isNil {(call compile format["%1",life_spawn_point select 0])}) then {
 			if((["house",life_spawn_point select 0] call BIS_fnc_inString)) then {
 				private["_bPos","_house","_pos"];
@@ -61,9 +60,11 @@ if(count life_spawn_point == 0) then {
 			_spawnPos = _spawnPos buildingPos 0;
 			player setPos _spawnPos;
 		};*/
-	} else {
-		player setPos (getMarkerPos (life_spawn_point select 0));
-	};
+	//} else {
+		//player setPos (getMarkerPos (life_spawn_point select 0));
+	//};
+	player setPos (getMarkerPos (life_spawn_point select 0));
+	diag_log format["isNil {(call compile format["%1", _sp select 0])}", isNil {(call compile format["%1", _sp select 0])}];
 	titleText[format["%2 %1",life_spawn_point select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
 };
 
