@@ -9,15 +9,21 @@ private["_spCfg","_sp","_spawnPos"];
 closeDialog 0;
 cutText ["","BLACK IN"];
 
-diag_log "spawn";
+diag_log "confirmed";
+diag_log format["life_spawn_point: %1", life_spawn_point];
 
 if(count life_spawn_point == 0) then {
 	private["_sp","_spCfg"];
 	_spCfg = [playerSide] call life_fnc_spawnPointCfg;
 	_sp = _spCfg select 0;
 
+	diag_log format["_spCfg: %1", _spCfg];
+	diag_log format["_sp: %1", _sp];
+
 	if(playerSide == civilian) then {
 		if(isNil {(call compile format["%1", _sp select 0])}) then {
+			diag_log "setPos";
+			diag_log format["getMarkerPos (_sp select 0): %1", getMarkerPos (_sp select 0)];
 			player setPos (getMarkerPos (_sp select 0));
 		} else {
 			_spawnPos = (call compile format["%1", _sp select 0]) call BIS_fnc_selectRandom;
@@ -56,8 +62,6 @@ if(count life_spawn_point == 0) then {
 	};
 	titleText[format["%2 %1",life_spawn_point select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
 };
-
-diag_log "spawn2";
 
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
