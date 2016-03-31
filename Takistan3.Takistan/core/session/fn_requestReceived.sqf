@@ -57,12 +57,12 @@ switch(playerSide) do {
 			life_thirst = SEL(SEL(_this,10),1);
 		};
 		diag_log "Pre Money";
-		diag_log format["west CASH: %1", SEL(_this,16)];
-		diag_log format["west CASH: %1",typeName SEL(_this,16)];
-		diag_log format["west BANK: %1", SEL(_this,17)];
-		diag_log format["west BANK: %1",typeName SEL(_this,17)];
-		CASH = (SEL(_this,16));
-		BANK = (SEL(_this,17));
+		diag_log format["west CASH: %1", SEL(_this,14)];
+		diag_log format["west CASH: %1",typeName SEL(_this,14)];
+		diag_log format["west BANK: %1", SEL(_this,15)];
+		diag_log format["west BANK: %1",typeName SEL(_this,15)];
+		CASH = (SEL(_this,14));
+		BANK = (SEL(_this,15));
 		diag_log "After Money";
 	};
 
@@ -105,13 +105,13 @@ switch(playerSide) do {
 			life_thirst = SEL(SEL(_this,9),1);
 		};
 		diag_log "Pre Money";
-		CASH = (SEL(_this,16));
-		BANK = (SEL(_this,17));
+		CASH = (SEL(_this,14));
+		BANK = (SEL(_this,15));
 		diag_log "After Money";
-		diag_log format["independent CASH: %1", SEL(_this,16)];
-		diag_log format["independent CASH: %1",typeName SEL(_this,16)];
-		diag_log format["independent BANK: %1", SEL(_this,17)];
-		diag_log format["independent BANK: %1",typeName SEL(_this,17)];
+		diag_log format["independent CASH: %1", SEL(_this,14)];
+		diag_log format["independent CASH: %1",typeName SEL(_this,14)];
+		diag_log format["independent BANK: %1", SEL(_this,15)];
+		diag_log format["independent BANK: %1",typeName SEL(_this,15)];
 	};
 };
 diag_log "After Sidestuff";
