@@ -29,7 +29,7 @@ class PlayerHUD {
 	/* Background */
 	class xy_ui_background: Life_RscBackground
 	{
-		colorBackground[] = {0,0,0,0.35};
+		colorBackground[] = {0,0,0,0.2};
 		idc = IDC_UI_XY_UI_BACKGROUND;
 		x = 0.0101562 * safezoneW + safezoneX;
 		y = 0.016 * safezoneH + safezoneY;
@@ -85,11 +85,11 @@ class PlayerHUD {
 	class xy_ui_level: Life_RscText
 	{
 		idc = IDC_UI_XY_UI_LEVEL;
-		text = "5"; //--- ToDo: Localize;
+		text = "15"; //--- ToDo: Localize;
 		colorText[] = {1,0.67,0,1};
-		x = 0.329844 * safezoneW + safezoneX;
-		y = 0.291 * safezoneH + safezoneY;
-		w = 0.04125 * safezoneW;
+		x = 0.0204687 * safezoneW + safezoneX;
+		y = 0.027 * safezoneH + safezoneY;
+		w = 0.0309375 * safezoneW;
 		h = 0.055 * safezoneH;
 	};
 };
