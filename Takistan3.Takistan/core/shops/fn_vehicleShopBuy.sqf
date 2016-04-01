@@ -26,8 +26,9 @@ diag_log format["LICENSE_VALUE(_licenses,_shopSide): %1",LICENSE_VALUE(_licenses
 
 //Series of checks (YAY!)
 if(!(isNil _licenses)) then {
-	if(!(LICENSE_VALUE(_licenses,_shopSide))) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licenses];};
+	if(!(LICENSE_VALUE(_licenses,_shopSide))) then {_exit = true;};
 };
+
 /*_licensesName = "";
 {
 	if(!(EQUAL(_x,"")) && {!(LICENSE_VALUE(_x,_shopSide))}) then {
@@ -36,7 +37,7 @@ if(!(isNil _licenses)) then {
 	};
 } foreach _licenses; */
 
-//if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];};
+if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];};
 
 if(typeName CASH == "STRING") then {
 	CASH = parseNumber CASH
