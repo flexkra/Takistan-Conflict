@@ -21,19 +21,11 @@ _licenses = SEL(SEL(_vehicleList,_vIndex),2);
  if(_mode) then {_basePrice = round(_basePrice * 1.5)};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
-diag_log format["_licenses: %1",_licenses];
-diag_log format["isNil _licenses: %1",isNil _licenses];
-
-
 //Series of checks (YAY!)
 if(!(_licenses == "none")) then {
-	diag_log format["LICENSE_VALUE(_licenses,_shopSide): %1",LICENSE_VALUE(_licenses,_shopSide)];
-	diag_log format["!LICENSE_VALUE(_licenses,_shopSide): %1",!(LICENSE_VALUE(_licenses,_shopSide))];
 	if(!(LICENSE_VALUE(_licenses,_shopSide))) then {
 		_exit = true;
-		diag_log format["_exit: %1",_exit];
 	};
-	diag_log format["_exit1: %1",_exit];
 };
 
 /*_licensesName = "";
@@ -43,8 +35,6 @@ if(!(_licenses == "none")) then {
 		_exit = true;
 	};
 } foreach _licenses; */
-
-diag_log format["_exit2: %1",_exit];
 
 if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licenses];};
 

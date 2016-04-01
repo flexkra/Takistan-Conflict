@@ -16,13 +16,6 @@ private["_shop","_sideCheck","_spawnPoints","_shopFlag","_shopTitle","_disableBu
 	["_disableBuy",false,[true]]
 ];
 
-diag_log format["_shop: %1",_shop];
-diag_log format["_sideCheck: %1",_sideCheck];
-diag_log format["_spawnPoints: %1",_spawnPoints];
-diag_log format["_shopFlag: %1",_shopFlag];
-diag_log format["_shopTitle: %1",_shopTitle];
-diag_log format["_disableBuy: %1",_disableBuy];
-
 disableSerialization;
 //Long boring series of checks
 if(dialog) exitWith {};
@@ -31,8 +24,6 @@ if(_sideCheck != sideUnknown && {playerSide != _sideCheck}) exitWith {hint local
 if(!createDialog "Life_Vehicle_Shop_v2") exitWith {};
 
 life_veh_shop = [_shop,_spawnpoints,_shopFlag,_disableBuy]; //Store it so so other parts of the system can access it.
-
-diag_log format["life_veh_shop: %1",life_veh_shop];
 
 ctrlSetText [2301,_shopTitle];
 
@@ -43,8 +34,6 @@ if(_disableBuy) then {
 
 //Fetch the shop config.
 _vehicleList = M_CONFIG(getArray,"CarShops",_shop,"vehicles");
-
-diag_log format["_vehicleList: %1",_vehicleList];
 
 _control = CONTROL(2300,2302);
 lbClear _control; //Flush the list.
