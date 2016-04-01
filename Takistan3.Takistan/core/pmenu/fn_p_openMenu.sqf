@@ -11,18 +11,59 @@ createDialog "playerSettings";
 disableSerialization;
 
 switch(playerSide) do {
-	case west: {
-		ctrlShow[2011,false];
+	case west:
+	{
+		ctrlShow[2407,false]; //hide group button
+		ctrlShow[1208,false]; //hide group button
+		ctrlShow[2424,false]; //hide craft button
+		ctrlShow[1211,false]; //hide craft button
+		ctrlShow[9800,true]; //Wanted
+		ctrlShow[9801,true]; //Wanted+
+		ctrlShow[9803,false];
+		ctrlShow[1217,false]; //admin ^
+		ctrlShow[2425,true];
+		ctrlShow[1215,true];
 	};
 
-	case civilian: {
-		ctrlShow[2012,false];
+	case civilian:
+	{
+		ctrlShow[9800,false]; //Wanted
+		ctrlShow[9801,false]; //Wanted+
+		ctrlShow[1213,false]; //Wanted
+		ctrlShow[1214,false]; //Wanted+
+		ctrlShow[9803,false];
+		ctrlShow[1217,false]; //admin ^
+		ctrlShow[2425,true];
+		ctrlShow[1215,true];
+		ctrlShow[2407,true]; //hide group button
+		ctrlShow[1208,true]; //hide group button
+	};
+
+	case independent:
+	{
+		ctrlShow[2407,false]; //hide group button
+		ctrlShow[1208,false]; //hide group button
+		ctrlShow[2424,false]; //hide craft button
+		ctrlShow[1211,false]; //hide craft button
+		ctrlShow[9800,false]; //Wanted
+		ctrlShow[9801,false]; //Wanted+
+		ctrlShow[1213,false]; //Wanted
+		ctrlShow[1214,false]; //Wanted+
+		ctrlShow[9803,false];
+		ctrlShow[1217,false]; //admin ^
+		ctrlShow[2425,true];
+		ctrlShow[1215,true];
 	};
 };
 
 if(FETCH_CONST(life_adminlevel) < 1) then {
-	ctrlShow[2020,false];
-	ctrlShow[2021,false];
+	ctrlShow[9803,false];
+	ctrlShow[1217,false]; //admin ^
 };
 
 [] call life_fnc_p_updateMenu;
+
+if(FETCH_CONST(life_adminlevel) >= 1) then {
+	ctrlShow[9803,true];
+	ctrlShow[1217,true]; //admin ^
+};
