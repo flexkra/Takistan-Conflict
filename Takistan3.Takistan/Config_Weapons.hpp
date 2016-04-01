@@ -19,8 +19,7 @@ class GangShops {
         name = "STR_Shops_Miliz";
         side = "civ";
         license = "";
-        level = -1;
-        msg = "";
+        level[] = { "", "", -1, "" };
         items[] = {
             { "NONE","Equipment",0},
             { "rhsusf_ANPVS_15","",400}, 
@@ -39,8 +38,7 @@ class GangShops {
         name = "STR_Shops_MilitaryCamp";
         side = "civ";
         license = "";
-        level = -1;
-        msg = "";
+        level[] = { "", "", -1, "" };
         items[] = { 
 
         };
@@ -100,8 +98,7 @@ class WeaponShops {
         name = "Donatorshop";
         side = "civ";
         license = "donator";
-        level = -1;
-        msg = "";
+        level[] = { "", "", -1, "" };
         items[] = {
             {"NONE","Waffen",0},
             { "CUP_arifle_AKS_Gold", "Goldene AK", 1337 },
@@ -144,8 +141,7 @@ class WeaponShops {
         name = "Tankstellenshop";
         side = "civ";
         license = "";
-        level = -1;
-        msg = "";
+        level[] = { "", "", -1, "" };
         items[] = {
             { "ToolKit", "", 150 },
             { "ACE_Flashlight_XL50", "", 20 },
@@ -157,8 +153,7 @@ class WeaponShops {
         name = "Synced Gemischtwaren";
         side = "civ";
         license = "";
-        level = -1;
-        msg = "";
+        level[] = { "", "", -1, "" };
         items[] = {
             { "ItemGPS", "", 30 },
             { "ItemMap", "", 20 },
@@ -175,8 +170,7 @@ class WeaponShops {
         name = "PJ Ausrüstung";
         side = "med";
         license = "";
-        level = -1;
-        msg = "";
+        level[] = { "", "", -1, "" };
         items[] = {
             { "ItemGPS", "", 10 },
             { "ItemCompass", "", 10 },
@@ -204,8 +198,7 @@ class WeaponShops {
         name = "Grundausrüstung";
         side = "cop";
         license = "";
-        level = -1;
-        msg = "";
+        level[] = { "", "", -1, "" };
         items[] = {
                         {"tf_anprc152","",10},
             {"ItemGPS","",10},
@@ -234,8 +227,7 @@ class WeaponShops {
         name = "Recruit Waffenspind";
         side = "cop";
         license = "";
-        level = 1;
-        msg = "Du bist hier falsch!";
+        level[] = { "", "", -1, "" };
         items[] = {
                                         {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -261,8 +253,7 @@ class WeaponShops {
         name = "Private Waffenspind";
         side = "cop";
         license = "";
-        level = 2;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 2, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -295,8 +286,7 @@ class WeaponShops {
         name = "Private 1st Waffenspind";
         side = "cop";
         license = "";
-        level = 3;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 3, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -336,8 +326,7 @@ class WeaponShops {
         name = "Specialist Waffenspind";
         side = "cop";
         license = "";
-        level = 4;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 4, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -392,8 +381,7 @@ class WeaponShops {
         name = "Corporal Waffenspind";
         side = "cop";
         license = "";
-        level = 5;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 5, "Du bist hier falsch!" };
         items[] = {
                         {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -455,8 +443,7 @@ class WeaponShops {
         name = "Sergeant Waffenspind";
         side = "cop";
         license = "";
-        level = 6;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 6, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -528,8 +515,7 @@ class WeaponShops {
         name = "Staff Sergeant Waffenspind";
         side = "cop";
         license = "";
-        level = 7;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 7, "Du bist hier falsch!" };
         items[] = {
                         {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -621,8 +607,7 @@ class WeaponShops {
         name = "Sergeant First Class Waffenspind";
         side = "cop";
         license = "";
-        level = 8;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 8, "Du bist hier falsch!" };
         items[] = {
                         {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -725,8 +710,7 @@ class WeaponShops {
         name = "Master Sergeant Waffenspind";
         side = "cop";
         license = "";
-        level = 9;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 9, "Du bist hier falsch!" };
         items[] = {
                         {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -833,8 +817,7 @@ class WeaponShops {
         name = "Sergeant Major Waffenspind";
         side = "cop";
         license = "";
-        level = 10;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 10, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -948,8 +931,7 @@ class WeaponShops {
         name = "Command Sgt Major Waffenspind";
         side = "cop";
         license = "";
-        level = 11;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 11, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -1065,8 +1047,7 @@ class WeaponShops {
         name = "Second Lieutenant Waffenspind";
         side = "cop";
         license = "";
-        level = 12;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 12, "Du bist hier falsch!" };
         items[] = {
                         {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -1186,8 +1167,7 @@ class WeaponShops {
         name = "First Lieutenant Waffenspind";
         side = "cop";
         license = "";
-        level = 13;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 13, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -1312,8 +1292,7 @@ class WeaponShops {
         name = "Captain Waffenspind";
         side = "cop";
         license = "";
-        level = 14;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 14, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -1439,8 +1418,7 @@ class WeaponShops {
         name = "Major Waffenspind";
         side = "cop";
         license = "";
-        level = 15;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 15, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -1566,8 +1544,7 @@ class WeaponShops {
         name = "Colonel Waffenspind";
         side = "cop";
         license = "";
-        level = 16;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 16, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -1693,8 +1670,7 @@ class WeaponShops {
         name = "General Waffenspind";
         side = "cop";
         license = "";
-        level = 17;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 17, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -1829,8 +1805,7 @@ class WeaponShops {
         name = "Commander in Chief Waffenspind";
         side = "cop";
         license = "";
-        level = 18;
-        msg = "Du bist hier falsch!";
+        level[] = { "life_coplevel", "SCALAR", 18, "Du bist hier falsch!" };
         items[] = {
                                     {"NONE","Waffen",0},
                         {"CUP_arifle_M16A4_Base","",200},
@@ -1952,8 +1927,7 @@ class WeaponShops {
         name = "Level3 Shop";
         side = "civ";
         license = "";
-        level = ;
-        msg = "Du hast noch nicht das richtige Level";
+        level[] = { "life_level", "SCALAR", 3, "Du hast nicht das richtige Level!" };
         items[] = {
            {"NONE","Waffen",0},
                {"CUP_hgun_Makarov","",300},
@@ -1971,8 +1945,7 @@ class WeaponShops {
         name = "Level4 Shop";
         side = "civ";
         license = "";
-        level = 4;
-        msg = "Du hast noch nicht das richtige Level";
+        level[] = { "life_level", "SCALAR", 4, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                    {"CUP_hgun_Makarov","",300},
@@ -1992,8 +1965,7 @@ class WeaponShops {
         name = "Level5 Shop";
         side = "civ";
         license = "";
-        level = 5;
-        msg = "Du hast noch nicht das richtige Level";
+        level[] = { "life_level", "SCALAR", 5, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                        {"CUP_hgun_Makarov","",300},
@@ -2017,8 +1989,7 @@ class WeaponShops {
         name = "Level6/7 Shop";                                // und 7
         side = "civ";
         license = "";
-        level = 6;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 6, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                        {"CUP_hgun_Makarov","",300},
@@ -2044,8 +2015,7 @@ class WeaponShops {
         name = "Level8/9 Shop";                  // und 9
         side = "civ";
         license = "";
-        level = 8;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 8, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
              {"CUP_hgun_Makarov","",300},
@@ -2072,8 +2042,7 @@ class WeaponShops {
         name = "Level10/11 Shop";                   // und 11
         side = "civ";
         license = "";
-        level = 10;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 10, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2103,8 +2072,7 @@ class WeaponShops {
         name = "Level12 Shop";                   
         side = "civ";
         license = "";
-        level = 12;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 12, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2143,8 +2111,7 @@ class WeaponShops {
         name = "Level13 Shop";                   
         side = "civ";
         license = "";
-        level = 13;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 13, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2184,8 +2151,7 @@ class WeaponShops {
         name = "Level14 Shop";                   
         side = "civ";
         license = "";
-        level = 14;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 14, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2231,8 +2197,7 @@ class WeaponShops {
         name = "Level15/16 Shop";                                 // und 16
         side = "civ";
         license = "";
-        level = 15;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 15, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2283,8 +2248,7 @@ class WeaponShops {
         name = "Level17 Shop";                                
         side = "civ";
         license = "";
-        level = 17;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 17, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2339,8 +2303,7 @@ class WeaponShops {
         name = "Level18 Shop";                                
         side = "civ";
         license = "";
-        level = 18;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 18, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2396,8 +2359,7 @@ class WeaponShops {
         name = "Level19 Shop";                                
         side = "civ";
         license = "";
-        level = 19;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 19, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2455,8 +2417,7 @@ class WeaponShops {
         name = "Level20 Shop";                                
         side = "civ";
         license = "";
-        level = 20;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 20, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2514,8 +2475,7 @@ class WeaponShops {
         name = "Level21 Shop";                                
         side = "civ";
         license = "";
-        level = 21;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 21, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2580,8 +2540,7 @@ class WeaponShops {
         name = "Level22 Shop";                                
         side = "civ";
         license = "";
-        level = 22;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 22, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2644,8 +2603,7 @@ class WeaponShops {
         name = "Level23 Shop";                                
         side = "civ";
         license = "";
-        level = 23;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 23, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2713,8 +2671,7 @@ class WeaponShops {
         name = "Level24 Shop";                                
         side = "civ";
         license = "";
-        level = 24;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 24, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2783,8 +2740,7 @@ class WeaponShops {
         name = "Level25 Shop";                                
         side = "civ";
         license = "";
-        level = 25;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 25, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2856,8 +2812,7 @@ class WeaponShops {
         name = "Level26 Shop";                                
         side = "civ";
         license = "";
-        level = 26;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 26, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -2929,8 +2884,7 @@ class WeaponShops {
         name = "Level27 Shop";                                
         side = "civ";
         license = "";
-        level = 27;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 27, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3007,8 +2961,7 @@ class WeaponShops {
         name = "Level28 Shop";                              
         side = "civ";
         license = "";
-        level = 28;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 28, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3087,8 +3040,7 @@ class WeaponShops {
         name = "Level29 Shop";                               
         side = "civ";
         license = "";
-        level = 29;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 29, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3168,8 +3120,7 @@ class WeaponShops {
         name = "Level30 Shop";                               
         side = "civ";
         license = "";
-        level = 30;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 30, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3256,8 +3207,7 @@ class WeaponShops {
         name = "Level31 Shop";                               
         side = "civ";
         license = "";
-        level = 31;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 31, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3346,8 +3296,7 @@ class WeaponShops {
         name = "Level32 Shop";                               
         side = "civ";
         license = "";
-        level = 32;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 32, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3437,8 +3386,7 @@ class WeaponShops {
         name = "Level33 Shop";                               
         side = "civ";
         license = "";
-        level = 33;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 33, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
              {"CUP_hgun_Makarov","",300},
@@ -3534,8 +3482,7 @@ class WeaponShops {
         name = "Level34 Shop";                               
         side = "civ";
         license = "";
-        level = 34;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 34, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3635,8 +3582,7 @@ class WeaponShops {
         name = "Level35 Shop";                               
         side = "civ";
         license = "";
-        level = 35;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 35, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3734,8 +3680,7 @@ class WeaponShops {
         name = "Level36 Shop";                               
         side = "civ";
         license = "";
-        level = 36;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 36, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3839,8 +3784,7 @@ class WeaponShops {
         name = "Level37 Shop";                               
         side = "civ";
         license = "";
-        level = 37;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 37, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -3945,8 +3889,7 @@ class WeaponShops {
         name = "Level38 Shop";                               
         side = "civ";
         license = "";
-        level = 38;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 38, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -4053,8 +3996,7 @@ class WeaponShops {
         name = "Level39 Shop";                               
         side = "civ";
         license = "";
-        level = 39;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 39, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -4163,8 +4105,7 @@ class WeaponShops {
         name = "Level40 Shop";                               
         side = "civ";
         license = "";
-        level = 40;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 40, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -4274,8 +4215,7 @@ class WeaponShops {
         name = "Level41 Shop";                               
         side = "civ";
         license = "";
-        level = 41;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 41, "Du hast nicht das richtige Level!" };
         items[] = {
             {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -4389,8 +4329,7 @@ class WeaponShops {
         name = "Level42 Shop";                               
         side = "civ";
         license = "";
-        level = 42;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 42, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -4507,8 +4446,7 @@ class WeaponShops {
         name = "Level43 Shop";                               
         side = "civ";
         license = "";
-        level = 43;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 43, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -4628,8 +4566,7 @@ class WeaponShops {
         name = "Level44 Shop";                               
         side = "civ";
         license = "";
-        level = 44;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 44, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -4749,8 +4686,7 @@ class WeaponShops {
         name = "Level45 Shop";                               
         side = "civ";
         license = "";
-        level = 45;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 45, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -4873,8 +4809,7 @@ class WeaponShops {
         name = "Level46 Shop";                               
         side = "civ";
         license = "";
-        level = 46;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 46, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -4999,8 +4934,7 @@ class WeaponShops {
         name = "Level47 Shop";                               
         side = "civ";
         license = "";
-        level = 47;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 47, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -5127,8 +5061,7 @@ class WeaponShops {
         name = "Level48 Shop";                               
         side = "civ";
         license = "";
-        level = 48;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 48, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -5257,8 +5190,7 @@ class WeaponShops {
         name = "Level49 Shop";                               
         side = "civ";
         license = "";
-        level = 49;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 49, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
@@ -5387,8 +5319,7 @@ class WeaponShops {
         name = "Level50 Shop";                               
         side = "civ";
         license = "";
-        level = 50;
-        msg = "";
+        level[] = { "life_level", "SCALAR", 50, "Du hast nicht das richtige Level!" };
         items[] = {
              {"NONE","Waffen",0},
                  {"CUP_hgun_Makarov","",300},
