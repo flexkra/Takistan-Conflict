@@ -25,7 +25,7 @@ diag_log format["_licenses: %1",_licenses];
 diag_log format["LICENSE_VALUE(_licenses,_shopSide): %1",LICENSE_VALUE(_licenses,_shopSide)];
 
 //Series of checks (YAY!)
-if(!_licenses == "") then {
+if(!(isNil _licenses)) then {
 	if(!(LICENSE_VALUE(_licenses,_shopSide))) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licenses];};
 };
 /*_licensesName = "";
