@@ -199,6 +199,7 @@ class Life_Client_Core
 		class territoryReward {};
 		class suicideBomb {};
 		class setupLevel {};
+		class queststart {};
 	};
 
 	class Network
