@@ -22,6 +22,7 @@ _licenses = SEL(SEL(_vehicleList,_vIndex),2);
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 diag_log format["_licenses: %1",_licenses];
+diag_log format["isNil _licenses: %1",isNil _licenses];
 diag_log format["LICENSE_VALUE(_licenses,_shopSide): %1",LICENSE_VALUE(_licenses,_shopSide)];
 
 //Series of checks (YAY!)
