@@ -17,16 +17,16 @@ private["_bounty","_crime"];
 disableSerialization;
 
 if(isNull LIFEdisplay) then {[] call life_fnc_hudSetup;};
-LIFEctrl(5503) progressSetPosition (1 / (100 / life_hunger));
-LIFEctrl(5504) progressSetPosition (1 / (100 / life_thirst));
-LIFEctrl(5501) progressSetPosition (1 - (damage player));
+LIFEctrl(IDC_LIFE_BAR_FOOD) progressSetPosition (1 / (100 / life_hunger));
+LIFEctrl(IDC_LIFE_BAR_WATER) progressSetPosition (1 / (100 / life_thirst));
+LIFEctrl(IDC_LIFE_BAR_HEALTH) progressSetPosition (1 - (damage player));
 LIFEctrl(IDC_LIFE_BAR_EXP) progressSetPosition (1 / (100 / (life_exp +1)));
-LIFEctrl(5502) progressSetPosition (1 / (100 / (life_blood +1)));
+LIFEctrl(IDC_LIFE_BAR_BLOOD) progressSetPosition (1 / (100 / (life_blood +1)));
 
 LIFEctrl(IDC_LIFE_FOOD_TEXT) ctrlsetText format["%1", life_hunger];
 LIFEctrl(IDC_LIFE_WATER_TEXT) ctrlsetText format["%1", life_thirst];
 LIFEctrl(IDC_LIFE_HEALTH_TEXT) ctrlsetText format["%1", round((1 - (damage player)) * 100)];
 LIFEctrl(IDC_LIFE_EXP_TEXT) ctrlsetText format["%1", life_exp];
-LIFEctrl(5505) ctrlsetText format["%1", life_level];
+LIFEctrl(IDC_LIFE_LEVEL_TEXT) ctrlsetText format["%1", life_level];
 LIFEctrl(IDC_LIFE_BLOOD_TEXT) ctrlsetText format["%1", life_bloodstatus];
 LIFEctrl(IDC_LIFE_LEVEL_TEXT2) ctrlsetText format["%1", (life_level + 1)];
