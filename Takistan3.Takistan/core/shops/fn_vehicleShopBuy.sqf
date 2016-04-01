@@ -23,11 +23,13 @@ _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 diag_log format["_licenses: %1",_licenses];
 diag_log format["isNil _licenses: %1",isNil _licenses];
-diag_log format["LICENSE_VALUE(_licenses,_shopSide): %1",LICENSE_VALUE(_licenses,_shopSide)];
+
 
 //Series of checks (YAY!)
 if(!(_licenses == "none")) then {
+	diag_log format["LICENSE_VALUE(_licenses,_shopSide): %1",LICENSE_VALUE(_licenses,_shopSide)];
 	if(!(LICENSE_VALUE(_licenses,_shopSide))) then {_exit = true;};
+	diag_log format["_exit: %1",_exit];
 };
 
 /*_licensesName = "";
