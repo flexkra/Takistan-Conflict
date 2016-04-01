@@ -247,7 +247,7 @@
       </Key>
   </Package>
   <Package name="Global">
-    <Key ID="Close">
+    <Key ID="STR_Global_Close">
       <Original>Close</Original>
       <German>Schließen</German>
       <French>Fermer</French>
