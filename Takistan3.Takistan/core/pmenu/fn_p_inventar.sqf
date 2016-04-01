@@ -43,6 +43,8 @@ ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
 
 {
 	diag_log format["_x: %1",_x];
+	diag_log format["configName _x: %1",configName _x];
+	diag_log format["ITEM_VALUE(configName _x): %1",ITEM_VALUE(configName _x)];
 	if(ITEM_VALUE(configName _x) > 0) then {
 		_inv lbAdd format["%2 [x%1]",ITEM_VALUE(configName _x),localize (getText(_x >> "displayName"))];
 		_inv lbSetData [(lbSize _inv)-1,configName _x];
