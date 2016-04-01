@@ -15,7 +15,7 @@ if(isNull LIFEdisplay) then {[] call life_fnc_hudSetup;};
 LIFEctrl(IDC_UI_XY_UI_EXP) htmlLoad "http://www.grundschule-schnellmark.de/";
 LIFEctrl(IDC_UI_XY_UI_FOOD) progressSetPosition (1 / (100 / life_hunger));
 LIFEctrl(IDC_UI_XY_UI_WATER) progressSetPosition (1 / (100 / life_thirst));
-LIFEctrl(IDC_LIFE_HEALTH_TEXT) progressSetPosition (1 - (damage player));
+LIFEctrl(IDC_LIFE_HEALTH) progressSetPosition (1 - (damage player));
 //LIFEctrl(IDC_LIFE_BAR_EXP) progressSetPosition (1 / (100 / (life_exp +1)));
 LIFEctrl(IDC_UI_XY_UI_BLOOD) progressSetPosition (1 / (100 / (life_blood +1)));
 
