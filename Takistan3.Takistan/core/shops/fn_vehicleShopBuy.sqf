@@ -37,7 +37,7 @@ if(!(isNil _licenses)) then {
 	};
 } foreach _licenses; */
 
-if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];};
+if(_exit) exitWith {hint parseText format[(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licenses];};
 
 if(typeName CASH == "STRING") then {
 	CASH = parseNumber CASH
