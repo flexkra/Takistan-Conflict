@@ -98,6 +98,13 @@ switch(playerSide) do {
 	};
 };
 
+if(typeName BANK == "STRING") then {
+	BANK = parseNumber BANK;
+};
+if(typeName CASH == "STRING") then {
+	CASH = parseNumber CASH;
+};
+
 if(count (SEL(_this,13)) > 0) then {
 	{life_vehicles pushBack _x;} foreach (SEL(_this,13));
 };
