@@ -16,11 +16,11 @@ if(FETCH_CONST(life_adminlevel) < 1) then {
 
 _side = switch(playerSide) do {case west:{"cop"}; case civilian:{"civ"}; case independent:{"med"};};
 
-_inv = CONTROL(2001,2005);
-_lic = CONTROL(2001,2014);
-_near = CONTROL(2001,2022);
-_near_i = CONTROL(2001,2023);
-_mstatus = CONTROL(2001,2015);
+_inv = CONTROL(20001,2005);
+_lic = CONTROL(20001,2014);
+_near = CONTROL(20001,2022);
+_near_i = CONTROL(20001,2023);
+_mstatus = CONTROL(20001,2015);
 _struct = "";
 lbClear _inv;
 lbClear _near;
@@ -42,10 +42,10 @@ _mstatus ctrlSetStructuredText parseText format["<img size='1.3' image='icons\ba
 ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
 
 {
-	diag_log format["_x: %1",_x];
-	diag_log format["configName _x: %1",configName _x];
-	diag_log format["ITEM_VALUE(configName _x): %1",ITEM_VALUE(configName _x)];
 	if(ITEM_VALUE(configName _x) > 0) then {
+		diag_log format["_x: %1",_x];
+		diag_log format["configName _x: %1",configName _x];
+		diag_log format["ITEM_VALUE(configName _x): %1",ITEM_VALUE(configName _x)];
 		_inv lbAdd format["%2 [x%1]",ITEM_VALUE(configName _x),localize (getText(_x >> "displayName"))];
 		_inv lbSetData [(lbSize _inv)-1,configName _x];
 		_icon = M_CONFIG(getText,"VirtualItems",configName _x,"icon");
