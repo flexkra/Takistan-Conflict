@@ -99,8 +99,12 @@ if(_bool) then {
 								if(_item in (assignedItems  player)) then {
 									player addItem _item;
 								} else {
-									player addItem _item;
-									player assignItem _item;
+									if (!(["ACE",_item] call BIS_fnc_inString)) then {
+										player linkItem _item;
+									} else {
+										player addItem _item;
+									};
+								};
 								};
 							};
 						};
