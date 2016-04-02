@@ -17,13 +17,13 @@ class PlayerHUD {
 	objects[] = {};
 	controls[]=
 	{
+		xy_ui_exp,
 		xy_ui_background,
 		xy_ui_health,
 		xy_ui_blood,
 		xy_ui_food,
 		xy_ui_water,
-		xy_ui_level,
-		xy_ui_exp
+		xy_ui_level
 	};
 
 	/* Background */
