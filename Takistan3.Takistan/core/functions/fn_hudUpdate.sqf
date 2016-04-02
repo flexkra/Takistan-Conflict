@@ -77,8 +77,9 @@ if(_exp >= 0.95) then {
 if(life_level == 50) then {
 	LIFEctrl(IDC_UI_XY_UI_EXP) ctrlSetText "icons/level_100.paa";
 };
-LIFEctrl(IDC_UI_XY_UI_FOOD) progressSetPosition (1 / (100 / life_hunger));
-LIFEctrl(IDC_UI_XY_UI_WATER) progressSetPosition (1 / (100 / life_thirst));
+LIFEctrl(IDC_UI_XY_UI_FOOD) progressSetPosition (life_hunger/100);
+LIFEctrl(IDC_UI_XY_UI_WATER) progressSetPosition (life_thirst/100);
 LIFEctrl(IDC_LIFE_HEALTH) progressSetPosition (1 - (damage player));
-LIFEctrl(IDC_UI_XY_UI_BLOOD) progressSetPosition (1 / (100 / (life_blood +1)));
+LIFEctrl(IDC_UI_XY_UI_BLOOD) progressSetPosition (life_blood/100);
 LIFEctrl(IDC_UI_XY_UI_LEVEL) ctrlsetText format["%1", life_level];
+LIFEctrl(IDC_UI_XY_UI_LEVEL) ctrlSetFontHeight 2;
