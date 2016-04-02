@@ -1106,6 +1106,17 @@ class VirtualItems {
         icon = "";
     };
 
+    class strahler {
+        variable = "strahler" ;
+        displayName = "STR_Item_Strahler";
+        weight = 3;
+        buyPrice = 10;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "";
+    };
+
     // Transporte
 
     class pistolenlieferung {
