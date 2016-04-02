@@ -798,7 +798,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = false;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_getreide.paa";
     };
 
     class wasser {
@@ -991,7 +991,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = false;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_gehaeuse.paa";
     };
 
     class behaelter {
@@ -1002,7 +1002,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = false;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_behaelter.paa";
     };
 
     class battery {
@@ -1081,7 +1081,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_barricade.paa";
     };
 
     class barrier {
@@ -1092,7 +1092,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_barrier-paa";
     };
 
     class tape {
@@ -1103,7 +1103,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_flatterband.paa";
     };
 
     class strahler {
@@ -1114,7 +1114,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "";
+        icon = "icons\ico_strahler.paa";
     };
 
     // Transporte
