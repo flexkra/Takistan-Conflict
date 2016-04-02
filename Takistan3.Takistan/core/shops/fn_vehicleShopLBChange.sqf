@@ -64,9 +64,9 @@ _colorArray = M_CONFIG(getArray,CONFIG_LIFE_VEHICLES,_classNameLife,"textures");
 if(_className in (LIFE_SETTINGS(getArray,"vehicleShop_rentalOnly"))) then {
 	ctrlEnable [2309,false];
 } else {
-	if(!(life_veh_shop select 3)) then {
+	//if(!(life_veh_shop select 3)) then {
 		ctrlEnable [2309,true];
-	};
+	//};
 };
 
 lbSetCurSel[2304,0];
