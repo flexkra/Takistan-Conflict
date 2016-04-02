@@ -33,6 +33,7 @@ _sellPrice = switch(playerSide) do {
 
 diag_log format["_sellPrice: %1",_sellPrice];
 diag_log format["typeName _sellPrice: %1",typeName _sellPrice];
+diag_log format["BANK: %1",BANK];
 diag_log format["typeName BANK: %1",typeName BANK];
 
 if(!(EQUAL(typeName _sellPrice,typeName 0)) OR _sellPrice < 1) then {_sellPrice = 1000};
