@@ -65,7 +65,7 @@ class VirtualShops {
 
     class medic {
         name = "STR_Shops_Medic";
-        side = "civ";
+        side = "med";
         license = "";
         level[] = { "", "", -1, "" };
         items[] = { "burger", "cola", "fuelFull", "strahler", "barrier", "barricade", "tape",  "lockpick" };
