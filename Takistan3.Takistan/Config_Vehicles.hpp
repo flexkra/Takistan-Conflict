@@ -48,9 +48,9 @@ class CarShops {
     class med_shop {
         side = "med";
         vehicles[] = {
-            { "l_mas_cars_LR_soft_Med", 100, "none", { "life_mediclevel", 1 }},
+            { "I_mas_cars_LR_soft_Med", 100, "none", { "life_mediclevel", 1 }},
             { "RDS_S1203_Civ_02", 100, "none", { "life_mediclevel", 1 }},
-            { "B_mas_cars_Hilux_Med ", 125, "none", { "life_mediclevel", 2 }},
+            { "B_mas_cars_Hilux_Med", 125, "none", { "life_mediclevel", 2 }},
             { "B_mas_cars_LR_Med", 125, "none", { "life_mediclevel", 2 }},
             { "I_mas_cars_UAZ_Med", 150, "none", { "life_mediclevel", 3 }},
             { "B_mas_HMMWV_MEV", 200, "none", { "life_mediclevel", 4 }},
@@ -61,10 +61,10 @@ class CarShops {
     class med_air_hs {
         side = "med";
         vehicles[] = {
-            { "B_mas_UH1Y_MEV_F", 100, "none", { "life_mediclevel", 2 }},
             { "GR_Bell412_1", 100, "none", { "life_mediclevel", 1 }},
-            { "UH1H", 100, "none", { "life_mediclevel", 2 }},
-            { "RHS_UH60M_MEV_d ", 100, "none", { "life_mediclevel", 3 }},
+            { "B_mas_UH1Y_MEV_F", 100, "none", { "life_mediclevel", 2 }},
+            //{ "UH1H", 100, "none", { "life_mediclevel", 2 }},
+            //{ "RHS_UH60M_MEV_d", 100, "none", { "life_mediclevel", 3 }},
             { "RHS_UH60M_MEV", 100, "none", { "life_mediclevel", 3 }},
             { "B_mas_UH60M_MEV", 100, "none", { "life_mediclevel", 4 }}
         };
@@ -92,7 +92,7 @@ class CarShops {
             { "B_G_Offroad_01_armed_F", 11000, "none", { "life_level", 29 }},
             { "DAR_MK27T", 27000, "none", { "life_level", 30 }},
             { "C_Hatchback_01_F", 3000, "none", { "life_level", 33 }},
-            { "_Truck_01_ammo_F", 35000, "none", { "life_level", 35 }},
+            { "B_Truck_01_ammo_F", 35000, "none", { "life_level", 35 }},
             { "C_SUV_01_F", 4500, "none", { "life_level", 36 }},
             { "max_Dodge_multy", 6750, "none", { "life_level", 39 }},
             { "I_mas_cars_UAZ_SPG9", 15000, "none", { "life_level", 40 }},
@@ -516,6 +516,22 @@ class LifeCfgVehicles {
   class O_MRAP_02_F {
         vItemSpace = 10;
         storageFee[] = { 350, 0, 0, 0 };
+        garageSell[] = { 0, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+  class RDS_S1203_Civ_02 {
+        vItemSpace = 10;
+        storageFee[] = { 0, 0, 0, 0 };
+        garageSell[] = { 0, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+    class B_mas_cars_Hilux_Med {
+        vItemSpace = 10;
+        storageFee[] = { 0, 0, 0, 0 };
         garageSell[] = { 0, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
