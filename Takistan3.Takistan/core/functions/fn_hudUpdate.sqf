@@ -87,6 +87,6 @@ if(playerSide == civilian) then {
 if(playerSide == west) then {
 	LIFEctrl(IDC_UI_XY_UI_EXP) ctrlSetText "icons\ico_usarmy.paa";
 };
-if(playerSide == east) then {
+if(playerSide == GUER) then {
 	LIFEctrl(IDC_UI_XY_UI_EXP) ctrlSetText "icons\ico_medics.paa";
 };
