@@ -21,6 +21,7 @@ LIFEctrl(IDC_UI_XY_UI_LEVEL) ctrlsetText format["%1", life_level];
 LIFEctrl(IDC_UI_XY_UI_LEVEL) ctrlSetFontHeight 2;
 
 _exp = (life_exp+1)/100;
+diag_log format["%1",_exp];
 if(_exp < 0.05) then {
 	LIFEctrl(IDC_UI_XY_UI_EXP) ctrlSetText "icons\level_0.paa";
 };
