@@ -9,9 +9,6 @@ private["_spCfg","_sp","_spawnPos"];
 closeDialog 0;
 cutText ["","BLACK IN"];
 
-diag_log "confirmed";
-diag_log format["life_spawn_point: %1", life_spawn_point];
-
 if(count life_spawn_point == 0) then {
 	private["_sp","_spCfg"];
 	_spCfg = [playerSide] call life_fnc_spawnPointCfg;

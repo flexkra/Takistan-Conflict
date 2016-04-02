@@ -30,17 +30,9 @@ _sellPrice = switch(playerSide) do {
 	case east: {SEL(M_CONFIG(getArray,CONFIG_LIFE_VEHICLES,_vehicleLife,"garageSell"),3)};
 };
 
-
-diag_log format["_sellPrice: %1",_sellPrice];
-diag_log format["typeName _sellPrice: %1",typeName _sellPrice];
-diag_log format["BANK: %1",BANK];
-diag_log format["typeName BANK: %1",typeName BANK];
-
-if(!(EQUAL(typeName _sellPrice,typeName 0)) OR _sellPrice < 1) then {_sellPrice = 1000};
+if(!(EQUAL(typeName _sellPrice,typeName 0)) OR _sellPrice < 1) then {_sellPrice = 100};
 [_vid,_pid,_sellPrice,player,life_garage_type] remoteExecCall ["TON_fnc_vehicleDelete",RSERV];
 hint format[localize "STR_Garage_SoldCar",[_sellPrice] call life_fnc_numberText];
 ADD(BANK,_sellPrice);
-diag_log format["BANK2: %1",BANK];
-diag_log format["typeName BANK2: %1",typeName BANK];
 life_action_delay = time;
 closeDialog 0;

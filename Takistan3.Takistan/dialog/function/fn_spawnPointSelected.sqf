@@ -10,13 +10,8 @@ private["_control","_selection","_spCfg","_sp"];
 _control = [_this,0,controlNull,[controlNull]] call BIS_fnc_param;
 _selection = [_this,1,0,[0]] call BIS_fnc_param;
 
-diag_log format["_control: %1", _control];
-diag_log format["selection: %1", _selection];
-
 _spCfg = [playerSide] call life_fnc_spawnPointCfg;
 _sp = _spCfg select _selection;
-
-diag_log format["_sp: %1", _sp];
 
 [((findDisplay 38500) displayCtrl 38502),1,0.1,getMarkerPos (_sp select 0)] call life_fnc_setMapPosition;
 life_spawn_point = _sp;
