@@ -124,8 +124,9 @@ class CarShops {
     class civ_air {
         side = "civ";
         vehicles[] = {
-            { "GR_Mi8_1", 15000, "none", { "life_level", 32 }},
-            { "GR_Mi_171_2", 30000, "none", { "life_level", 49 }}
+            { "GR_Mi8_1", 15000, "none", { "life_level", 24 }},
+            { "GR_Mi_171_2", 30000, "none", { "life_level", 32 }},
+            { "O_Heli_Light_02_unarmed_F", 80000, "none", { "life_level", 49 }}
         };
     };
 
@@ -508,6 +509,15 @@ class LifeCfgVehicles {
         vItemSpace = 10;
         storageFee[] = { 350, 0, 0, 0 };
         garageSell[] = { 10000, 10000, 10000, 10000 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+
+    class O_Heli_Light_02_unarmed_F {
+        vItemSpace = 10;
+        storageFee[] = { 500, 0, 0, 0 };
+        garageSell[] = { 20000, 20000, 20000, 20000 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
