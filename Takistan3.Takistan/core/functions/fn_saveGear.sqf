@@ -149,6 +149,7 @@ _return pushBack _pItems;
 _return pushBack _hItems;
 if(EQUAL(LIFE_SETTINGS(getNumber,"save_virtualItems"),1)) then {
     _return pushBack _yItems;
+    diag_log format["_yItems: %1", _yItems];
 } else {
     _return pushBack [];
 };
