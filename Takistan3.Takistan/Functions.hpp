@@ -105,6 +105,7 @@ class Life_Client_Core
 		class gather {};
 		class getWasser {};
 		class torturePerson {};
+		class craftAction {};
 	};
 
 	class Config
