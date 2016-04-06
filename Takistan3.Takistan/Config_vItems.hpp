@@ -995,7 +995,7 @@ class VirtualItems {
     };
 
     class gehaeuse {
-        variable = ;
+        variable = "gehaeuse";
         displayName = "STR_Item_Gehaeuse";
         weight = 3;
         buyPrice = 50;
@@ -1006,7 +1006,7 @@ class VirtualItems {
     };
 
     class behaelter {
-        variable = ;
+        variable = "behaelter";
         displayName = "STR_Item_Behaelter";
         weight = 3;
         buyPrice = 50;
