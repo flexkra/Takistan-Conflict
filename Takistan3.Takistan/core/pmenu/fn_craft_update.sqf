@@ -28,6 +28,7 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 			//_str = [_matsNeed select _i] call life_fnc_varToStr;
 			_str = ITEM_NAME(_matsNeed select _i);
 			diag_log format["str: %1",_str];
+			diag_log format["_matsNeed: %1",_matsNeed];
 			_matsNum = _matsNeed select _i+1;
 			diag_log format["matsNum: %1",_matsNum];
 			_struct = _struct + format["%1x %2<br/>",_matsNum,_str];
