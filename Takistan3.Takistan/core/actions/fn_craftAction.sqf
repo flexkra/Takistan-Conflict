@@ -24,7 +24,6 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 	if(_item == _x select 0)then
 	{
 		_matsNeed = _x select 1;
-		diag_log format["_matsNeed: %1",_matsNeed];
 		_invSize = count _matsNeed;
 		for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
 			_mat = _matsNeed select _i;
@@ -33,9 +32,6 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 			_matsNum = _matsNeed select _i+1;
 			_matName = ITEM_VARNAME(_mat);
 			_matInv = ITEM_VALUE(_mat);
-			diag_log format["_matName: %1",_matName];
-			diag_log format["_matInv: %1",_matInv ];
-			diag_log format["_matsNum: %1",_matsNum];
 			if(_matInv < _matsNum) exitWith {_allMaterial = false;};
 
 		};
@@ -103,7 +99,7 @@ _removeItemSuccess = true;
 _invSize = count _oldItem;
 for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
 	diag_log format["_handledItem: %1",_handledItem];
-	_handledItem = [_oldItem select _i,1] call life_fnc_varHandle;
+	_handledItem = _oldItem select _i;
 	if(!([false,_handledItem,_oldItem select _i+1] call life_fnc_handleInv)) exitWith {_removeItemSuccess = false;};
 };
 if(!_removeItemSuccess) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
@@ -130,7 +126,7 @@ if(_itemFilter == "backpack") then{
 };
 
 if(_itemFilter == "item") then{
-	_handledItem = [_newItem,1] call life_fnc_varHandle;
+	_handledItem = _newItem;
 	[true,_handledItem,1] call life_fnc_handleInv;
 };
 
@@ -181,7 +177,7 @@ if(_itemFilter == "weapon") then{
 		}else{
 			5 cutText ["","PLAIN"];
 			for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
-				_handledItem = [_oldItem select _i,1] call life_fnc_varHandle;
+				_handledItem = _oldItem select _i;
 				[true,_handledItem,_oldItem select _i+1] call life_fnc_handleInv;
 			};
 			life_is_processing = false;
