@@ -44,8 +44,10 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 		_matsNeed = _x select 1;
 		_invSize = count _matsNeed;
 		for [{_i = 0},{_i < _invSize - 1},{_i = _i + 2}] do {
-			_str = [_matsNeed select _i] call life_fnc_varToStr;
+			_str = ITEM_NAME(_matsNeed select _i);
+			diag_log format["%1",_str];
 			_matsNum = _matsNeed select _i+1;
+			diag_log format["%1",_matsNum];
 			_struct = _struct + format["%1x %2<br/>",_matsNum,_str];
 
 		};
