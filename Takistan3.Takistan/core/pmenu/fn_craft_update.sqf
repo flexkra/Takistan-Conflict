@@ -26,12 +26,17 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 		_invSize = count _matsNeed;
 		for [{_i = 0},{_i < _invSize - 1},{_i = _i + 2}] do {
 			//_str = [_matsNeed select _i] call life_fnc_varToStr;
-			_str = ITEM_NAME(_matsNeed select _i);
-			diag_log format["str: %1",_str];
+			_mat = _matsNeed select _i
 			diag_log format["_matsNeed: %1",_matsNeed];
+			diag_log format["_mat: %1",_mat];
+			diag_log format["_matsNeed select _i: %1",_matsNeed select _i];
+			_str = ITEM_NAME(_mat);
+			diag_log format["str: %1",_str];
+			diag_log format["_mat: %1",_mat];
 			_matsNum = _matsNeed select _i+1;
 			diag_log format["matsNum: %1",_matsNum];
 			_struct = _struct + format["%1x %2<br/>",_matsNum,_str];
+			diag_log format["_struct: %1",_struct];
 
 		};
 	};
