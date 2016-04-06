@@ -15,8 +15,7 @@ _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case 
 
 _packet pushBack _array;
 
-_saveGear = [] call life_fnc_saveGear;
-waitUntil {scriptDone _saveGear};
+[] call life_fnc_saveGear;
 _packet pushBack life_gear;
 
 _array = [];
