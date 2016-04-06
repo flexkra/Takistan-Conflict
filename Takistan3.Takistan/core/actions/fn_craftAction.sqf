@@ -29,7 +29,7 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 			//_str = [_matsNeed select _i] call life_fnc_varToStr;
 			_matsNum = _matsNeed select _i+1;
 			_mat = ITEM_VARNAME(_mat);
-			if((missionNamespace getVariable (_mat select _i)) < _matsNum) exitWith {_allMaterial = false;};
+			if((missionNamespace getVariable _mat) < _matsNum) exitWith {_allMaterial = false;};
 
 		};
 	};
