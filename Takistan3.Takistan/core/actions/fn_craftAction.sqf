@@ -35,7 +35,7 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 			_matInv = ITEM_VALUE(_mat);
 			diag_log format["_matName: %1",_matName];
 			diag_log format["_matInv: %1",_matInv ];
-			diag_log format["_matsNum = _matsNeed select _i+1: %1",_matsNum = _matsNeed select _i+1];
+			diag_log format["_matsNum: %1",_matsNum];
 			if(_matInv < _matsNum) exitWith {_allMaterial = false;};
 
 		};
