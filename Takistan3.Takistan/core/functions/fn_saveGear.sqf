@@ -133,9 +133,8 @@ if(count (PISTOL_ITEMS) > 0) then {
 };
 
 {
-    _val = ITEM_VALUE(_x);
-    if (_val > 0) then {
-		_yItems pushBack [_x,_val];
+    if(ITEM_VALUE(configName _x) > 0) then {
+		_yItems pushBack [configName _x,_val];
     };
 } foreach ("true" configClasses (missionConfigFile >> "VirtualItems"));
 
