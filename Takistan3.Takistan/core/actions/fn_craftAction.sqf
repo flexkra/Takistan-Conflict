@@ -69,9 +69,11 @@ if(_itemFilter == "weapon" && !(player canAdd _newItem) || currentWeapon player 
 
 _oldItem = _matsNeed;
 _newItem = _item;
+diag_log format["_oldItem: %1",_oldItem];
+diag_log format["_newItem: %1",_newItem];
 
 if(_itemFilter == "item") then{
-	_itemName = [_newItem] call life_fnc_varToStr;
+	_itemName = ITEM_NAME(_newItem);
 } else {
 	_itemInfo = [_newItem] call life_fnc_fetchCfgDetails;
 	_itemName = _itemInfo select 1;
@@ -96,7 +98,7 @@ _cP = 0.01;
 _removeItemSuccess = true;
 _invSize = count _oldItem;
 for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
-
+	diag_log format["_handledItem: %1",_handledItem];
 	_handledItem = [_oldItem select _i,1] call life_fnc_varHandle;
 	if(!([false,_handledItem,_oldItem select _i+1] call life_fnc_handleInv)) exitWith {_removeItemSuccess = false;};
 };
