@@ -25,11 +25,11 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 		_matsNeed = _x select 1;
 		_invSize = count _matsNeed;
 		for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
-
-			_str = [_matsNeed select _i] call life_fnc_varToStr;
+			_mat = _matsNeed select _i;
+			//_str = [_matsNeed select _i] call life_fnc_varToStr;
 			_matsNum = _matsNeed select _i+1;
-
-			if((missionNamespace getVariable (_matsNeed select _i)) < _matsNum) exitWith {_allMaterial = false;};
+			_mat = ITEM_VARNAME(_mat);
+			if((missionNamespace getVariable (_mat select _i)) < _matsNum) exitWith {_allMaterial = false;};
 
 		};
 	};

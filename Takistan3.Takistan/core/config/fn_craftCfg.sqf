@@ -22,32 +22,32 @@ switch(_craft) do
 		if (life_quest >= 9) then
 			{
 			_return pushBack
-			["DemoCharge_Remote_Mag", ["life_inv_explosive",5,"life_inv_battery",2,"life_inv_behaelter",4]];
+			["DemoCharge_Remote_Mag", ["explosive",5,"battery",2,"behaelter",4]];
 			};
 		if ((life_level >= 20) && (life_quest >= 32)) then
 			{
 			_return pushBack
-			["IEDLandSmall_Remote_Mag", ["life_inv_explosive",1,"life_inv_battery",1,"life_inv_behaelter",1]];
+			["IEDLandSmall_Remote_Mag", ["explosive",1,"battery",1,"behaelter",1]];
 			};
 		if (life_level >= 26 && (life_quest >= 32)) then
 			{
 			_return pushBack
-			["SatchelCharge_Remote_Mag", ["life_inv_explosive",7,"life_inv_battery",2,"life_inv_behaelter",6]];
+			["SatchelCharge_Remote_Mag", ["explosive",7,"battery",2,"behaelter",6]];
 			};
 		if (life_level >= 30 && (life_quest >= 32)) then
 			{
 			_return pushBack
-			["IEDUrbanSmall_Remote_Mag", ["life_inv_explosive",1,"life_inv_battery",1,"life_inv_behaelter",1,"life_inv_altpapier",1]];
+			["IEDUrbanSmall_Remote_Mag", ["explosive",1,"battery",1,"behaelter",1,"altpapier",1]];
 			};
 		if (life_level >= 35 && (life_quest >= 32)) then
 			{
 			_return pushBack
-			["IEDLandBig_Remote_Mag", ["life_inv_explosive",3,"life_inv_battery",1,"life_inv_behaelter",3,"life_inv_blumenende",6]];
+			["IEDLandBig_Remote_Mag", ["explosive",3,"battery",1,"behaelter",3,"blumenende",6]];
 			};
 		if (life_level >= 47 && (life_quest >= 32)) then
 			{
 			_return pushBack
-			["IEDUrbanBig_Remote_Mag", ["life_inv_explosive",3,"life_inv_battery",1,"life_inv_behaelter",3,"life_inv_altpapier",6]];
+			["IEDUrbanBig_Remote_Mag", ["explosive",3,"battery",1,"behaelter",3,"altpapier",6]];
 			};
 
 	};
