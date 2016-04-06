@@ -902,6 +902,17 @@ class VirtualItems {
         icon = "icons\ico_gunpowder.paa";
     };
 
+    class explosive {
+        variable = "explosive";
+        displayName = "STR_Item_Explosive";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_gunpowder.paa";
+    };
+
     // Essen und Trinken
 
     class fladen {
