@@ -24,6 +24,7 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 	if(_item == _x select 0)then
 	{
 		_matsNeed = _x select 1;
+		diag_log format["_matsNeed: %1",_matsNeed];
 		_invSize = count _matsNeed;
 		for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
 			_mat = _matsNeed select _i;
@@ -31,10 +32,11 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 			//_str = [_matsNeed select _i] call life_fnc_varToStr;
 			_matsNum = _matsNeed select _i+1;
 			_matName = ITEM_VARNAME(_mat);
+			_matInv = ITEM_VALUE(_mat);
 			diag_log format["_matName: %1",_matName];
-			diag_log format["missionNamespace getVariable _mat: %1",missionNamespace getVariable _mat];
+			diag_log format["_matInv: %1",_matInv ];
 			diag_log format["_matsNum = _matsNeed select _i+1: %1",_matsNum = _matsNeed select _i+1];
-			if((missionNamespace getVariable _mat) < _matsNum) exitWith {_allMaterial = false;};
+			if(_matInv < _matsNum) exitWith {_allMaterial = false;};
 
 		};
 	};
