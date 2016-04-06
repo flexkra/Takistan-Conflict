@@ -59,7 +59,7 @@ switch(_craft) do
 		if (life_quest >= 9) then
 			{
 			_return pushBack
-			["V_HarnessOGL_brn", ["life_inv_explosive",1,"life_inv_guertel",1]];
+			["V_HarnessOGL_brn", ["explosive",1,"guertel",1]];
 			};
 	};
 
@@ -68,7 +68,7 @@ switch(_craft) do
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
-				["tf_anprc148jem", ["life_inv_gehaeuse",1,"life_inv_battery",1,"life_inv_antenne",1]]
+				["tf_anprc148jem", ["gehaeuse",1,"battery",1,"antenne",1]]
 			];
 	};
 
