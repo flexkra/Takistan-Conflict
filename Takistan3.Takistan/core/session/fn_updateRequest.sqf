@@ -39,4 +39,6 @@ switch (playerSide) do {
 	};
 };
 
+diag_log format["_packet: %1",_packet]
+
 _packet remoteExecCall ["DB_fnc_updateRequest",RSERV];
