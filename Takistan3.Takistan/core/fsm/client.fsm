@@ -9,8 +9,8 @@ link0[] = {0,1};
 link1[] = {1,2};
 link2[] = {2,3};
 link3[] = {3,2};
-globals[] = {0.000000,0,0,0,0,640,480,1,26,6316128,1,-531.894897,433.759613,405.916382,-198.553436,1403,894,1};
-window[] = {2,-1,-1,-1,-1,844,26,1466,26,3,1421};
+globals[] = {0.000000,0,0,0,0,640,480,1,26,6316128,1,-531.894897,433.759613,405.916382,-198.553436,1031,646,1};
+window[] = {2,-1,-1,-32000,-32000,981,109,1549,163,1,1049};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -61,7 +61,8 @@ class FSM
                                         to="Split";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"(time - _lastcheck) > ((getNumber(missionConfigFile >> ""Life_Settings"" >> ""paycheck_period"")) * 60)"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"life_paytime = life_paytime + 5;" \n
+                                        action=/*%FSM<ACTION""">*/"if(playerSide == civilian) then {" \n
+                                         "life_paytime = life_paytime + 5;" \n
                                          "if (life_paytime >= 60) then {" \n
                                          "  life_payday = (life_payday + 1); " \n
                                          "  life_atmbank = life_atmbank + 1000;" \n
@@ -70,6 +71,9 @@ class FSM
                                          "  [""Paycheck"",[""Payday erhalten."",5]] call bis_fnc_showNotification; " \n
                                          "  [format [""<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 1000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden"",life_payday],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;" \n
                                          " life_paytime = 0;" \n
+                                         "};" \n
+                                         "} else {" \n
+                                         "  life_atmbank = 100;" \n
                                          "};" \n
                                          "_lastcheck = time;" \n
                                          "" \n
