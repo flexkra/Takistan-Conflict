@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp"
 /*
 	File: fn_craft_updateFilter.sqf
 	Description: Crafting System
