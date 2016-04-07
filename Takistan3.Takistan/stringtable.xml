@@ -7042,4 +7042,30 @@
        <Portuguese>You already have an uniform ! Put it on the ground before crafting a new.</Portuguese>
       </Key>
     </Package>
+    <Package name="Container">
+      <Key ID='STR_Container_SelectItem'>
+          <Original>No item was selected</Original>
+          <German>Kein Gegenstand ausgewählt</German>
+      </Key>
+      <Key ID='STR_Container_NoSpace'>
+          <Original>There is no Space in your locker</Original>
+          <German>Du hast keinen Platz mehr frei</German>
+      </Key>
+      <Key ID='STR_Container_NotEnough'>
+          <Original>There is no Space in your locker</Original>
+          <German>Du hast keinen Platz mehr frei</German>
+      </Key>
+      <Key ID='STR_Container_Sell'>
+          <Original>You sold your locker for %1</Original>
+          <German>Du hast deinen Container für %1 verkauft</German>
+      </Key>
+      <Key ID='STR_Container_Take'>
+          <Original>Take</Original>
+          <German>Nehmen</German>
+      </Key>
+      <Key ID='STR_Container_Store'>
+          <Original>Store</Original>
+          <German>Lagern</German>
+      </Key>
+    </Package>
 </Project>
