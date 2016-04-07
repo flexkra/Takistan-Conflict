@@ -30,9 +30,15 @@ class Life_Settings {
     house_limit = 5; //Maximum amount of houses a player can own.
 
     /* Gang related settings */
-    gang_price = 50000; //Price for creating a gang, remember they are persistent so keep it reasonable to avoid millions of gangs.
+    gang_price = 25000; //Price for creating a gang, remember they are persistent so keep it reasonable to avoid millions of gangs.
     gang_upgradeBase = 20000; //The base cost for upgrading slots in a gang
     gang_upgradeMultiplier = 2.5; //Not sure if in use?
+
+    /* Container Stuff */
+    container_price = 20000;
+    container_period_price = 200;
+    container_type_size = 20;
+    container_init_days = 7;
 
     /* Player-related systems */
     enable_fatigue = false; //Set to false to disable the ARMA 3 false system.

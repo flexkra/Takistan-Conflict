@@ -56,6 +56,7 @@ switch(_mode) do {
 		_packet set[2,life_container_inventory];
 		_packet set[4,life_container_gear];
 		_packet set[5,life_container_duration];
+		_packet set[6,life_container_type];
 	};
 };
 

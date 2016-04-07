@@ -358,4 +358,16 @@ class Life_Client_Core
 		class wireTransfer {};
 		class gangWithdraw {};
 	};
+
+	class Containers
+	{
+		file = "core/containers";
+		class buyContainer {};
+		class buyContainerDuration {};
+		class containerMenu {};
+		class containerStore {};
+		class containerTake {};
+		class initContainer {};
+		class sellContainer {};
+	};
 };

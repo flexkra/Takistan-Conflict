@@ -51,6 +51,7 @@
 #define ITEM_SELLPRICE(varName) M_CONFIG(getNumber,"VirtualItems",varName,"sellPrice")
 #define ITEM_BUYPRICE(varName) M_CONFIG(getNumber,"VirtualItems",varName,"buyPrice")
 #define ITEM_NAME(varName) M_CONFIG(getText,"VirtualItems",varName,"displayName")
+#define ITEM_WEIGHT(varName) M_CONFIG(getNumber,"VirtualItems",varName,"weight")
 
 //Condition Macros
 #define EQUAL(condition1,condition2) condition1 isEqualTo condition2
