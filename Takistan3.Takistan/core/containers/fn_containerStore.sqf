@@ -37,6 +37,6 @@ if(!(_found)) then {
   _array pushBack _item;
   _array pushBack 1;
   life_container_inventory pushBack _array;
-}
+};
 
 [] call life_fnc_containerMenu;
