@@ -361,7 +361,7 @@ class Life_Client_Core
 
 	class Containers
 	{
-		file = "core/containers";
+		file = "core\containers";
 		class buyContainer {};
 		class buyContainerDuration {};
 		class containerMenu {};
