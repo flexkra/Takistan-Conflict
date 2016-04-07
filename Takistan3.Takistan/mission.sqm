@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=7330;
+		nextID=7462;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7563.1323,349.84125,1799.1096};
-		dir[]={-0.19424751,-0.30086061,0.93367851};
-		up[]={-0.061280638,0.95366812,0.29455382};
-		aside[]={0.97903794,-6.8859663e-008,0.20368439};
+		pos[]={5306.1782,148.04703,6175.0815};
+		dir[]={0.85782158,-0.42007488,0.29643506};
+		up[]={0.39704576,0.90747172,0.13720636};
+		aside[]={0.32665157,-1.0243384e-006,-0.94525379};
 	};
 };
 binarizationWanted=0;
@@ -143,7 +143,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2841;
+		items=2843;
 		class Item0
 		{
 			dataType="Marker";
@@ -957,7 +957,7 @@ class Mission
 			position[]={7098.4746,47.20414,12646.484};
 			name="sv_pos1";
 			type="Empty";
-			angle=217.63313;
+			angle=217.63312;
 			id=74;
 		};
 		class Item75
@@ -6087,7 +6087,7 @@ class Mission
 			text="Gas Station";
 			type="loc_Fuelstation";
 			colorName="ColorRed";
-			angle=112.09412;
+			angle=112.09411;
 			id=601;
 		};
 		class Item602
@@ -6114,7 +6114,7 @@ class Mission
 			position[]={5858.3223,83.040001,11399.883};
 			name="cop_air_1";
 			type="Empty";
-			angle=57.036118;
+			angle=57.036114;
 			id=604;
 		};
 		class Item605
@@ -6123,7 +6123,7 @@ class Mission
 			position[]={5850.9971,83.040001,11391.59};
 			name="cop_air_2";
 			type="Empty";
-			angle=57.036118;
+			angle=57.036114;
 			id=605;
 		};
 		class Item606
@@ -47576,6 +47576,60 @@ class Mission
 			};
 			id=7329;
 			type="RoadBarrier_F";
+		};
+		class Item2841
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5301.5439,145.74199,6153.1221};
+				angles[]={6.259192,0,0.023993526};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=7364;
+			type="AmmoCrates_NoInteractive_Large";
+		};
+		class Item2842
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5308.8857,146.63371,6175.7041};
+				angles[]={0,2.2233748,6.2826962};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'player getVariable [""life_container_duration"",0] > 0'];";
+			};
+			id=7460;
+			type="plp_ct_HighSecSmallBlack";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
