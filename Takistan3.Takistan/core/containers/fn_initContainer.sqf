@@ -5,7 +5,7 @@
 */
 private[];
 
-if(count life_container = 0) exitWith {};
+if(count life_container == 0) exitWith {};
 life_container_inventory = life_container select 0;
 life_container_gear = life_container select 1;
 life_container_duration = life_container select 2;

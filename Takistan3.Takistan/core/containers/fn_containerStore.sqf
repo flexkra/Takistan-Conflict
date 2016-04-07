@@ -33,7 +33,7 @@ _found = false;
 } forEach life_container_inventory;
 
 if(!(_found)) then {
-  _array = []
+  _array = [];
   _array pushBack _item;
   _array pushBack 1;
   life_container_inventory pushBack _array;
