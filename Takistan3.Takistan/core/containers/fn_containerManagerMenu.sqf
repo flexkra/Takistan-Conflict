@@ -95,7 +95,7 @@ _durPrice = _periodPrice * 6 * _durDays;
 _durTextCosts ctrlSetText format[localize "STR_Container_Costs",_durPrice];
 
 //Upgrade Price
-_upPrice = floor (_buyPrice * 1.5^(life_container_type+1));
+_upPrice = floor (_buyPrice * 1.5^(life_container_type));
 _upTextCosts ctrlSetText format[localize "STR_Container_Costs",_upPrice];
 
 

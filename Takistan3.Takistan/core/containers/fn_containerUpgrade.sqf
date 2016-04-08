@@ -7,7 +7,7 @@ private[];
 
 _buyPrice = LIFE_SETTINGS(getNumber,"container_price");
 
-_upPrice = floor (_buyPrice * 1.5^(life_container_type+1));
+_upPrice = floor (_buyPrice * 1.5^(life_container_type));
 
 if(BANK < _upPrice) exitWith {hint format[localize "STR_GNOTF_NotEnoughMoney",(_upPrice - BANK)]};
 

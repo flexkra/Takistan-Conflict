@@ -12,7 +12,7 @@ if(_uid == "") exitWith {};
 
 
 [_uid] remoteExec ["TON_fnc_deleteContainer",RSERV];
-_upPrice = _price * 1.5^(life_container_type-1);
+_upPrice = _price * 1.5^(life_container_type);
 _sellPrice = floor (_upPrice/2);
 ADD(CASH,_sellPrice);
 
