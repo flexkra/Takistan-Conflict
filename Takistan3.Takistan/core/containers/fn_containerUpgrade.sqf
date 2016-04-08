@@ -14,5 +14,5 @@ if(BANK < _upPrice) exitWith {hint format[localize "STR_GNOTF_NotEnoughMoney",(_
 SUB(BANK,_upPrice);
 ADD(life_container_type,1);
 
-hint format[localize "STR_Container_UpgradeBuy",_upPrice]
+hint format[localize "STR_Container_UpgradeBuy",_upPrice];
 [] call life_fnc_containerManagerMenu;
