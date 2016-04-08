@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8547.6367,372.72623,2452.2261};
-		dir[]={-0.30716097,-0.57619119,0.75741285};
-		up[]={-0.2165405,0.81731486,0.53395671};
-		aside[]={0.92670709,-1.641456e-008,0.3758162};
+		pos[]={5300.1978,148.51828,6178.353};
+		dir[]={-0.5660271,-0.38767755,-0.72755021};
+		up[]={-0.23805447,0.92179161,-0.30598542};
+		aside[]={-0.78927279,-4.391768e-007,0.6140486};
 	};
 };
 binarizationWanted=0;
@@ -957,7 +957,7 @@ class Mission
 			position[]={7098.4746,47.20414,12646.484};
 			name="sv_pos1";
 			type="Empty";
-			angle=217.63309;
+			angle=217.63307;
 			id=74;
 		};
 		class Item75
@@ -6114,7 +6114,7 @@ class Mission
 			position[]={5858.3223,83.040001,11399.883};
 			name="cop_air_1";
 			type="Empty";
-			angle=57.036106;
+			angle=57.036102;
 			id=604;
 		};
 		class Item605
@@ -6123,7 +6123,7 @@ class Mission
 			position[]={5850.9971,83.040001,11391.59};
 			name="cop_air_2";
 			type="Empty";
-			angle=57.036106;
+			angle=57.036102;
 			id=605;
 		};
 		class Item606
@@ -47597,8 +47597,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5298.7417,146.39342,6176.9063};
-				angles[]={0,3.9003656,6.2826972};
+				position[]={5298.7422,146.39337,6176.9058};
+				angles[]={0,3.900357,6.2826962};
 			};
 			side="Empty";
 			class Attributes
@@ -47606,6 +47606,48 @@ class Mission
 			};
 			id=7462;
 			type="Land_CashDesk_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2843
 		{
@@ -47626,11 +47668,54 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this enableSimultaion false; this allowDamage false; this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						name="container_manager_0";
 						isPlayer=1;
 					};
 					id=7484;
 					type="RDS_Functionary1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -47643,8 +47728,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5299.9199,146.7999,6175.5527};
-				angles[]={0,4.1010852,6.2826972};
+				position[]={5299.9199,146.79987,6175.5532};
+				angles[]={0,4.1010876,6.2826962};
 			};
 			side="Empty";
 			class Attributes
@@ -47652,6 +47737,48 @@ class Mission
 			};
 			id=7489;
 			type="Land_TableDesk_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2845
 		{
@@ -47665,10 +47792,53 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this enableSimultaion false; this allowDamage false; this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				name="container_container_0";
 			};
 			id=7495;
 			type="plp_cts_WoodBoxLightTiny";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2846
 		{
@@ -47676,7 +47846,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6281.4541,59.925282,11144.012};
-				angles[]={0.0080009829,4.7834401,0.0015822123};
+				angles[]={0.0079936078,4.7834415,0.0015882496};
 			};
 			side="Empty";
 			class Attributes
@@ -47684,6 +47854,48 @@ class Mission
 			};
 			id=7505;
 			type="Land_TableDesk_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2847
 		{
@@ -47691,7 +47903,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6281.3931,59.503769,11145.808};
-				angles[]={0.0080009829,4.5827208,0.0015822123};
+				angles[]={0.0079936078,4.5827289,0.0015882496};
 			};
 			side="Empty";
 			class Attributes
@@ -47699,6 +47911,48 @@ class Mission
 			};
 			id=7506;
 			type="Land_CashDesk_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2848
 		{
@@ -47719,13 +47973,33 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this enableSimultaion false; this allowDamage false; this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						name="container_manager_1";
 					};
 					id=7508;
 					type="RDS_Functionary1";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -47744,7 +48018,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -47758,17 +48051,60 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6281.5718,60.450283,11144.206};
-				angles[]={0,4.7897429,0};
+				position[]={6281.5718,60.45042,11144.206};
+				angles[]={0,4.789742,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
-				init="this enableSimultaion false; this allowDamage false; this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				name="container_container_1";
 			};
 			id=7509;
 			type="plp_cts_WoodBoxLightTiny";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2850
 		{
@@ -47782,17 +48118,79 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8534.4023,309.63696,2505.0564};
-						angles[]={0,2.9651043,0};
+						position[]={8534.4023,309.63672,2505.0562};
+						angles[]={0,2.9651051,0};
 					};
 					side="Civilian";
 					flags=3;
 					class Attributes
 					{
-						init="this enableSimultaion false; this allowDamage false; this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						name="container_manager_2";
 					};
 					id=7513;
 					type="RDS_Functionary1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 			};
 			class Attributes
@@ -47805,17 +48203,60 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8534.3457,310.66125,2504.2031};
-				angles[]={0,6.2013359,0};
+				position[]={8534.3457,310.66098,2504.2029};
+				angles[]={0,6.2013292,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
-				init="this enableSimultaion false; this allowDamage false; this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				name="container_container_2";
 			};
 			id=7514;
 			type="plp_cts_WoodBoxLightTiny";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections
