@@ -6,19 +6,17 @@
 	Shows the container menu
 */
 private["_cInv","_pInv","_pIcon","_cIcon","_item","_amount"];
-diag_log "1";
 disableSerialization;
-diag_log "2";
 
-createDialog "container_menu";
+if(!dialog) then {
+	createDialog "container_menu";
+};
 
-diag_log "3";
 _cInv = CONTROL(54000,5401);
 _pInv = CONTROL(54000,5402);
 lbClear _cInv;
 lbClear _pInv;
 
-diag_log "4";
 {
 	if(ITEM_VALUE(configName _x) > 0) then {
 		_pInv lbAdd format["%2 [x%1]",ITEM_VALUE(configName _x),localize (getText(_x >> "displayName"))];
