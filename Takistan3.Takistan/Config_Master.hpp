@@ -13,7 +13,7 @@ class Life_Settings {
     save_veh_gear = false; //Save Gear for vehicles (all sides)?
 
     /* Clothing related settings */
-    clothing_box = true; //true = preview inside a black box.  false = preview on map.
+    clothing_box = false; //true = preview inside a black box.  false = preview on map.
     clothing_masks[] = { };
 
     /* Cop related settings */
