@@ -29,7 +29,7 @@ _found = false;
   	     _x set[1,_cAmount+1];
          _found = true;
     };
-    if(_found) exitWith {};
+    //if(_found) exitWith {};
 } forEach life_container_inventory;
 
 if(!(_found)) then {
