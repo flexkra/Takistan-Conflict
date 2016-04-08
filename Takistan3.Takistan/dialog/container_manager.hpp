@@ -82,7 +82,7 @@ class container_manager {
 		y = 0.412 * safezoneH + safezoneY;
 		w = 0.0154688 * safezoneW;
 		h = 0.022 * safezoneH;
-		onButtonClick = "_t = ctrlText 5453; _t = parseNumber _t; _t = format[""%1"",_t+1]; ctrlSetText[5453,_t];"
+		onButtonClick = "_t = ctrlText 5453; _t = parseNumber _t; _t = format[""%1"",_t+1]; ctrlSetText[5453,_t]; [] call life_fnc_containerManagerMenu;"
 	};
 	class xy_container_manager_addDurationMinus: Life_RscButtonMenu
 	{
@@ -92,11 +92,11 @@ class container_manager {
 		y = 0.412 * safezoneH + safezoneY;
 		w = 0.0154688 * safezoneW;
 		h = 0.022 * safezoneH;
-		onButtonClick = "_t = ctrlText 5453; _t = parseNumber _t; _t = format[""%1"",_t-1]; ctrlSetText[5453,_t];"
+		onButtonClick = "_t = ctrlText 5453; _t = parseNumber _t; _t = format[""%1"",_t-1]; ctrlSetText[5453,_t]; [] call life_fnc_containerManagerMenu;"
 	};
 	class xy_container_manager_addDurationAccept: Life_RscButtonMenu
 	{
-		idc = -1;
+		idc = 54555;
 		text = "$STR_Container_Renew"; //--- ToDo: Localize;
 		x = 0.556719 * safezoneW + safezoneX;
 		y = 0.445 * safezoneH + safezoneY;

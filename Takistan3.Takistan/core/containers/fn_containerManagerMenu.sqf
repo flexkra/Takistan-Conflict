@@ -30,10 +30,19 @@ diag_log format["life_container_duration: %1",life_container_duration];
 diag_log format["life_container_duration <= 0: %1",life_container_duration <= 0];
 diag_log format["_durTextDaysData == 1: %1",_durTextDaysData == 1];
 diag_log format["_durTextDaysData == 10: %1",_durTextDaysData == 10];
+
+//Reset Disable Stuff
+ctrlEnable [5451,true]; //Buy Button
+ctrlEnable [5452,true]; //Sell Button
+ctrlEnable [54555,true]; //Add Button
+ctrlEnable [5455,true]; //Minus Button
+ctrlEnable [5454,true]; //Plus Button
+ctrlEnable [5458,true]; //Upgrade Button
+
 //Disable Stuff
 if(!(life_container_owner)) then { //No Owner
 	ctrlEnable [5452,false]; //Sell Button
-	ctrlEnable [5454,false]; //Add Button
+	ctrlEnable [54555,false]; //Add Button
 	ctrlEnable [5458,false]; //Upgrade Button
 } else {
 	ctrlEnable [5451,false]; //Buy Button
@@ -43,7 +52,7 @@ if(life_container_type == _maxUpgrades) then { //MaxUpgrades
 };
 if(life_container_duration <= 0) then {	//No Time(Reactivate)
 	ctrlEnable [5452,false]; //Sell Button
-	ctrlEnable [5454,false]; //Add Button
+	ctrlEnable [54555,false]; //Add Button
 	ctrlEnable [5458,false]; //Upgrade Button
 };
 if(_durTextDaysData == 1) then {
