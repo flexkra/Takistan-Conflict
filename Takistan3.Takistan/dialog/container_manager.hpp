@@ -43,7 +43,7 @@ class container_manager {
 		y = 0.335 * safezoneH + safezoneY;
 		w = 0.226875 * safezoneW;
 		h = 0.022 * safezoneH;
-		colorBackground[] = {0.9922,0.8902,0.0235,1};
+		colorBackground[] = {0.8275,0.3294,0,1};
 	};
 	class xy_container_manager_buybutton: Life_RscButtonMenu
 	{
