@@ -6,12 +6,13 @@
 	Description:
 	
 */
-private["_index","_item","_size","_cSpace","_itemWeight","_space","_found","_cAmount","_cItem","_array"];
+private["_item","_size","_cSpace","_itemWeight","_space","_found","_cAmount","_cItem","_array"];
 disableSerialization;
 
 if((lbCurSel 5402) == -1) exitWith {hint localize "STR_Container_SelectItem";};
-_index = lbCurSel 5402;
 _item = CONTROL_DATA(5402);
+diag_log format["_item %1",_item];
+diag_log format["typeName _item %1",typeName _item];
 _cSpace = life_container_space;
 _itemWeight = ITEM_WEIGHT(_item);
 _space = life_container_space + _itemWeight;
