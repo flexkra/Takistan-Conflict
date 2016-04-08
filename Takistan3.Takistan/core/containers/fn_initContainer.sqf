@@ -5,12 +5,19 @@
 */
 private["_item","_amount","_weight","_weightAcc"];
 
-if(count life_container == 0) exitWith {};
-diag_log format["life_container: %1",life_container];
-life_container_inventory = life_container select 0;
-life_container_gear = life_container select 1;
-life_container_duration = life_container select 2;
-life_container_type = life_container select 3;
+if(count life_container == 0) then {
+	life_container_inventory = [];
+	life_container_gear = [];
+	life_container_duration = 0;
+	life_container_type = 0;
+} else {
+	diag_log format["life_container: %1",life_container];
+	life_container_inventory = life_container select 0;
+	life_container_gear = life_container select 1;
+	life_container_duration = life_container select 2;
+	life_container_type = life_container select 3;
+};
+
 
 life_container_size = life_container_type * (LIFE_SETTINGS(getNumber,"container_type_size"));
 
