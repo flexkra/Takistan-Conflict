@@ -5,7 +5,6 @@
 */
 private["_item","_amount","_weight","_weightAcc"];
 
-diag_log format["life_container: %1",life_container];
 if(count life_container == 0) then {
 	life_container_inventory = [];
 	life_container_gear = [];
