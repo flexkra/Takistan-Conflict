@@ -47626,7 +47626,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						init="this enableSimultaion false; this allowDamage false; this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
 						isPlayer=1;
 					};
 					id=7484;
@@ -47665,7 +47665,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				init="this enableSimultaion false; this allowDamage false; this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
 			};
 			id=7495;
 			type="plp_cts_WoodBoxLightTiny";
@@ -47719,7 +47719,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						init="this enableSimultaion false; this allowDamage false; this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
 					};
 					id=7508;
 					type="RDS_Functionary1";
@@ -47765,7 +47765,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				init="this enableSimultaion false; this allowDamage false; this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
 			};
 			id=7509;
 			type="plp_cts_WoodBoxLightTiny";
@@ -47789,7 +47789,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						init="this enableSimultaion false; this allowDamage false; this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
 					};
 					id=7513;
 					type="RDS_Functionary1";
@@ -47812,7 +47812,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				init="this enableSimultaion false; this allowDamage false; this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
 			};
 			id=7514;
 			type="plp_cts_WoodBoxLightTiny";

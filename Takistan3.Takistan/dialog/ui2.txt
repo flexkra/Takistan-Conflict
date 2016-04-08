@@ -1,0 +1,224 @@
+/* #Xekuwa
+$[
+	1.063,
+	["container_manager",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[2200,"xy_container_manager_background",[1,"",["0.407187 * safezoneW + safezoneX","0.335 * safezoneH + safezoneY","0.226875 * safezoneW","0.231 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"xy_container_manager_header",[1,"SchlieÃŸfachmanager",["0.407187 * safezoneW + safezoneX","0.335 * safezoneH + safezoneY","0.226875 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2400,"xy_container_manager_buybutton",[1,"BUY",["0.4175 * safezoneW + safezoneX","0.533 * safezoneH + safezoneY","0.0567187 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2401,"xy_container_manager_sellbutton",[1,"SELL",["0.484531 * safezoneW + safezoneX","0.533 * safezoneH + safezoneY","0.0567187 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"xy_container_manager_addDurationTime",[1,"1",["0.587656 * safezoneW + safezoneX","0.412 * safezoneH + safezoneY","0.0103125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2402,"xy_container_manager_addDurationPlusButton",[1,"+",["0.613437 * safezoneW + safezoneX","0.412 * safezoneH + safezoneY","0.0154688 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2403,"xy_container_manager_addDurationMinus",[1,"-",["0.556719 * safezoneW + safezoneX","0.412 * safezoneH + safezoneY","0.0154688 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2404,"xy_container_manager_addDurationAccept",[1,"Renew",["0.556719 * safezoneW + safezoneX","0.445 * safezoneH + safezoneY","0.0721875 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"xy_container_manager_addDurationTextHeader",[1,"VerlÃ¤ngern?",["0.556719 * safezoneW + safezoneX","0.357 * safezoneH + safezoneY","0.0515625 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"xy_container_manager_addDurationTextCosts",[1,"Kosten: 10000$",["0.556718 * safezoneW + safezoneX","0.379 * safezoneH + safezoneY","0.0721875 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[2405,"xy_container_manager_upgradeButton",[1,"UPGRADE",["0.556719 * safezoneW + safezoneX","0.533 * safezoneH + safezoneY","0.0721875 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"xy_container_manager_upgradeTextHeader",[1,"Upgraden?",["0.556719 * safezoneW + safezoneX","0.478 * safezoneH + safezoneY","0.0721875 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"xy_container_manager_upgradeTextCosts",[1,"Kosten: 10000$",["0.556719 * safezoneW + safezoneX","0.5 * safezoneH + safezoneY","0.0670312 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"xy_container_manager_durationInfoText",[1,"LÃ¤uft noch: 10 Tage",["0.412344 * safezoneW + safezoneX","0.401 * safezoneH + safezoneY","0.128906 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"xy_container_manager_lockerInfoText",[1,"Herr von und Zu's SchlieÃŸfach",["0.412344 * safezoneW + safezoneX","0.368 * safezoneH + safezoneY","0.128906 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1008,"xy_container_manager_sizeInfoText",[1,"Aktuelle GrÃ¶ÃŸe: 40 Slots",["0.412344 * safezoneW + safezoneX","0.445 * safezoneH + safezoneY","0.128906 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1009,"xy_container_manager_nextUpgradeInfoText",[1,"NÃ¤chstes Update: 80 Slots",["0.412344 * safezoneW + safezoneX","0.467 * safezoneH + safezoneY","0.128906 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+
+
+controls[]=
+{
+	xy_container_manager_background,
+	xy_container_manager_header,
+	xy_container_manager_buybutton,
+	xy_container_manager_sellbutton,
+	xy_container_manager_addDurationTime,
+	xy_container_manager_addDurationPlusButton,
+	xy_container_manager_addDurationMinus,
+	xy_container_manager_addDurationAccept,
+	xy_container_manager_addDurationTextHeader,
+	xy_container_manager_addDurationTextCosts,
+	xy_container_manager_upgradeButton,
+	xy_container_manager_upgradeTextHeader,
+	xy_container_manager_upgradeTextCosts,
+	xy_container_manager_durationInfoText,
+	xy_container_manager_lockerInfoText,
+	xy_container_manager_sizeInfoText,
+	xy_container_manager_nextUpgradeInfoText
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by xydra, v1.063, #Xekuwa)
+////////////////////////////////////////////////////////
+
+class xy_container_manager_background: IGUIBack
+{
+	idc = 2200;
+	x = 0.407187 * safezoneW + safezoneX;
+	y = 0.335 * safezoneH + safezoneY;
+	w = 0.226875 * safezoneW;
+	h = 0.231 * safezoneH;
+};
+class xy_container_manager_header: RscText
+{
+	idc = 1000;
+	text = "SchlieÃŸfachmanager"; //--- ToDo: Localize;
+	x = 0.407187 * safezoneW + safezoneX;
+	y = 0.335 * safezoneH + safezoneY;
+	w = 0.226875 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_buybutton: RscButtonMenu
+{
+	idc = 2400;
+	text = "BUY"; //--- ToDo: Localize;
+	x = 0.4175 * safezoneW + safezoneX;
+	y = 0.533 * safezoneH + safezoneY;
+	w = 0.0567187 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_sellbutton: RscButtonMenu
+{
+	idc = 2401;
+	text = "SELL"; //--- ToDo: Localize;
+	x = 0.484531 * safezoneW + safezoneX;
+	y = 0.533 * safezoneH + safezoneY;
+	w = 0.0567187 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_addDurationTime: RscText
+{
+	idc = 1001;
+	text = "1"; //--- ToDo: Localize;
+	x = 0.587656 * safezoneW + safezoneX;
+	y = 0.412 * safezoneH + safezoneY;
+	w = 0.0103125 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_addDurationPlusButton: RscButtonMenu
+{
+	idc = 2402;
+	text = "+"; //--- ToDo: Localize;
+	x = 0.613437 * safezoneW + safezoneX;
+	y = 0.412 * safezoneH + safezoneY;
+	w = 0.0154688 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_addDurationMinus: RscButtonMenu
+{
+	idc = 2403;
+	text = "-"; //--- ToDo: Localize;
+	x = 0.556719 * safezoneW + safezoneX;
+	y = 0.412 * safezoneH + safezoneY;
+	w = 0.0154688 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_addDurationAccept: RscButtonMenu
+{
+	idc = 2404;
+	text = "Renew"; //--- ToDo: Localize;
+	x = 0.556719 * safezoneW + safezoneX;
+	y = 0.445 * safezoneH + safezoneY;
+	w = 0.0721875 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_addDurationTextHeader: RscText
+{
+	idc = 1002;
+	text = "VerlÃ¤ngern?"; //--- ToDo: Localize;
+	x = 0.556719 * safezoneW + safezoneX;
+	y = 0.357 * safezoneH + safezoneY;
+	w = 0.0515625 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_addDurationTextCosts: RscText
+{
+	idc = 1004;
+	text = "Kosten: 10000$"; //--- ToDo: Localize;
+	x = 0.556718 * safezoneW + safezoneX;
+	y = 0.379 * safezoneH + safezoneY;
+	w = 0.0721875 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_upgradeButton: RscButtonMenu
+{
+	idc = 2405;
+	text = "UPGRADE"; //--- ToDo: Localize;
+	x = 0.556719 * safezoneW + safezoneX;
+	y = 0.533 * safezoneH + safezoneY;
+	w = 0.0721875 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_upgradeTextHeader: RscText
+{
+	idc = 1003;
+	text = "Upgraden?"; //--- ToDo: Localize;
+	x = 0.556719 * safezoneW + safezoneX;
+	y = 0.478 * safezoneH + safezoneY;
+	w = 0.0721875 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_upgradeTextCosts: RscText
+{
+	idc = 1005;
+	text = "Kosten: 10000$"; //--- ToDo: Localize;
+	x = 0.556719 * safezoneW + safezoneX;
+	y = 0.5 * safezoneH + safezoneY;
+	w = 0.0670312 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_durationInfoText: RscText
+{
+	idc = 1006;
+	text = "LÃ¤uft noch: 10 Tage"; //--- ToDo: Localize;
+	x = 0.412344 * safezoneW + safezoneX;
+	y = 0.401 * safezoneH + safezoneY;
+	w = 0.128906 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_lockerInfoText: RscText
+{
+	idc = 1007;
+	text = "Herr von und Zu's SchlieÃŸfach"; //--- ToDo: Localize;
+	x = 0.412344 * safezoneW + safezoneX;
+	y = 0.368 * safezoneH + safezoneY;
+	w = 0.128906 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_sizeInfoText: RscText
+{
+	idc = 1008;
+	text = "Aktuelle GrÃ¶ÃŸe: 40 Slots"; //--- ToDo: Localize;
+	x = 0.412344 * safezoneW + safezoneX;
+	y = 0.445 * safezoneH + safezoneY;
+	w = 0.128906 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_manager_nextUpgradeInfoText: RscText
+{
+	idc = 1009;
+	text = "NÃ¤chstes Update: 80 Slots"; //--- ToDo: Localize;
+	x = 0.412344 * safezoneW + safezoneX;
+	y = 0.467 * safezoneH + safezoneY;
+	w = 0.128906 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////
+
+
+
+//--- container_manager	
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_ADDDURATIONTIME	5453
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_ADDDURATIONTEXTHEADER	15247
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_UPGRADETEXTHEADER	15248
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_ADDDURATIONTEXTCOSTS	15249
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_UPGRADETEXTCOSTS	15250
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_DURATIONINFOTEXT	15251
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_LOCKERINFOTEXT	15252
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_SIZEINFOTEXT		15253
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_NEXTUPGRADEINFOTEXT	15254
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_BUYBUTTON		16645
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_SELLBUTTON		16646
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_ADDDURATIONPLUSBUTTON	16647
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_ADDDURATIONMINUS	16648
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_ADDDURATIONACCEPT	16649
+#define IDC_CONTAINER_MANAGER_XY_CONTAINER_MANAGER_UPGRADEBUTTON		16650

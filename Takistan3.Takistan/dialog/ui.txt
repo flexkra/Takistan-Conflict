@@ -1,0 +1,249 @@
+/* #Bujipy
+$[
+	1.063,
+	["UI",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,1,1],
+	[2200,"xi_ui_background",[1,"",["0.0101562 * safezoneW + safezoneX","0.016 * safezoneH + safezoneY","0.165 * safezoneW","0.088 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1800,"xy_ui_health",[1,"",["0.0617187 * safezoneW + safezoneX","0.027 * safezoneH + safezoneY","0.108281 * safezoneW","0.011 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1801,"xy_ui_blood",[1,"",["0.0617187 * safezoneW + safezoneX","0.038 * safezoneH + safezoneY","0.108281 * safezoneW","0.011 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1802,"xy_ui_food",[1,"",["0.0617187 * safezoneW + safezoneX","0.06 * safezoneH + safezoneY","0.108281 * safezoneW","0.011 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1803,"xy_ui_water",[1,"",["0.0617187 * safezoneW + safezoneX","0.071 * safezoneH + safezoneY","0.108281 * safezoneW","0.011 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"xy_ui_level",[1,"5",["0.0204687 * safezoneW + safezoneX","0.027 * safezoneH + safezoneY","0.0309375 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1200,"xy_ui_exp",[1,"#(argb,8,8,3)color(1,1,1,1)",["0.0153125 * safezoneW + safezoneX","0.027 * safezoneH + safezoneY","0.04125 * safezoneW","0.066 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+
+
+//--- UI
+#define IDC_UI_XY_UI_LEVEL	1074
+#define IDC_UI_XY_UI_EXP	1273
+#define IDC_UI_XY_UI_HEALTH	1873
+#define IDC_UI_XY_UI_BLOOD	1874
+#define IDC_UI_XY_UI_FOOD	1875
+#define IDC_UI_XY_UI_WATER	1876
+#define IDC_UI_XI_UI_BACKGROUND	2273
+
+
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by xydra, v1.063, #Bujipy)
+////////////////////////////////////////////////////////
+
+class xi_ui_background: IGUIBack
+{
+	idc = IDC_UI_XI_UI_BACKGROUND;
+	x = 0.0101562 * safezoneW + safezoneX;
+	y = 0.016 * safezoneH + safezoneY;
+	w = 0.165 * safezoneW;
+	h = 0.088 * safezoneH;
+};
+class xy_ui_health: RscFrame
+{
+	idc = IDC_UI_XY_UI_HEALTH;
+	x = 0.0617187 * safezoneW + safezoneX;
+	y = 0.027 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.011 * safezoneH;
+};
+class xy_ui_blood: RscFrame
+{
+	idc = IDC_UI_XY_UI_BLOOD;
+	x = 0.0617187 * safezoneW + safezoneX;
+	y = 0.038 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.011 * safezoneH;
+};
+class xy_ui_food: RscFrame
+{
+	idc = IDC_UI_XY_UI_FOOD;
+	x = 0.0617187 * safezoneW + safezoneX;
+	y = 0.06 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.011 * safezoneH;
+};
+class xy_ui_water: RscFrame
+{
+	idc = IDC_UI_XY_UI_WATER;
+	x = 0.0617187 * safezoneW + safezoneX;
+	y = 0.071 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.011 * safezoneH;
+};
+class xy_ui_level: RscText
+{
+	idc = IDC_UI_XY_UI_LEVEL;
+	text = $STR_A3_UI_xy_ui_level;
+	x = 0.0204687 * safezoneW + safezoneX;
+	y = 0.027 * safezoneH + safezoneY;
+	w = 0.0309375 * safezoneW;
+	h = 0.055 * safezoneH;
+};
+class xy_ui_exp: RscPicture
+{
+	idc = IDC_UI_XY_UI_EXP;
+	text = "#(argb,8,8,3)color(1,1,1,1)";
+	x = 0.0153125 * safezoneW + safezoneX;
+	y = 0.027 * safezoneH + safezoneY;
+	w = 0.04125 * safezoneW;
+	h = 0.066 * safezoneH;
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////
+
+
+
+
+
+controls[]=
+{
+	xi_ui_background,
+	xy_ui_health,
+	xy_ui_blood,
+	xy_ui_food,
+	xy_ui_water,
+	xy_ui_level,
+	xy_ui_exp
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by xydra, v1.063, #Bujipy)
+////////////////////////////////////////////////////////
+
+class xy_ui_background: IGUIBack
+{
+	idc = IDC_UI_XI_UI_BACKGROUND;
+	x = 0.0101562 * safezoneW + safezoneX;
+	y = 0.016 * safezoneH + safezoneY;
+	w = 0.165 * safezoneW;
+	h = 0.088 * safezoneH;
+};
+class xy_ui_health: RscFrame
+{
+	idc = IDC_UI_XY_UI_HEALTH;
+	x = 0.0617187 * safezoneW + safezoneX;
+	y = 0.027 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.011 * safezoneH;
+};
+class xy_ui_blood: RscFrame
+{
+	idc = IDC_UI_XY_UI_BLOOD;
+	x = 0.0617187 * safezoneW + safezoneX;
+	y = 0.038 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.011 * safezoneH;
+};
+class xy_ui_food: RscFrame
+{
+	idc = IDC_UI_XY_UI_FOOD;
+	x = 0.0617187 * safezoneW + safezoneX;
+	y = 0.06 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.011 * safezoneH;
+};
+class xy_ui_water: RscFrame
+{
+	idc = IDC_UI_XY_UI_WATER;
+	x = 0.0617187 * safezoneW + safezoneX;
+	y = 0.071 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.011 * safezoneH;
+};
+class xy_ui_level: RscText
+{
+	idc = IDC_UI_XY_UI_LEVEL;
+	text = $STR_A3_UI_xy_ui_level;
+	x = 0.0204687 * safezoneW + safezoneX;
+	y = 0.027 * safezoneH + safezoneY;
+	w = 0.0309375 * safezoneW;
+	h = 0.055 * safezoneH;
+};
+class xy_ui_exp: RscPicture
+{
+	idc = IDC_UI_XY_UI_EXP;
+	text = "#(argb,8,8,3)color(1,1,1,1)";
+	x = 0.0153125 * safezoneW + safezoneX;
+	y = 0.027 * safezoneH + safezoneY;
+	w = 0.04125 * safezoneW;
+	h = 0.066 * safezoneH;
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by xydra, v1.063, #Haxyga)
+////////////////////////////////////////////////////////
+
+class xy_container_menubackground: IGUIBack
+{
+	idc = 2200;
+	x = 0.438125 * safezoneW + safezoneX;
+	y = 0.225 * safezoneH + safezoneY;
+	w = 0.134062 * safezoneW;
+	h = 0.55 * safezoneH;
+};
+class xy_container_sidemenubg: IGUIBack
+{
+	idc = 2201;
+	x = 0.572187 * safezoneW + safezoneX;
+	y = 0.225 * safezoneH + safezoneY;
+	w = 0.118594 * safezoneW;
+	h = 0.165 * safezoneH;
+};
+class xy_container_inv: RscListbox
+{
+	idc = 1500;
+	x = 0.443281 * safezoneW + safezoneX;
+	y = 0.236 * safezoneH + safezoneY;
+	w = 0.12375 * safezoneW;
+	h = 0.143 * safezoneH;
+};
+class xy_container_playerinv: RscListbox
+{
+	idc = 1501;
+	x = 0.577344 * safezoneW + safezoneX;
+	y = 0.236 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.11 * safezoneH;
+};
+class xy_container_takebutton: RscButton
+{
+	idc = 1600;
+	x = 0.577344 * safezoneW + safezoneX;
+	y = 0.357 * safezoneH + safezoneY;
+	w = 0.0515625 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_putbutton: RscButton
+{
+	idc = 1601;
+	x = 0.634062 * safezoneW + safezoneX;
+	y = 0.357 * safezoneH + safezoneY;
+	w = 0.0515625 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class xy_container_gearpic: RscPicture
+{
+	idc = 1200;
+	text = "#(argb,8,8,3)color(1,1,1,1)";
+	x = 0.448438 * safezoneW + safezoneX;
+	y = 0.423 * safezoneH + safezoneY;
+	w = 0.113437 * safezoneW;
+	h = 0.341 * safezoneH;
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////
+
+
+//--- Container_Menu
+#define IDC_CONTAINER_MENU_RSCPICTURE_1200	10648
+#define IDC_CONTAINER_MENU_RSCLISTBOX_1500	10948
+#define IDC_CONTAINER_MENU_RSCLISTBOX_1501	10949
+#define IDC_CONTAINER_MENU_RSCBUTTON_1600	11048
+#define IDC_CONTAINER_MENU_RSCBUTTON_1601	11049
+#define IDC_CONTAINER_MENU_IGUIBACK_2200	11648
+#define IDC_CONTAINER_MENU_IGUIBACK_2201	11649
