@@ -6,7 +6,7 @@
 private["_periodPrice","_durTextDaysData","_duration","_price"];
 
 _periodPrice = LIFE_SETTINGS(getNumber,"container_period_price");
-_durTextDaysData = CONTROL_DATA(5453);
+_durTextDaysData = parseNumber ctrlText _durTextDays;
 
 _duration = 6 * _durTextDaysData
 _price = _duration * _dayPrice;

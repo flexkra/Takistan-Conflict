@@ -12,15 +12,13 @@ if(_uid == "") exitWith {};
 
 
 [_uid] remoteExec ["TON_fnc_deleteContainer",RSERV];
-_upPrice = _price * 1.5^life_container_type;
+_upPrice = _price * 1.5^(life_container_type-1);
 _sellPrice = floor (_upPrice/2);
-_durationPrice = life_container_duration * 100;
-_endPrice = (_sellPrice + _durationPrice);
-ADD(CASH,_endPrice);
+ADD(CASH,_sellPrice);
 
 life_container_owner = false;
 life_container_duration = 0;
 
-hint format[localize "STR_Container_Sell",_endPrice];
+hint format[localize "STR_Container_Sell",_sellPrice];
 
 [] call life_fnc_containerManagerMenu;
