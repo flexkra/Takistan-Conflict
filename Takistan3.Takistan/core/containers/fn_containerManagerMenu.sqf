@@ -38,11 +38,12 @@ ctrlEnable [54555,true]; //Add Button
 ctrlEnable [5455,true]; //Minus Button
 ctrlEnable [5454,true]; //Plus Button
 ctrlEnable [5458,true]; //Upgrade Button
+ctrlEnable [54555,false]; //Add Button
 
 //Disable Stuff
 if(!(life_container_owner)) then { //No Owner
 	ctrlEnable [5452,false]; //Sell Button
-	ctrlEnable [54555,false]; //Add Button
+	//ctrlEnable [54555,false]; //Add Button
 	ctrlEnable [5458,false]; //Upgrade Button
 } else {
 	ctrlEnable [5451,false]; //Buy Button
@@ -52,7 +53,7 @@ if(life_container_type == _maxUpgrades) then { //MaxUpgrades
 };
 if(life_container_duration <= 0) then {	//No Time(Reactivate)
 	ctrlEnable [5452,false]; //Sell Button
-	ctrlEnable [54555,false]; //Add Button
+	//ctrlEnable [54555,false]; //Add Button
 	ctrlEnable [5458,false]; //Upgrade Button
 };
 if(_durTextDaysData == 1) then {
@@ -94,7 +95,7 @@ _durPrice = _periodPrice * 6 * _durDays;
 _durTextCosts ctrlSetText format[localize "STR_Container_Costs",_durPrice];
 
 //Upgrade Price
-_upPrice = _buyPrice * 1.5^(life_container_type+1);
+_upPrice = floor (_buyPrice * 1.5^(life_container_type+1));
 _upTextCosts ctrlSetText format[localize "STR_Container_Costs",_upPrice];
 
 
