@@ -7052,8 +7052,8 @@
           <German>Du hast keinen Platz mehr frei</German>
       </Key>
       <Key ID='STR_Container_NotEnough'>
-          <Original>There is no Space in your locker</Original>
-          <German>Du hast keinen Platz mehr frei</German>
+          <Original>You have not enough money</Original>
+          <German>DU hast nicht genügend Geld</German>
       </Key>
       <Key ID='STR_Container_Sell'>
           <Original>You sold your locker for %1</Original>
