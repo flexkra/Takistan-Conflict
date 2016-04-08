@@ -23,6 +23,7 @@ class container_menu {
 		y = 0.225 * safezoneH + safezoneY;
 		w = 0.134062 * safezoneW;
 		h = 0.55 * safezoneH;
+		colorBackground[] = {0,0,0,0.2};
 	};
 	class xy_container_sidemenubg: Life_RscBackground
 	{
@@ -31,6 +32,7 @@ class container_menu {
 		y = 0.225 * safezoneH + safezoneY;
 		w = 0.118594 * safezoneW;
 		h = 0.165 * safezoneH;
+		colorBackground[] = {0,0,0,0.2};
 	};
 	class xy_container_inv: Life_RscListBox
 	{
@@ -48,7 +50,7 @@ class container_menu {
 		w = 0.108281 * safezoneW;
 		h = 0.11 * safezoneH;
 	};
-	class xy_container_takebutton: Life_RscButton
+	class xy_container_takebutton: Life_RscButtonMenu
 	{
 		idc = 5403;
 		text = "$STR_Container_Take";
@@ -58,7 +60,7 @@ class container_menu {
 		h = 0.022 * safezoneH;
 		onButtonClick = "[] call life_fnc_containerTake;";
 	};
-	class xy_container_storebutton: Life_RscButton
+	class xy_container_storebutton: Life_RscButtonMenu
 	{
 		idc = 5404;
 		text = "$STR_Container_Store";
