@@ -24,7 +24,7 @@ if(count life_container == 0) then {
 life_container_size = life_container_type * (LIFE_SETTINGS(getNumber,"container_type_size"));
 
 life_container_space = 0;
-if(count life_container_inventory == 0) exitWith {};
+if(count life_container_inventory != 2) exitWith {};
 {
 	_item = _x select 0;
 	_amount = _x select 1;
