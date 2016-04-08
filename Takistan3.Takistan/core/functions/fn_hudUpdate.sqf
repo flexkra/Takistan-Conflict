@@ -18,7 +18,7 @@ LIFEctrl(IDC_UI_XY_UI_WATER) progressSetPosition (life_thirst/100);
 LIFEctrl(IDC_UI_XY_UI_HEALTH) progressSetPosition (1 - (damage player));
 LIFEctrl(IDC_UI_XY_UI_BLOOD) progressSetPosition (life_blood/100);
 if(playerSide == civilian) then {
-	LIFEctrl(IDC_UI_XY_UI_LEVEL) ctrlsetStructuredText format["<t align='center' valign='middle' size='2.2'>%1</t>", life_level];
+	LIFEctrl(IDC_UI_XY_UI_LEVEL) ctrlsetStructuredText parseText format["<t align='center' valign='middle' size='2.2'>%1</t>", life_level];
 };
 if(playerSide == civilian) then {
 	if(life_exp < 0.05) then {
