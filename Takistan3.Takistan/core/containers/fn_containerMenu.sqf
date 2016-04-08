@@ -29,7 +29,7 @@ if(count life_container_inventory == 0) exitWith {};
 {
 	_item = _x select 0;
 	_amount = _x select 1;
-	_cInv = lbAdd format["%2 [x%1]",_amount,localize (getText(_item >> "displayName"))];
+	_cInv = lbAdd format["%2 [x%1]",_amount,localize ITEM_NAME(_item)];
 	_cInv = lbSetData [(lbSize _cInv)-1,_item];
 	_cIcon = M_CONFIG(getText,"VirtualItems",configName _item,"icon");
 	if(!(EQUAL(_cIcon,""))) then {
