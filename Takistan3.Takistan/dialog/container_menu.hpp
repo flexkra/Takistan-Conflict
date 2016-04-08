@@ -1,5 +1,5 @@
 class container_menu {
-	idc= 54000;
+	idd= 54000;
 	name="container_menu_locker";
 	movingEnable = 0;
 	enableSimulation = 1;
