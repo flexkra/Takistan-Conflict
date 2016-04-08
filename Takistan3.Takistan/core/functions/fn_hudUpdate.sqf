@@ -18,7 +18,6 @@ LIFEctrl(IDC_UI_XY_UI_WATER) progressSetPosition (life_thirst/100);
 LIFEctrl(IDC_UI_XY_UI_HEALTH) progressSetPosition (1 - (damage player));
 LIFEctrl(IDC_UI_XY_UI_BLOOD) progressSetPosition (life_blood/100);
 LIFEctrl(IDC_UI_XY_UI_LEVEL) ctrlsetText format["%1", life_level];
-LIFEctrl(IDC_UI_XY_UI_LEVEL) ctrlSetFontHeight 2;
 if(playerSide == civilian) then {
 	if(life_exp < 0.05) then {
 		LIFEctrl(IDC_UI_XY_UI_EXP) ctrlSetText "icons\level_0.paa";
