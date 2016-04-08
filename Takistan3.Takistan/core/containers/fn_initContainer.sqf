@@ -6,6 +6,7 @@
 private["_item","_amount","_weight","_weightAcc"];
 
 if(count life_container == 0) exitWith {};
+diag_log format["life_container: %1",life_container];
 life_container_inventory = life_container select 0;
 life_container_gear = life_container select 1;
 life_container_duration = life_container select 2;
