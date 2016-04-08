@@ -38,5 +38,6 @@ if(!(_found)) then {
   _array pushBack 1;
   life_container_inventory pushBack _array;
 };
+[false,_item,1] call life_fnc_handleInv;
 
 [] call life_fnc_containerMenu;
