@@ -1,9 +1,20 @@
 class container_menu {
 	idd= 54000;
 	name="container_menu_locker";
-	movingEnable = 0;
-	enableSimulation = 1;
+	movingEnable = true;
+	enableSimulation = true;
 	onLoad ="[] spawn life_fnc_containerMenu;";
+	objects[] = {};
+	controls[]=
+	{
+		xy_container_menubackground,
+		xy_container_sidemenubg,
+		xy_container_inv,
+		xy_container_playerinv,
+		xy_container_takebutton,
+		xy_container_storebutton,
+		xy_container_gearpic
+	};
 	
 	class xy_container_menubackground: Life_RscBackground
 	{
@@ -57,7 +68,7 @@ class container_menu {
 		h = 0.022 * safezoneH;
 		onButtonClick = "[] call life_fnc_containerStore;";
 	};
-	/*class xy_container_gearpic: life_RscPicture
+	class xy_container_gearpic: life_RscPicture
 	{
 		idc = 5405;
 		text = "";
@@ -65,5 +76,5 @@ class container_menu {
 		y = 0.423 * safezoneH + safezoneY;
 		w = 0.113437 * safezoneW;
 		h = 0.341 * safezoneH;
-	};*/
+	};
 };
