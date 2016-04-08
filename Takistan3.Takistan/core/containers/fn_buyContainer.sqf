@@ -14,6 +14,7 @@ if(BANK < _price) exitWith {hint localize "STR_Container_NotEnough"};
 
 SUB(BANK,_price);
 [_uid,_duration] remoteExec ["TON_fnc_buyContainer",RSERV];
+life_container_owner = true;
 life_container_duration = _duration;
 life_container_type = 1;
 life_container_inventory = [];

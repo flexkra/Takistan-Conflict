@@ -62,6 +62,7 @@ if(_durTextDaysData == 10) then {
 	ctrlEnable [5454,false]; //Plus Button
 };
 
+_nextSize = (life_container_type+1) * _baseSize;
 //Boring Text
 //LeftSide
 if(life_container_owner) then {
@@ -70,7 +71,6 @@ if(life_container_owner) then {
 	if(life_container_type == _maxUpgrades) then {
 		_upInfo ctrlSetText format[localize "STR_Container_NoUpgrade"];
 	} else {
-		_nextSize = (life_container_type+1) * _baseSize;
 		_upInfo ctrlSetText format[localize "STR_Container_UpgradeSize",_nextSize];
 
 	};
