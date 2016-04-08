@@ -8,9 +8,7 @@
 	sort through the information, validate it and if all valid
 	set the client up.
 */
-diag_log format["Startshizzle - %1 - %2",count _this, _this];
 private["_array"];
-diag_log "Load";
 life_session_tries = life_session_tries + 1;
 if(life_session_completed) exitWith {diag_log "Session completed";}; //Why did this get executed when the client already initialized? Fucking arma...
 if(life_session_tries > 3) exitWith {cutText[localize "STR_Session_Error","BLACK FADED"]; 0 cutFadeOut 999999999;};
