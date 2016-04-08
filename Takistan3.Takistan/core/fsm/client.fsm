@@ -73,7 +73,7 @@ class FSM
                                          " life_paytime = 0;" \n
                                          "};" \n
                                          "} else {" \n
-                                         "  life_atmbank = 100;" \n
+                                         "  life_atmbank = life_atmbank = 100;" \n
                                          "};" \n
                                          "_lastcheck = time;" \n
                                          "" \n
