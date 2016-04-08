@@ -82,7 +82,7 @@ class container_manager {
 		y = 0.412 * safezoneH + safezoneY;
 		w = 0.0154688 * safezoneW;
 		h = 0.022 * safezoneH;
-		onButtonClick = "{_t = ctrlText 5453; _t = parseNumber _t; _t = format[""%1"",_t+1]; ctrlSetText[5453,_t];}"
+		onButtonClick = "_t = ctrlText 5453; _t = parseNumber _t; _t = format[""%1"",_t+1]; ctrlSetText[5453,_t];"
 	};
 	class xy_container_manager_addDurationMinus: Life_RscButtonMenu
 	{
@@ -92,7 +92,7 @@ class container_manager {
 		y = 0.412 * safezoneH + safezoneY;
 		w = 0.0154688 * safezoneW;
 		h = 0.022 * safezoneH;
-		onButtonClick = "{_t = ctrlText 5453; _t = parseNumber _t; _t = format[""%1"",_t-1]; ctrlSetText[5453,_t];}"
+		onButtonClick = "_t = ctrlText 5453; _t = parseNumber _t; _t = format[""%1"",_t-1]; ctrlSetText[5453,_t];"
 	};
 	class xy_container_manager_addDurationAccept: Life_RscButtonMenu
 	{

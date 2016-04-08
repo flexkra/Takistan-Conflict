@@ -22,7 +22,7 @@ _conName = CONTROL(54500,5462);
 _sizeInfo = CONTROL(54500,5463);
 _upInfo = CONTROL(54500,5464);
 
-_durTextDaysData = CONTROL_DATA(5453);
+_durTextDaysData = parseNumber ctrlText _durTextDays;
 
 diag_log format["life_container_owner: %1",life_container_owner];
 diag_log format["life_container_type == _maxUpgrades: %1",life_container_type == _maxUpgrades];
