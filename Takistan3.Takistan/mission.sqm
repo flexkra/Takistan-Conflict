@@ -47603,7 +47603,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0']; this addAction[""Container öffnen2"",{createDialog ""container_menu"";}];";
+				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0']; this addAction[""Container öffnen2"",{createDialog ""container_menu"";}]; this addAction[""Container öffnen3"",{createDialog ""geld"";}];";
 			};
 			id=7460;
 			type="plp_ct_HighSecSmallBlack";
