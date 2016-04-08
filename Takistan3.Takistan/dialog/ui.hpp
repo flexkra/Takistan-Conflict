@@ -84,14 +84,14 @@ class PlayerHUD {
 	};
 
 	/* Text */
-	class xy_ui_level: Life_RscText
+	class xy_ui_level: Life_RscStructuredText
 	{
 		idc = IDC_UI_XY_UI_LEVEL;
-		text = "15"; //--- ToDo: Localize;
+		text = ""; //--- ToDo: Localize;
 		colorText[] = {1,0.67,0,1};
-		x = 0.0204687 * safezoneW + safezoneX;
+		x = 0.0153125 * safezoneW + safezoneX;
 		y = 0.027 * safezoneH + safezoneY;
-		w = 0.0309375 * safezoneW;
-		h = 0.055 * safezoneH;
+		w = 0.04125 * safezoneW;
+		h = 0.066 * safezoneH;
 	};
 };
