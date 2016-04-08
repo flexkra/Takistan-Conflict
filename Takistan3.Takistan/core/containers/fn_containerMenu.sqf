@@ -30,6 +30,8 @@ diag_log "4";
 	};
 } foreach ("true" configClasses (missionConfigFile >> "VirtualItems"));
 
+life_container_inventory = [];
+
 if(count life_container_inventory == 0) exitWith {};
 {
 	_item = _x select 0;
