@@ -5,6 +5,7 @@
 */
 private["_item","_amount","_weight","_weightAcc"];
 
+diag_log format["life_container: %1",life_container];
 if(count life_container == 0) then {
 	life_container_inventory = [];
 	life_container_gear = [];
@@ -12,7 +13,6 @@ if(count life_container == 0) then {
 	life_container_type = 0;
 	life_container_owner = false;
 } else {
-	diag_log format["life_container: %1",life_container];
 	life_container_inventory = life_container select 0;
 	life_container_gear = life_container select 1;
 	life_container_duration = life_container select 2;
