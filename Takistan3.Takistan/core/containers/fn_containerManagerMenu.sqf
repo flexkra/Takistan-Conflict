@@ -74,8 +74,6 @@ if(life_container_owner) then {
 		_upInfo ctrlSetText format[localize "STR_Container_UpgradeSize",_nextSize];
 
 	};
-} else {
-	//Time Left
 	if(life_container_duration < 6) then {
 		_durTime = life_container_duration * 4;
 		_durLeftText ctrlSetText format[localize "STR_Container_TimeLeft",_durTime,localize "STR_Global_Hours"];	
@@ -83,6 +81,8 @@ if(life_container_owner) then {
 		_durTime = floor (life_container_duration / 6);
 		_durLeftText ctrlSetText format[localize "STR_Container_TimeLeft",_durTime,localize "STR_Global_Days"];	
 	};
+} else {
+	_durLeftText ctrlSetText "";
 	_conName ctrlSetText format[localize "STR_Container_NoOwner"];
 	_sizeInfo ctrlSetText format[localize "STR_Container_UpgradeSize",_nextSize];
 	_upInfo ctrlSetText format[localize "STR_Container_Costs",_buyPrice];

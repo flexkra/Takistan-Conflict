@@ -23,3 +23,5 @@ life_container_space = 0;
 life_container_size = LIFE_SETTINGS(getNumber,"container_type_size");
 
 hint format[localize "STR_Container_Buy",_price];
+
+[] call life_fnc_containerManagerMenu;

@@ -22,3 +22,5 @@ life_container_owner = false;
 life_container_duration = 0;
 
 hint format[localize "STR_Container_Sell",_endPrice];
+
+[] call life_fnc_containerManagerMenu;
