@@ -6,19 +6,19 @@
 	Shows the container menu
 */
 private["_cInv","_pInv","_pIcon","_cIcon","_item","_amount"];
-diag_log["%1",1];
+diag_log "1";
 disableSerialization;
-diag_log["%1",2];
+diag_log "2";
 
 createDialog "container_menu";
 
-diag_log["%1",3];
+diag_log "3";
 _cInv = CONTROL(54000,5401);
 _pInv = CONTROL(54000,5402);
 lbClear _cInv;
 lbClear _pInv;
 
-diag_log["%1",4];
+diag_log "4";
 {
 	if(ITEM_VALUE(configName _x) > 0) then {
 		_pInv lbAdd format["%2 [x%1]",ITEM_VALUE(configName _x),localize (getText(_x >> "displayName"))];
@@ -30,6 +30,7 @@ diag_log["%1",4];
 	};
 } foreach ("true" configClasses (missionConfigFile >> "VirtualItems"));
 
+if(count life_container_inventory == 0) exitWith {};
 {
 	_item = _x select 0;
 	_amount = _x select 1;
