@@ -47603,7 +47603,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'player getVariable [""life_container_duration"",0] > 0'];";
+				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0'];";
 			};
 			id=7460;
 			type="plp_ct_HighSecSmallBlack";
