@@ -24,6 +24,7 @@ lbClear _pInv;
 	};
 } foreach ("true" configClasses (missionConfigFile >> "VirtualItems"));
 
+diag_log format["life_container_inventory: %1",life_container_inventory];
 if(count life_container_inventory == 0) exitWith {};
 {
 	_item = _x select 0;
