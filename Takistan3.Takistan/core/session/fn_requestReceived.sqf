@@ -70,9 +70,7 @@ switch(playerSide) do {
 		};
 
 		life_container = SEL(_this,10);
-		if(!(EQUAL(count life_container,0))) then {
-			[] call life_fnc_initContainer;
-		};
+		[] call life_fnc_initContainer;
 
 		life_gangData = SEL(_this,11);
 		if(!(EQUAL(count life_gangData,0))) then {
