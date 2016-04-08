@@ -13,7 +13,7 @@ if(_uid == "") exitWith {};
 if(BANK < _price) exitWith {hint localize "STR_Container_NotEnough"};
 
 SUB(BANK,_price);
-[_uid,duration] remoteExec ["TON_fnc_buyContainer",RSERV];
+[_uid,_duration] remoteExec ["TON_fnc_buyContainer",RSERV];
 life_container_duration = _duration;
 life_container_type = 1;
 
