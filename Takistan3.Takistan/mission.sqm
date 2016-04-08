@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=7462;
+		nextID=7515;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5306.1782,148.04703,6175.0815};
-		dir[]={0.85782158,-0.42007488,0.29643506};
-		up[]={0.39704576,0.90747172,0.13720636};
-		aside[]={0.32665157,-1.0243384e-006,-0.94525379};
+		pos[]={8547.6367,372.72623,2452.2261};
+		dir[]={-0.30716097,-0.57619119,0.75741285};
+		up[]={-0.2165405,0.81731486,0.53395671};
+		aside[]={0.92670709,-1.641456e-008,0.3758162};
 	};
 };
 binarizationWanted=0;
@@ -143,7 +143,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2843;
+		items=2852;
 		class Item0
 		{
 			dataType="Marker";
@@ -957,7 +957,7 @@ class Mission
 			position[]={7098.4746,47.20414,12646.484};
 			name="sv_pos1";
 			type="Empty";
-			angle=217.63312;
+			angle=217.63309;
 			id=74;
 		};
 		class Item75
@@ -6087,7 +6087,7 @@ class Mission
 			text="Gas Station";
 			type="loc_Fuelstation";
 			colorName="ColorRed";
-			angle=112.09411;
+			angle=112.09409;
 			id=601;
 		};
 		class Item602
@@ -6114,7 +6114,7 @@ class Mission
 			position[]={5858.3223,83.040001,11399.883};
 			name="cop_air_1";
 			type="Empty";
-			angle=57.036114;
+			angle=57.036106;
 			id=604;
 		};
 		class Item605
@@ -6123,7 +6123,7 @@ class Mission
 			position[]={5850.9971,83.040001,11391.59};
 			name="cop_air_2";
 			type="Empty";
-			angle=57.036114;
+			angle=57.036106;
 			id=605;
 		};
 		class Item606
@@ -47597,39 +47597,225 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5308.8857,146.63371,6175.7041};
-				angles[]={0,2.2233748,6.2826962};
+				position[]={5298.7417,146.39342,6176.9063};
+				angles[]={0,3.9003656,6.2826972};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this addAction[""Container öffnen"",{createDialog ""container_menu"";},"""",0,false,false,"""",'life_container_duration > 0'];";
 			};
-			id=7460;
-			type="plp_ct_HighSecSmallBlack";
-			class CustomAttributes
+			id=7462;
+			type="Land_CashDesk_F";
+		};
+		class Item2843
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
 			{
-				class Attribute0
+				items=1;
+				class Item0
 				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
+					dataType="Object";
+					class PositionInfo
 					{
-						class data
+						position[]={5298.4819,146.39525,6176.1909};
+						angles[]={0,0.47809803,0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						isPlayer=1;
+					};
+					id=7484;
+					type="RDS_Functionary1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=7483;
+		};
+		class Item2844
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5299.9199,146.7999,6175.5527};
+				angles[]={0,4.1010852,6.2826972};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=7489;
+			type="Land_TableDesk_F";
+		};
+		class Item2845
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5299.8901,147.33954,6175.7759};
+				angles[]={0,4.107388,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+			};
+			id=7495;
+			type="plp_cts_WoodBoxLightTiny";
+		};
+		class Item2846
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6281.4541,59.925282,11144.012};
+				angles[]={0.0080009829,4.7834401,0.0015822123};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=7505;
+			type="Land_TableDesk_F";
+		};
+		class Item2847
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6281.3931,59.503769,11145.808};
+				angles[]={0.0080009829,4.5827208,0.0015822123};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=7506;
+			type="Land_CashDesk_F";
+		};
+		class Item2848
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6280.709,59.506687,11145.428};
+						angles[]={0,1.1604519,0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+					};
+					id=7508;
+					type="RDS_Functionary1";
+					class CustomAttributes
+					{
+						class Attribute0
 						{
-							class type
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
 							{
-								type[]=
+								class data
 								{
-									"STRING"
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
+						nAttributes=1;
 					};
 				};
-				nAttributes=1;
 			};
+			class Attributes
+			{
+			};
+			id=7507;
+		};
+		class Item2849
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6281.5718,60.450283,11144.206};
+				angles[]={0,4.7897429,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+			};
+			id=7509;
+			type="plp_cts_WoodBoxLightTiny";
+		};
+		class Item2850
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8534.4023,309.63696,2505.0564};
+						angles[]={0,2.9651043,0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+					};
+					id=7513;
+					type="RDS_Functionary1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=7512;
+		};
+		class Item2851
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8534.3457,310.66125,2504.2031};
+				angles[]={0,6.2013359,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+			};
+			id=7514;
+			type="plp_cts_WoodBoxLightTiny";
 		};
 	};
 	class Connections

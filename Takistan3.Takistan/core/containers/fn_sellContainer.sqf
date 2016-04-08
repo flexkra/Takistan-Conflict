@@ -18,4 +18,6 @@ _durationPrice = life_container_duration * 100;
 _endPrice = (_sellPrice + _durationPrice);
 ADD(CASH,_endPrice);
 
+life_cotainer_owner = false;
+
 hint format[localize "STR_Container_Sell",_endPrice];
