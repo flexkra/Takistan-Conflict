@@ -1412,7 +1412,7 @@
     </Key>
     <Key ID="STR_Keys_DropKey">
       <Original>Drop Key</Original>
-      <German>Schlüssel wegwerfen</German>
+      <German>Wegwerfen</German>
       <French>Jeter Clef</French>
       <Italian>Abbandona Chiave</Italian>
       <Portuguese>Remover Chave</Portuguese>
@@ -1420,7 +1420,7 @@
     </Key>
     <Key ID="STR_Keys_GiveKey">
       <Original>Give Key</Original>
-      <German>Schlüssel geben</German>
+      <German>Geben</German>
       <French>Donner Clef</French>
       <Italian>Dai Chiave</Italian>
       <Portuguese>Dar Chave</Portuguese>
@@ -5498,7 +5498,7 @@
     </Key>
     <Key ID="STR_vInAct_Unflip">
       <Original>Unflip Vehicle</Original>
-      <German>Fahrzeug umdrehen</German>
+      <German>Umdrehen</German>
       <French>Retourner Véhicule</French>
       <Italian>Raddrizza veicolo</Italian>
       <Portuguese>Desvirar Veículo</Portuguese>
@@ -5514,13 +5514,13 @@
     </Key>
     <Key ID="STR_vInAct_GetInHeli">
       <Original>Get In Helicopter</Original>
-      <German>In den Helikopter einsteigen</German>
+      <German>Einsteigen</German>
       <French>Monter dans l'hélicoptere</French>
       <Portuguese>Entrar no Helicóptero</Portuguese>
     </Key>
     <Key ID="STR_vInAct_PushBoat">
       <Original>Push Boat</Original>
-      <German>Boot schieben</German>
+      <German>Schieben</German>
       <French>Pousser bateau</French>
       <Italian>Spingi Barca</Italian>
       <Portuguese>Empurrar Barco</Portuguese>
@@ -5528,7 +5528,7 @@
     </Key>
     <Key ID="STR_vInAct_Repair">
       <Original>Repair Vehicle</Original>
-      <German>Fahrzeug reparieren</German>
+      <German>Reparieren</German>
       <French>Réparer Véhicule</French>
       <Italian>Ripara Veicolo</Italian>
       <Portuguese>Consertar Veículo</Portuguese>
@@ -5544,7 +5544,7 @@
     </Key>
     <Key ID="STR_vInAct_SearchVehicle">
       <Original>Search Vehicle</Original>
-      <German>Fahrzeug durchsuchen</German>
+      <German>Durchsuchen</German>
       <French>Fouiller Véhicule</French>
       <Italian>Cerca Veicolo</Italian>
       <Portuguese>Vasculhar Veículo</Portuguese>
@@ -5556,7 +5556,7 @@
     </Key>
     <Key ID="STR_vInAct_PullOut">
       <Original>Pullout Players</Original>
-      <German>Aus Fahrzeug ziehen</German>
+      <German>Rausziehen</German>
       <French>Sortir Personnes</French>
       <Italian>Estrai Giocatore</Italian>
       <Portuguese>Retirar Jogadores</Portuguese>
@@ -5564,7 +5564,7 @@
     </Key>
     <Key ID="STR_vInAct_Impound">
       <Original>Impound Vehicle</Original>
-      <German>Fahrzeug beschlagnahmen</German>
+      <German>Beschlagnahmen</German>
       <French>Mise en fourrière</French>
       <Italian>Sequestra Veicolo</Italian>
       <Portuguese>Apreender Veículo</Portuguese>
