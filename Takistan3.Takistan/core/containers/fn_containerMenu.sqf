@@ -8,7 +8,7 @@
 private["_cInv","_pInv","_pIcon","_cIcon","_item","_amount"];
 disableSerialization;
 
-createDialog "container_menu";
+createDisplay "container_menu";
 
 _cInv = CONTROL(54000,5401);
 _pInv = CONTROL(54000,5402);

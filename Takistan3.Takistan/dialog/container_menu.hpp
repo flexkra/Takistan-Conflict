@@ -3,7 +3,7 @@ class container_menu {
 	name="container_menu_locker";
 	movingEnable = 0;
 	enableSimulation = 1;
-	onLoad ="[] call life_fnc_containerMenu;";
+	onLoad ="[] spawn life_fnc_containerMenu;";
 	
 	class xy_container_menubackground: Life_RscBackground
 	{
