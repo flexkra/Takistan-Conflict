@@ -24,7 +24,12 @@ _upInfo = CONTROL(54500,5464);
 
 _durTextDaysData = CONTROL_DATA(5453);
 
-
+diag_log format["life_container_owner: %1",life_container_owner];
+diag_log format["life_container_type == _maxUpgrades: %1",life_container_type == _maxUpgrades];
+diag_log format["life_container_duration: %1",life_container_duration];
+diag_log format["life_container_duration <= 0: %1",life_container_duration <= 0];
+diag_log format["_durTextDaysData == 1: %1",_durTextDaysData == 1];
+diag_log format["_durTextDaysData == 10: %1",_durTextDaysData == 10];
 //Disable Stuff
 if(!(life_container_owner)) then { //No Owner
 	ctrlEnable [5452,false]; //Sell Button
@@ -72,7 +77,7 @@ if(life_container_owner) then {
 	_conName ctrlSetText format[localize "STR_Container_NoOwner"];
 	_sizeInfo ctrlSetText format[localize "STR_Container_UpgradeSize",_nextSize];
 	_upInfo ctrlSetText format[localize "STR_Container_Costs",_buyPrice];
-}
+};
 
 //Renew Price
 _durDays = parseNumber ctrlText _durTextDays;
