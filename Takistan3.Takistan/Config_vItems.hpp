@@ -910,7 +910,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_gunpowder.paa";
+        icon = "icons\ico_explosive.paa";
     };
 
     // Essen und Trinken
