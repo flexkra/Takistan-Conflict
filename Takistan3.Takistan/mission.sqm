@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=7515;
+		nextID=7518;
 	};
 	class MarkerIDProvider
 	{
-		nextID=656;
+		nextID=659;
 	};
 	class Camera
 	{
-		pos[]={5300.1978,148.51828,6178.353};
-		dir[]={-0.5660271,-0.38767755,-0.72755021};
-		up[]={-0.23805447,0.92179161,-0.30598542};
-		aside[]={-0.78927279,-4.391768e-007,0.6140486};
+		pos[]={5256.9624,153.43826,6160.7896};
+		dir[]={-0.12215443,-0.35486695,-0.92692786};
+		up[]={-0.046370219,0.93490058,-0.35185629};
+		aside[]={-0.99144775,-1.5151891e-006,0.13066089};
 	};
 };
 binarizationWanted=0;
@@ -143,7 +143,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2852;
+		items=2855;
 		class Item0
 		{
 			dataType="Marker";
@@ -6114,7 +6114,7 @@ class Mission
 			position[]={5858.3223,83.040001,11399.883};
 			name="cop_air_1";
 			type="Empty";
-			angle=57.036102;
+			angle=57.036098;
 			id=604;
 		};
 		class Item605
@@ -6123,7 +6123,7 @@ class Mission
 			position[]={5850.9971,83.040001,11391.59};
 			name="cop_air_2";
 			type="Empty";
-			angle=57.036102;
+			angle=57.036098;
 			id=605;
 		};
 		class Item606
@@ -47597,8 +47597,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5298.7422,146.39337,6176.9058};
-				angles[]={0,3.900357,6.2826962};
+				position[]={5254.7549,144.04242,6149.646};
+				angles[]={0.0051674889,3.9195359,6.255331};
 			};
 			side="Empty";
 			class Attributes
@@ -47661,16 +47661,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5298.4819,146.39525,6176.1909};
-						angles[]={0,0.47809803,0};
+						position[]={5254.2852,144.06114,6148.9009};
+						angles[]={0,0.62954026,0};
 					};
 					side="Civilian";
 					flags=3;
 					class Attributes
 					{
-						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						init="this addAction[""Schließfachmanager"",{createDialog ""container_manager"";}];";
 						name="container_manager_0";
-						isPlayer=1;
 					};
 					id=7484;
 					type="RDS_Functionary1";
@@ -47728,8 +47727,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5299.9199,146.79987,6175.5532};
-				angles[]={0,4.1010876,6.2826962};
+				position[]={5252.7808,144.58257,6150.4551};
+				angles[]={6.2371092,2.3613758,6.2033672};
 			};
 			side="Empty";
 			class Attributes
@@ -47785,14 +47784,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5299.8901,147.33954,6175.7759};
-				angles[]={0,4.107388,0};
+				position[]={5252.7598,145.13396,6150.6182};
+				angles[]={0,2.3376939,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
-				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				init="this addAction[""Container öffnen"",{createDialog ""container_menu"";},"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
 				name="container_container_0";
 			};
 			id=7495;
@@ -47973,7 +47972,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						init="this addAction[""Schließfachmanager"",{createDialog ""container_manager"";}];";
 						name="container_manager_1";
 					};
 					id=7508;
@@ -48058,7 +48057,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				init="this addAction[""Container öffnen"",{createDialog ""container_menu"";},"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
 				name="container_container_1";
 			};
 			id=7509;
@@ -48125,7 +48124,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this addAction[""Schließfach öffnen"",{createDialog ""container_manager"";}];";
+						init="this addAction[""Schließfachmanager"",{createDialog ""container_manager"";}];";
 						name="container_manager_2";
 					};
 					id=7513;
@@ -48210,7 +48209,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this addAction[""Container öffnen"",life_fnc_containerMenu,"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
+				init="this addAction[""Container öffnen"",{createDialog ""container_menu"";},"""",0,false,false,"""",'life_container_duration > 0 && life_container_owner'];";
 				name="container_container_2";
 			};
 			id=7514;
@@ -48257,6 +48256,30 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item2852
+		{
+			dataType="Marker";
+			position[]={5255.1279,144.10139,6151.8447};
+			name="marker_656";
+			type="plp_mark_as_camp";
+			id=7515;
+		};
+		class Item2853
+		{
+			dataType="Marker";
+			position[]={8532.7412,309.51709,2505.3682};
+			name="marker_657";
+			type="plp_mark_as_camp";
+			id=7516;
+		};
+		class Item2854
+		{
+			dataType="Marker";
+			position[]={6280.543,59.512924,11144.193};
+			name="marker_658";
+			type="plp_mark_as_camp";
+			id=7517;
 		};
 	};
 	class Connections
