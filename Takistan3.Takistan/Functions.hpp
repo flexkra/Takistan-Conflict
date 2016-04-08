@@ -369,5 +369,7 @@ class Life_Client_Core
 		class containerTake {};
 		class initContainer {};
 		class sellContainer {};
+		class containerManagerMenu {};
+		class containerUpgrade {};
 	};
 };

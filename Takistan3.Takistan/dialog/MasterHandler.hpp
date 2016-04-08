@@ -34,3 +34,4 @@
 #include "progress.hpp"
 #include "wantedadd2.hpp"
 #include "container_menu.hpp"
+#include "container_manager.hpp"

@@ -365,6 +365,14 @@
       <Portuguese>Cancelar</Portuguese>
       <Polish>Anuluj</Polish>
     </Key>
+    <Key ID="STR_Global_Days">
+      <Original>days</Original>
+      <German>Tage</German>
+    </Key>
+    <Key ID="STR_Global_Hours">
+      <Original>hours</Original>
+      <German>Stunden</German>
+    </Key>
   </Package>
   <Package name="Admin_Menu">
     <Key ID="STR_Admin_Title">
@@ -7056,8 +7064,16 @@
           <German>DU hast nicht genügend Geld</German>
       </Key>
       <Key ID='STR_Container_Sell'>
-          <Original>You sold your locker for %1</Original>
-          <German>Du hast deinen Container für %1 verkauft</German>
+          <Original>You sold your locker for %1$</Original>
+          <German>Du hast deinen Container für %1$ verkauft</German>
+      </Key>
+      <Key ID='STR_Container_UpgradeBuy'>
+          <Original>You upgraded your locker for %1$</Original>
+          <German>Du hast deinen Container für %1$ erweitert</German>
+      </Key>
+      <Key ID='STR_Container_RenewBuy'>
+          <Original>You renewed your locker for %1$</Original>
+          <German>Du hast deinen Container für %1$ verlängert</German>
       </Key>
       <Key ID='STR_Container_Take'>
           <Original>Take</Original>
@@ -7066,6 +7082,58 @@
       <Key ID='STR_Container_Store'>
           <Original>Store</Original>
           <German>Lagern</German>
+      </Key>
+      <Key ID='STR_Container_Manager'>
+          <Original>Locker Manager</Original>
+          <German>Schließfachmanager</German>
+      </Key>
+      <Key ID='STR_Container_Renew'>
+          <Original>Renew</Original>
+          <German>Verlängern</German>
+      </Key>
+      <Key ID='STR_Container_RenewQM'>
+          <Original>Renew?</Original>
+          <German>Verlängern?</German>
+      </Key>
+      <Key ID='STR_Container_Costs'>
+          <Original>Costs: %1</Original>
+          <German>Kosten: %1</German>
+      </Key>
+      <Key ID='STR_Container_Upgrade'>
+          <Original>Upgrade</Original>
+          <German>Erweitern</German>
+      </Key>
+      <Key ID='STR_Container_UpgradeQM'>
+          <Original>Upgrade?</Original>
+          <German>Erweitern?</German>
+      </Key>
+      <Key ID='STR_Container_TimeLeft'>
+          <Original>Time Left: %1 %2</Original>
+          <German>Zeit übrig: %1 %2</German>
+      </Key>
+      <Key ID='STR_Container'>
+          <Original>%1's locker</Original>
+          <German>%1s SChließfach</German>
+      </Key>
+      <Key ID='STR_Container_CurrentSize'>
+          <Original>Current Size: %1 Slots</Original>
+          <German>Aktuelle Größe: %1 Plätze</German>
+      </Key>
+      <Key ID='STR_Container_UpgradeSize'>
+          <Original>Upgrade Size: %1 Slots</Original>
+          <German>Nächste Größe: %1 Plätze</German>
+      </Key>
+      <Key ID='STR_Container_NoUpgrade'>
+          <Original>No upgrade available</Original>
+          <German>Keine Erweiterung mehr verfügbar</German>
+      </Key>
+      <Key ID='STR_Container_Reactivate'>
+          <Original>Reaktivate</Original>
+          <German>Wiederherstellen</German>
+      </Key>
+      <Key ID='STR_Container_NoOwner'>
+          <Original>You don't own a locker</Original>
+          <German>Du besitzt kein Schließfach</German>
       </Key>
     </Package>
 </Project>

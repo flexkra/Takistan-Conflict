@@ -35,10 +35,11 @@ class Life_Settings {
     gang_upgradeMultiplier = 2.5; //Not sure if in use?
 
     /* Container Stuff */
-    container_price = 20000;
+    container_price = 5000;
     container_period_price = 200;
-    container_type_size = 20;
+    container_type_size = 10;
     container_init_days = 7;
+    container_max_upgrades = 4;
 
     /* Player-related systems */
     enable_fatigue = false; //Set to false to disable the ARMA 3 false system.
