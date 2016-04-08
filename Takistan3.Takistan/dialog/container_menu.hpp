@@ -1,13 +1,13 @@
 class container_menu {
-	idc= 5400;
-	name="container_menu";
+	idc= 54000;
+	name="container_menu_locker";
 	movingEnable = 0;
 	enableSimulation = 1;
 	onLoad ="[] call life_fnc_containerMenu;";
 	
 	class xy_container_menubackground: Life_RscBackground
 	{
-		idc = -1;
+		idc = 5410;
 		x = 0.438125 * safezoneW + safezoneX;
 		y = 0.225 * safezoneH + safezoneY;
 		w = 0.134062 * safezoneW;
@@ -15,7 +15,7 @@ class container_menu {
 	};
 	class xy_container_sidemenubg: Life_RscBackground
 	{
-		idc = -1;
+		idc = 5411;
 		x = 0.572187 * safezoneW + safezoneX;
 		y = 0.225 * safezoneH + safezoneY;
 		w = 0.118594 * safezoneW;
@@ -57,7 +57,7 @@ class container_menu {
 		h = 0.022 * safezoneH;
 		onButtonClick = "[] call life_fnc_containerStore;";
 	};
-	class xy_container_gearpic: life_RscPicture
+	/*class xy_container_gearpic: life_RscPicture
 	{
 		idc = 5405;
 		text = "";
@@ -65,5 +65,5 @@ class container_menu {
 		y = 0.423 * safezoneH + safezoneY;
 		w = 0.113437 * safezoneW;
 		h = 0.341 * safezoneH;
-	};
+	};*/
 };

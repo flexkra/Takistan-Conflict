@@ -10,8 +10,8 @@ disableSerialization;
 
 createDialog "container_menu";
 
-_cInv = CONTROL(5400,5401);
-_pInv = CONTROL(5400,5402);
+_cInv = CONTROL(54000,5401);
+_pInv = CONTROL(54000,5402);
 lbClear _cInv;
 lbClear _pInv;
 
