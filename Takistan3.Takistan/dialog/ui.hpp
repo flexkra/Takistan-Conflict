@@ -15,15 +15,17 @@ class PlayerHUD {
 	name = "playerHUD";
 	onLoad = "uiNamespace setVariable ['playerHUD',_this select 0]";
 	objects[] = {};
+	controlsBackground[] = {
+		xy_ui_background,
+		xy_ui_exp,
+		xy_ui_level
+	};
 	controls[]=
 	{
-		xy_ui_exp,
-		xy_ui_background,
 		xy_ui_health,
 		xy_ui_blood,
 		xy_ui_food,
-		xy_ui_water,
-		xy_ui_level
+		xy_ui_water
 	};
 
 	/* Background */
