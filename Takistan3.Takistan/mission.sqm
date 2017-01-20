@@ -93,7 +93,6 @@ addons[]=
 	"ace_weather",
 	"ace_advanced_ballistics",
 	"ace_map",
-	"ace_sitting",
 	"ace_cargo",
 	"ace_switchunits",
 	"ace_captives",
