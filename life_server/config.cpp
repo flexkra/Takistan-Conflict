@@ -11,7 +11,7 @@ class CfgPatches {
 
 class Life_Server_Settings {
 	class EXTDB {
-		DatabaseName = "altislife";
+		DatabaseName = "takistan";
 		DebugMode = 1;
 	};
 };
